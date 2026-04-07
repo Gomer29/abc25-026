@@ -39,7 +39,7 @@ footer {
   text-align: center;
   padding: 1rem;
 }
-
+/* Adding Pseudo-element for h1 */
 h1{
     position: relative;
     width: max-content;
