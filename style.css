@@ -40,3 +40,16 @@ footer {
   padding: 1rem;
 }
 
+h1{
+    position: relative;
+    width: max-content;
+}
+h1::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: .2em;
+    background-image: linear-gradient(to right, #ff0000, #000000, #0000ff);
+}
