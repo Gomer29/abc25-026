@@ -6,33 +6,29 @@ body {
   padding: 0;
 }
 
+/* header styling */
 header {
-  background-color: #333;
-  color: #fff;
-  padding: 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
+  background: #333;/*stay*/
+  color: #fff;/*stay*/
+  display: flex;/*stay*/
+  align-items: center;/*stay*/
+  padding: 1rem 2rem;/*Stay*/
 }
 
-nav {
+/* .navbar styling */
+nav { 
     margin-left: auto;
 }
 
-nav ul {
+/* navbar ul styling */
+.navbar ul {
   list-style: none;
   padding: 0;
   display: flex;
   gap: 20px;
 }
 
-nav ul li {
-  display: inline-block;
-  margin-right: 1rem;
-}
-
-nav ul li a {
+.navbar a {
   color: #fff;
   text-decoration: none;
 }
