@@ -75,6 +75,10 @@ h1::after{
     width: 100vw;
     height: 200vh;  
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
 }
 
 .banner-image {
