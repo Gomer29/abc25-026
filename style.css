@@ -1,5 +1,6 @@
 /* CSS Styles for GLY Motors */
 
+/* Global styling */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -8,11 +9,11 @@ body {
 
 /* header styling */
 header {
-  background: #333;/*stay*/
-  color: #fff;/*stay*/
-  display: flex;/*stay*/
-  align-items: center;/*stay*/
-  padding: 1rem 2rem;/*Stay*/
+  background: #000000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
 }
 
 /* .navbar styling */
@@ -28,23 +29,28 @@ nav {
   gap: 20px;
 }
 
+/* navbar a styling */
 .navbar a {
   color: #fff;
   text-decoration: none;
 }
 
+/* hero section styling */
 .hero {
   background-color: #f4f4f4;
   padding: 2rem;
   text-align: center;
 }
 
+
+/* footer styling */
 footer {
   background-color: #333;
   color: #fff;
   text-align: center;
   padding: 1rem;
 }
+
 /* Adding Pseudo-element for h1 */
 h1{
     position: relative;
