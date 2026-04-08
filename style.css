@@ -86,4 +86,10 @@ h1::after{
   height: auto;  
 }
    
-
+/* Adding a class to the footer for specific styling */
+.foot {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
