@@ -65,3 +65,13 @@ h1::after{
     height: .2em;
     background-image: linear-gradient(to right, #ff0000, #000000, #0000ff);
 }
+
+/* Adding A banner image to the hero section */
+.hero {
+    background-image: url('/Images/Banner/Banner.png.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100px;
+    width: 100%;
+}
