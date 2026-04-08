@@ -67,7 +67,7 @@ h1::after{
 }
 
 /* Adding A banner image to the hero section */
-.hero {
+.banner {
     background-image: url('/Images/Banner/Banner.png.png');
     background-repeat: no-repeat;
     background-size: cover;
