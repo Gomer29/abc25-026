@@ -72,8 +72,8 @@ h1::after{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 100vw;
-    height: 200vh;  
+    width: 50vw;
+    height: 00vh;  
     position: relative;
     display: flex;
     justify-content: center;
@@ -82,7 +82,7 @@ h1::after{
 }
 
 .banner-image {
-    width: 100vw;
-    height: 200vh;
+    width: 50vw;
+    height: 100vh;
 }
 
