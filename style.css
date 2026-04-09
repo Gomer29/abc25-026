@@ -67,6 +67,16 @@ h1::after{
     border-radius: 1em;
 }
 
+/* Hover pseudo-element for h1 */
+h1::after{
+    content: "";
+    scale: 0;
+    transition: scale 200ms ease;
+}
+h1:hover::after{
+    scale: 1;
+}
+
 /* Adding A banner image to the hero section */
 .banner {
     background-image: url('/Images/Banner/Banner.png.png');
