@@ -45,9 +45,8 @@ nav {
 
 /* Logo container styling */
 .logo-container {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+  width: 120px;   
+    height: auto;
 }
 
 /* hero section styling */
