@@ -105,6 +105,7 @@ h1:hover::after{
   height: auto;  
 }
 
+/* Styling for the car list container */
 .car-list {
   display: flex;
   flex-wrap: wrap;
@@ -126,12 +127,12 @@ h1:hover::after{
 
 /* Styling for car images */
 .car-item img {
-  width: 100%;
-  max-width: 300px;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
+  width: 100%;      /* Responsive Sizing */
+  max-width: 300px;    /* Keeps images uniform */
+  height: auto;     /* Maintains aspect ratio */
+  border-radius: 12px;   /* Rounded corners */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);  /* Soft shadow */
+  background-color: #fff;   /* Clean background */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
