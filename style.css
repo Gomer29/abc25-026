@@ -108,9 +108,9 @@ h1:hover::after{
 /* Styling for the car container */
 .car-container {
   display: grid; /* Using CSS Grid for layout */
-  grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) ); /* Three columns for larger screens */
+  grid-template-columns: repeat( auto-fit, minmax(280px, 1fr) ); /* Three columns for larger screens */
   gap: 30px; /* Spacing between cards */
-  padding: 40px; /* Spacing around the container */
+  padding: 60px 80px; /* Padding around the container */
   justify-content: center; /* Centering the grid */
   max-width: 1400px; /* Maximum width for larger screens */
   margin: 0 auto; /* Centering the container horizontally */
