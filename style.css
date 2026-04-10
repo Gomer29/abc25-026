@@ -108,11 +108,11 @@ h1:hover::after{
 /* Styling for the car container */
 .car-container {
   display: grid; /* Using CSS Grid for layout */
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid layout */
+  grid-template-columns: repeat(3, 1fr); /* Three columns for larger screens */
   gap: 20px; /* Spacing between cards */
   padding: 20px; /* Spacing around the container */
   justify-content: center; /* Centering the grid */
-  max-width: 1200px; /* Maximum width for larger screens */
+  max-width: 1400px; /* Maximum width for larger screens */
   margin: 0 auto; /* Centering the container horizontally */
 }
 
@@ -125,7 +125,7 @@ h1:hover::after{
   padding: 20px; /* Spacing inside the card */
   background: #fff; /* Clean white background for contrast */
   border: 1px solid #eee; /* Light border for separation */
-  border-radius: 8px; /* Rounded corners for a modern look */
+  border-radius: 10px; /* Rounded corners for a modern look */
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
   width: 200px; /* Fixed width for uniformity */
   text-align: center; /* Centering text and images */
@@ -138,7 +138,9 @@ h1:hover::after{
   width: 100%;      /* Responsive Sizing */
   max-width: 300px;    /* Keeps images uniform */
   display: block;   /* Removes extra space below images */
-  height: auto;     /* Maintains aspect ratio */
+  height: 220px;     /* Fixed height for uniformity */
+  object-fit: cover; /* Ensures images fill the area without distortion */
+  border-bottom: 1px solid #eee; /* Subtle separation from text */
   border-radius: 12px;   /* Rounded corners */
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);  /* Soft shadow */
   background-color: #fff;   /* Clean background */
@@ -149,16 +151,16 @@ h1:hover::after{
 /* Styling for car-card titles and prices */
 .car-card h3 {
   margin: 1rem 0 0.5rem; /* Spacing around titles */
-  font-size: 1.2rem; /* Slightly larger font for titles */
+  font-size: 1.4rem; /* Slightly larger font for titles */
   color: #333; /* Darker color for better readability */
 }
 .car-card p {
   margin-bottom: 1rem; /* Spacing below price */
-  font-size: 0.95rem; /* Slightly smaller font for price */
+  font-size: 1rem; /* Slightly smaller font for price */
   color: #666; /* Subtle color for price text */
 }
 /* Hover effect for interactivity with car-card images */
 .car-card img:hover {
-  transform: translateY(-5px);  /* Subtle lift on hover */
+  transform: translateY(-8px);  /* Subtle lift on hover */
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25); /* Enhanced shadow on hover */
 }
