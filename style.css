@@ -124,6 +124,7 @@ h1:hover::after{
   text-align: center;
 }
 
+/* Styling for car images */
 .car-item img {
   width: 100%;
   max-width: 300px;
@@ -132,4 +133,10 @@ h1:hover::after{
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
   background-color: #fff;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for car images */
+.car-item img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
 }
