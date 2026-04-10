@@ -121,6 +121,7 @@ h1:hover::after{
   display: grid; /* Using CSS Grid for layout */
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid layout */
   gap: 30px; /* Spacing between cards */
+  margin: 0 auto; /* Centering the card */
   justify-items: center; /* Centering items in the grid */
   padding: 15px; /* Spacing inside the card */
   background: #fff; /* Clean white background for contrast */
