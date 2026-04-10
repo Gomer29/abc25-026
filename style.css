@@ -135,7 +135,7 @@ h1:hover::after{
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Hover effect for car images */
+/* Hover effect for interactivity with car images */
 .car-item img:hover {
   transform: scale(1.05);
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
