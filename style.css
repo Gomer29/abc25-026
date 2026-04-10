@@ -130,7 +130,13 @@ h1:hover::after{
   width: 100%; /* Fixed width for uniformity */
   text-align: center; /* Centering text and images */
   overflow: hidden; /* Ensures content doesn't overflow the card */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+  transition: transform 0.3s ease; /* Smooth hover effect */
+  cursor: pointer; /* Indicates interactivity */
+}
+
+.car-card:hover {
+  transform: translateY(-8px); /* Slight lift on hover */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
 }
 
 /* Styling images in car-card */
@@ -144,7 +150,7 @@ h1:hover::after{
   border-radius: 12px;   /* Rounded corners */
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);  /* Soft shadow */
   background-color: #fff;   /* Clean background */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+  transition: transform 0.3s ease; /* Smooth hover effect */
   
 }
 
@@ -161,8 +167,8 @@ h1:hover::after{
 }
 /* Hover effect for interactivity with car-card images */
 .car-card img:hover {
-  transform: translateY(-8px);  /* Subtle lift on hover */
-  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25); /* Enhanced shadow on hover */
+  transform: scale(1.05);  /* Subtle zoom on hover */
+  /* box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25); /* Enhanced shadow on hover */
 }
 
 /* Responsive design for smaller screens */
