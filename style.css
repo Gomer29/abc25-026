@@ -43,8 +43,9 @@ nav {
   text-decoration: none;
 }
 
-/* hero section styling */
-.hero {
+/* combine hero and cars section styling for consistency */
+.hero,
+.cars {
   background-image: linear-gradient(to bottom, #FF0000, #0000FF);
   padding: 2rem;
   text-align: center;
