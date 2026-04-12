@@ -46,7 +46,9 @@ nav {
 /* combine hero, cars, and about section styling for consistency */
 .hero,
 .cars, 
-.about {
+.about
+.feedback
+.contact {
   background-image: linear-gradient(to bottom, #FF0000, #0000FF);
   padding: 2rem;
   text-align: center;
