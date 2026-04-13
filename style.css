@@ -9,7 +9,7 @@ body {
 
 /* header styling */
 header {
-  background:  #B4CFEC; 
+  background:  #3090C7; 
   color: #282626;
   display: flex;
   align-items: center;
@@ -57,7 +57,7 @@ nav {
 
 /* footer styling */
 footer {
-  background-color:  #B4CFEC;
+  background-color:  #3090C7;
   color: #000000;
   text-align: center;
   padding: 1rem;
