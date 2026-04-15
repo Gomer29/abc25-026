@@ -182,6 +182,20 @@ h1:hover::after{
   /* box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25); /* Enhanced shadow on hover */
 }
 
+.buy-now {
+  background-color: #3090C7; /* Button color */
+  color: #fff; /* Button text color */
+  border: none; /* Remove default border */
+  padding: 10px 20px; /* Button padding */
+  font-size: 1rem; /* Button font size */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+.buy-now:hover {
+  background-color: #1E90FF; /* Darker button color on hover */
+}
+
 /* Responsive design for smaller screens */
 @media screen and (max-width: 768px) {
   .car-container {
