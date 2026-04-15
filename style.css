@@ -1,0 +1,190 @@
+/* CSS Styles for GLY Motors */
+
+/* Global styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0; 
+}
+
+/* header styling */
+header {
+  background:  #3090C7; 
+  color: #282626;
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+/* logo styling */
+.logo a {
+  color: #282626;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* .navbar styling */
+nav { 
+    margin-left: auto;
+}
+
+/* navbar ul styling */
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+/* navbar a styling */
+.navbar a {
+  color: #282626;
+  text-decoration: none;
+}
+
+/* combine hero, cars, about, feedback, and contact section styling for consistency */
+.hero,
+.cars, 
+.about,
+.feedback,
+.contact {
+  background-image: linear-gradient(#F8F8FF, #B4CFEC); /* Gradient background for visual appeal */
+  color: #000000; 
+  padding: 2rem;
+  text-align: center;
+}
+
+/* footer styling */
+footer {
+  background-color:  #3090C7;
+  color: #000000;
+  text-align: center;
+  padding: 1rem;
+}
+.in-foot{
+  color: #000000;
+  font-weight: bold;
+}
+
+/* Adding Pseudo-element for h1 */
+h1{
+    position: relative;
+    width: max-content;
+}
+h1::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: .2em;
+    background-image: linear-gradient(to right, #ff0000, #0000ff);
+    border-radius: 1em;
+}
+
+/* Hover pseudo-element for h1 */
+h1::after{
+    content: "";
+    scale: 0;
+    transition: scale 200ms ease;
+}
+h1:hover::after{
+    scale: 1;
+}
+
+/* Adding A banner image to the hero section */
+.banner {
+    background-image: url('/Images/Banner/Banner.png.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: auto;  
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+.banner-image {
+  width: 100%;
+  height: auto;  
+}
+
+/* Styling for the car container */
+.car-container {
+  display: grid; /* Using CSS Grid for layout */
+  grid-template-columns: repeat( auto-fit, minmax(280px, 1fr) ); /* Three columns for larger screens */
+  gap: 30px; /* Spacing between cards */
+  padding: 60px 80px; /* Padding around the container */
+  justify-content: center;  /* Centering the grid  */
+  max-width: 1400px; /* Maximum width for larger screens */
+  margin: 15px; /* Centering the container */
+  flex-direction: column-reverse; /* Stacking cards vertically on smaller screens */
+  
+}
+
+/* Styling the car-card */
+.car-card {
+  display: grid; /* Using CSS Grid for layout */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid layout */
+  gap: 30px; /* Spacing between cards */
+  margin: 15px; /* Centering the card */
+  justify-items: center; /* Centering items in the grid */
+  padding: 15px; /* Spacing inside the card */
+  background: #fff; /* Clean white background for contrast */
+  border: 1px solid #eee; /* Light border for separation */
+  border-radius: 10px; /* Rounded corners for a modern look */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  width: 100%; /* Fixed width for uniformity */
+  text-align: center; /* Centering text and images */
+  overflow: hidden; /* Ensures content doesn't overflow the card */
+  transition: transform 0.3s ease; /* Smooth hover effect */
+  cursor: pointer; /* Indicates interactivity */
+}
+
+.car-card:hover {
+  transform: translateY(-8px); /* Slight lift on hover */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+/* Styling images in car-card */
+.car-card img {
+  width: 100%;      /* Responsive Sizing */
+  max-width: 300px;    /* Keeps images uniform */
+  display: block;   /* Removes extra space below images */
+  height: 220px;     /* Fixed height for uniformity */
+  object-fit: contain; /* Ensures images fit within the area without distortion */
+  border-bottom: 1px solid #eee; /* Subtle separation from text */
+  border-radius: 12px;   /* Rounded corners */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);  /* Soft shadow */
+  background-color: #fff;   /* Clean background */
+  transition: transform 0.3s ease; /* Smooth hover effect */
+  
+}
+
+/* Styling for car-card titles and prices */
+.car-card h3 {
+  margin: 1rem 0 0.5rem; /* Spacing around titles */
+  font-size: 1.4rem; /* Slightly larger font for titles */
+  color: #333; /* Darker color for better readability */
+}
+.car-card p {
+  margin-bottom: 1rem; /* Spacing below price */
+  font-size: 1rem; /* Slightly smaller font for price */
+  color: #666; /* Subtle color for price text */
+}
+/* Hover effect for interactivity with car-card images */
+.car-card img:hover {
+  transform: scale(1.05);  /* Subtle zoom on hover */
+  /* box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25); /* Enhanced shadow on hover */
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+  .car-container {
+    grid-template-columns: 1fr; /* Single column for smaller screens */
+  }
+}
