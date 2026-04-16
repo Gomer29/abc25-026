@@ -133,7 +133,8 @@ h1:hover::after{
 .car-card {
   display: grid; /* Using CSS Grid for layout */
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid layout */
-  gap: 30px; /* Spacing between cards */
+  column-gap: 15px; /* Spacing between columns */
+  row-gap: 15px; /* Spacing between rows */
   margin: 15px; /* Centering the card */
   justify-items: center; /* Centering items in the grid */
   padding: 15px; /* Spacing inside the card */
