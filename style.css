@@ -116,6 +116,7 @@ h1:hover::after{
 
 /* Styling for the car container */
 .car-container {
+  border: 1px solid #c0c0c0; /* Adding a border around the container */
   display: flex; /* Using CSS Grid for layout */
   flex-wrap: wrap; /* Allow cards to wrap to the next line */
   gap: 30px; /* Spacing between cards */
