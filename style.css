@@ -50,7 +50,7 @@ nav {
 .about,
 .feedback,
 .contact {
-  background-image: linear-gradient(#F8F8FF, #B4CFEC); /* Gradient background for visual appeal */
+  background-image: linear-gradient(#c0c0c0); /* Gradient background for visual appeal */
   color: #000000; 
   padding: 2rem;
   text-align: center;
