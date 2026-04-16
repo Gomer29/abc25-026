@@ -127,8 +127,13 @@ h1:hover::after{
   max-width: 1400px; /* Maximum width for larger screens */
   margin: 15px; /* Centering the container */
   flex-direction: column-reverse; /* Stacking cards vertically on smaller screens */
-  
 }
+
+.my-cars-container {
+  text-align: center; /* Centering the heading */
+  margin-bottom: 20px; /* Spacing below the heading */
+  font-size: medium; /* Font size for the heading */
+} 
 
 /* Styling the car-card */
 .car-card {
