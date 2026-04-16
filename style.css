@@ -130,6 +130,7 @@ h1:hover::after{
 }
 
 .my-cars-container {
+  border: 8px solid #c0c0c0; /* Adding a border around the heading */
   text-align: center; /* Centering the heading */
   margin-bottom: 20px; /* Spacing below the heading */
   font-size: medium; /* Font size for the heading */
