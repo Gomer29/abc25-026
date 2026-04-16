@@ -111,7 +111,7 @@ h1:hover::after{
 
 .banner-image {
   width: 100%;
-  height: auto;  
+  height: 100vh;  
 }
 
 /* Styling for the car container */
@@ -131,12 +131,11 @@ h1:hover::after{
 
 /* Styling the car-card */
 .car-card {
-  display: grid; /* Using CSS Grid for layout */
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid layout */
-  column-gap: 15px; /* Spacing between columns */
-  row-gap: 15px; /* Spacing between rows */
+  display: flex; /* Using CSS Grid for layout */
+  flex-direction: column; /* Stack content vertically */
+  gap: 15px; /* Spacing between elements */
   margin: 15px; /* Centering the card */
-  justify-items: center; /* Centering items in the grid */
+  justify-content: center; /* Centering items in the grid */
   padding: 15px; /* Spacing inside the card */
   background: #fff; /* Clean white background for contrast */
   border: 1px solid #eee; /* Light border for separation */
