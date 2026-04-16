@@ -5,12 +5,6 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0; 
-  display: flex;
-  border: 8px solid #c0c0c0; /* Adding a border around the entire page */
-  min-height: 100vh;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
 }
 
 /* header styling */
@@ -127,7 +121,7 @@ h1:hover::after{
   padding: 60px 80px; /* Padding around the container */
   justify-content: space-around;  /* Centering the grid  */
   height: 200px; /* Fixed height for the container */
-  max-height: fit-content; /* Allow height to adjust based on content */
+  max-height: fit-content;
   width: 200px;
   max-width: 1400px; /* Maximum width for larger screens */
   margin: 15px; /* Centering the container */
