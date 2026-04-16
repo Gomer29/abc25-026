@@ -130,13 +130,6 @@ h1:hover::after{
   flex-direction: column-reverse; /* Stacking cards vertically on smaller screens */
 }
 
-.my-cars-container {
-  border: 8px solid #c0c0c0; /* Adding a border around the heading */
-  text-align: center; /* Centering the heading */
-  margin-bottom: 20px; /* Spacing below the heading */
-  font-size: medium; /* Font size for the heading */
-} 
-
 /* Styling the car-card */
 .car-card {
   display: grid; /* Using CSS Grid for layout */
