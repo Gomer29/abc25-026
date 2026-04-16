@@ -121,11 +121,14 @@ h1:hover::after{
 
 /* Styling for the car container */
 .car-container {
-  display: grid; /* Using CSS Grid for layout */
-  grid-template-columns: repeat( auto-fit, minmax(280px, 1fr) ); /* Three columns for larger screens */
+  display: flex; /* Using CSS Grid for layout */
+  flex-wrap: wrap; /* Allow cards to wrap to the next line */
   gap: 30px; /* Spacing between cards */
   padding: 60px 80px; /* Padding around the container */
   justify-content: space-around;  /* Centering the grid  */
+  height: 200px; /* Fixed height for the container */
+  max-height: fit-content; /* Allow height to adjust based on content */
+  width: 200px;
   max-width: 1400px; /* Maximum width for larger screens */
   margin: 15px; /* Centering the container */
   flex-direction: column-reverse; /* Stacking cards vertically on smaller screens */
