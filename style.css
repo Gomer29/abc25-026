@@ -45,6 +45,7 @@ nav {
   transition: transform 0.3s ease; /* Smooth transition for hover effect */
 }
 
+/* navbar a hover styling */
 .navbar a:hover {
   color: #faebd7 ; /* Change color on hover for better interactivity */
   transform: scale(1.1); /* Scale up on hover for better interactivity */
@@ -56,7 +57,7 @@ nav {
   text-transform: uppercase; /* Transform text to uppercase on hover for better interactivity */
   text-align: center; /* Center the text on hover for better interactivity */
   font-weight: bold; /* Make the text bold on hover for better interactivity */
-  border: 3px solid #faebd7; /* Add a border on hover for better interactivity */
+  border: 1px solid #faebd7; /* Add a border on hover for better interactivity */
   position: relative; /* Ensure the element is positioned relative for better hover effects */
   text-decoration: none; /* Remove underline on hover for better interactivity */
   z-index: 1; /* Ensure the element is above other elements on hover for better interactivity */
