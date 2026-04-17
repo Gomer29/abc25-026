@@ -42,10 +42,12 @@ nav {
   color: #000000;
   text-decoration: none;
   font-weight: bold;
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
 }
 
 .navbar a:hover {
   color: #ff0000; /* Change color on hover for better interactivity */
+  transform: scale(1.1); /* Scale up on hover for better interactivity */
 }
 
 /* combine hero, cars, about, feedback, and contact section styling for consistency */
