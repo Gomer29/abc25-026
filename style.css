@@ -114,8 +114,9 @@ h1:hover::after{
   height: 100vh;  
 }
 
-.cars {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Three columns for car listings */
-  gap: 20px;
+.cars{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;  
 }
