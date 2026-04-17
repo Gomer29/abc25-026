@@ -88,43 +88,43 @@ footer {
 
 /* Adding Pseudo-element for h1 */
 h1{
-    position: relative; /* Ensure the h1 is positioned relative for the pseudo-element to be positioned correctly */
-    width: max-content; /* Set width to max-content to fit the content of the h1 */
+  position: relative; /* Ensure the h1 is positioned relative for the pseudo-element to be positioned correctly */
+  width: max-content; /* Set width to max-content to fit the content of the h1 */
 }
 h1::after{
-    content: ""; /* Create an empty content for the pseudo-element */
-    position: absolute; /* Position the pseudo-element absolutely to the h1 */
-    left: 0; /* Position the pseudo-element at the left edge of the h1 */
-    bottom: 0; /* Position the pseudo-element at the bottom edge of the h1 */
-    width: 100%; /* Set the width of the pseudo-element to 100% of the h1 */
-    height: .2em; /* Set the height of the pseudo-element */
-    background-image: linear-gradient(to right, #ff0000, #0000ff);
-    border-radius: 1em; /* Add border radius for rounded corners */
+  content: ""; /* Create an empty content for the pseudo-element */
+  position: absolute; /* Position the pseudo-element absolutely to the h1 */
+  left: 0; /* Position the pseudo-element at the left edge of the h1 */
+  bottom: 0; /* Position the pseudo-element at the bottom edge of the h1 */
+  width: 100%; /* Set the width of the pseudo-element to 100% of the h1 */
+  height: .2em; /* Set the height of the pseudo-element */
+  background-image: linear-gradient(to right, #ff0000, #0000ff);
+  border-radius: 1em; /* Add border radius for rounded corners */
 }
 
 /* Hover pseudo-element for h1 */
 h1::after{
-    content: ""; /* Create an empty content for the pseudo-element */
-    scale: 0; /* Initially scale the pseudo-element down to 0 for the hover effect */
-    transition: scale 200ms ease; /* Smooth transition for the hover effect */
+  content: ""; /* Create an empty content for the pseudo-element */
+  scale: 0; /* Initially scale the pseudo-element down to 0 for the hover effect */
+  transition: scale 200ms ease; /* Smooth transition for the hover effect */
 }
 h1:hover::after{
-    scale: 1; /* Scale the pseudo-element up to 1 on hover for the hover effect */
+  scale: 1; /* Scale the pseudo-element up to 1 on hover for the hover effect */
 }
 
 /* Adding A banner image to the hero section */
 .banner {
-    background-image: url('/Images/Banner/Banner.png.png'); /* Set the background image for the banner */
-    background-repeat: no-repeat; /* Prevent the background image from repeating */
-    background-size: cover; /* Cover the entire element with the background image */
-    background-position: center; /* Center the background image */
-    width: 100%; /* Set the width of the banner to 100% of its container */
-    height: auto;  /* Set the height of the banner to auto to maintain the aspect ratio of the image */
-    position: relative; /* Position the banner relative for the content to be positioned absolutely within it */
-    display: flex; /* Use flexbox for layout */
-    justify-content: center; /* Center the content horizontally */
-    align-items: center; /* Center the content vertically */
-    color: #ffffff; /* Set text color to white for better visibility on the banner */
+  background-image: url('/Images/Banner/Banner.png.png'); /* Set the background image for the banner */
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
+  background-size: cover; /* Cover the entire element with the background image */
+  background-position: center; /* Center the background image */
+  width: 100%; /* Set the width of the banner to 100% of its container */
+  height: auto;  /* Set the height of the banner to auto to maintain the aspect ratio of the image */
+  position: relative; /* Position the banner relative for the content to be positioned absolutely within it */
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+  color: #ffffff; /* Set text color to white for better visibility on the banner */
 }
 
 .banner-image {
@@ -133,11 +133,11 @@ h1:hover::after{
 }
 
 .cars{
-    display: flex; /* Use flexbox for layout */
-    flex-wrap: wrap; /* Allow the items to wrap to the next line if they exceed the width of the container */
-    justify-content: center; /* Center the items horizontally */
-    gap: 20px;  /* Add gap between the items for better spacing */
-    padding: 2rem; /* Add padding for better spacing */
-    border: 1px solid #000000; /* Add a border to the cars section for better visibility */
-    border-radius: 10px; /* Add border radius for better aesthetics */
+  display: flex; /* Use flexbox for layout */
+  flex-wrap: wrap; /* Allow the items to wrap to the next line if they exceed the width of the container */
+  justify-content: center; /* Center the items horizontally */
+  gap: 20px;  /* Add gap between the items for better spacing */
+  padding: 2rem; /* Add padding for better spacing */
+  border: 1px solid #000000; /* Add a border to the cars section for better visibility */
+  border-radius: 10px; /* Add border radius for better aesthetics */
 }
