@@ -149,6 +149,6 @@ h1:hover::after{
   gap: 20px; /* Add gap between the items for better spacing */
   padding: 2rem; /* Add padding for better spacing */
   border: 1px solid #000000; /* Add a border to the my-cars-container for better visibility */
-  border-radius: 1px; /* Add border radius for better aesthetics */
+  border-radius: 5px; /* Add border radius for better aesthetics */
   text-align: left; /* Align text to the left for better readability */
 }
