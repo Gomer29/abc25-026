@@ -162,3 +162,42 @@ h1:hover::after{
   padding: 1rem; /* Add padding for better spacing */
   background-color: #f0f0f0; /* Set a light background color for better visibility of the car details */
 }
+
+.car-card {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Arrange the items in a column for better layout */
+  gap: 10px; /* Add gap between the items for better spacing */
+}
+
+.car-container img {
+  width: 100%; /* Set the width of the car image to 100% of its container for better layout control */
+  height: auto; /* Set the height of the car image to auto to maintain the aspect ratio of the image */
+  border-radius: 5px; /* Add border radius to curve the edges of the car image for better aesthetics */
+}
+
+.car-card h3 {
+  margin: 0; /* Remove default margin for better layout control */
+  font-size: 1.2rem; /* Set a specific font size for the car name for better readability */
+  color: #000000; /* Set text color to black for better visibility */
+}
+
+.car-card p {
+  margin: 0; /* Remove default margin for better layout control */
+  font-size: 1rem; /* Set a specific font size for the car details for better readability */
+  color: #000000; /* Set text color to black for better visibility */
+}
+
+.car-card .price {
+  font-weight: bold; /* Make the price text bold for better visibility */
+  color: #000000; /* Set price text color to black for better visibility */
+}
+
+.car-card .button {
+  display: inline-block; /* Ensure the button is treated as an inline block for better layout control */
+  padding: 0.5rem 1rem; /* Add padding for better spacing */
+  background-color: #007bff; /* Set a blue background color for the button for better visibility */
+  color: #ffffff; /* Set text color to white for better visibility on the button */
+  text-decoration: none; /* Remove underline from the button text for better aesthetics */
+  border-radius: 5px; /* Add border radius to curve the edges of the button for better aesthetics */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect on the button */
+}
