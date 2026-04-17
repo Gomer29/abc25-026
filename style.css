@@ -81,12 +81,9 @@ nav {
 footer {
   background-color:  #DCDCDC ;
   color: #000000;
+  font-weight: bold;
   text-align: center;
   padding: 1rem;
-}
-.in-foot{
-  color: #000000;
-  font-weight: bold;
 }
 
 /* Adding Pseudo-element for h1 */
