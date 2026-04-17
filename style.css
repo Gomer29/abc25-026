@@ -58,7 +58,7 @@ nav {
   text-align: center; /* Center the text on hover for better interactivity */
   font-weight: bold; /* Make the text bold on hover for better interactivity */
   border: 1px solid #faebd7; /* Add a border on hover for better interactivity */
-  border-radius: 2px; /* Add border radius on hover for better interactivity */
+  border-radius: 2px; /* Add border radius to curve the edges on hover for better interactivity */
   padding: 0.7em 1.5em; /* Add padding on hover for better interactivity */
   position: relative; /* Ensure the element is positioned relative for better hover effects */
   text-decoration: none; /* Remove underline on hover for better interactivity */
@@ -99,7 +99,7 @@ h1::after{
   width: 100%; /* Set the width of the pseudo-element to 100% of the h1 */
   height: .2em; /* Set the height of the pseudo-element */
   background-image: linear-gradient(to right, #ff0000, #0000ff);
-  border-radius: 1em; /* Add border radius for rounded corners */
+  border-radius: 1em; /* Add border radius to curve the edges for rounded corners */
 }
 
 /* Hover pseudo-element for h1 */
@@ -139,7 +139,7 @@ h1:hover::after{
   gap: 20px;  /* Add gap between the items for better spacing */
   padding: 2rem; /* Add padding for better spacing */
   border: 1px solid #000000; /* Add a border to the cars section for better visibility */
-  border-radius: 10px; /* Add border radius for better aesthetics */
+  border-radius: 10px; /* Add border radius to curve the edges for better aesthetics */
 }
 
 .my-cars-container {
@@ -149,6 +149,6 @@ h1:hover::after{
   gap: 20px; /* Add gap between the items for better spacing */
   padding: 2rem; /* Add padding for better spacing */
   border: 1px solid #000000; /* Add a border to the my-cars-container for better visibility */
-  border-radius: 5px; /* Add border radius for better aesthetics */
+  border-radius: 5px; /* Add border radius to curve the edges for better aesthetics */
   text-align: left; /* Align text to the left for better readability */
 }
