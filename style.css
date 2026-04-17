@@ -2,46 +2,46 @@
 
 /* Global styling */
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0; 
+  font-family: Arial, sans-serif; /* Use a clean and modern font for better readability */
+  margin: 0; /* Remove default margin for better layout control */
+  padding: 0;  /* Remove default padding for better layout control */
 }
 
 /* header styling */
 header {
-  background:  #DCDCDC; 
-  color: #282626;
-  display: flex;
-  align-items: center;
-  padding: 1rem 2rem;
+  background:  #DCDCDC; /* Light gray background for the header */
+  color: #000000; /* Set text color to black for better visibility */
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Vertically center the content */
+  padding: 1rem 2rem; /* Add padding for better spacing */
 }
 
 /* logo styling */
 .logo a {
-  color: #282626;
-  text-decoration: none;
-  font-size: 1.5rem;
-  font-weight: bold;
+  color: #000000; /* Set logo text color to black for better visibility */
+  text-decoration: none; /* Remove underline for better aesthetics */
+  font-size: 1.5rem; /* Increase font size for better visibility */
+  font-weight: bold; /* Make the logo text bold for better visibility */
 }
 
 /* .navbar styling */
 nav { 
-    margin-left: auto;
+    margin-left: auto; /* Push the navbar to the right */
 }
 
 /* navbar ul styling */
 .navbar ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  gap: 20px;
+  list-style: none; /* Remove default list styling for better aesthetics */
+  padding: 0; /* Remove default padding for better aesthetics */
+  display: flex; /* Use flexbox for horizontal layout of navigation items */
+  gap: 20px; /* Add gap between navigation items for better spacing */
 }
 
 /* navbar a styling */
 .navbar a {
-  color: #000000;
-  text-decoration: none;
-  font-weight: bold;
+  color: #000000; /* Set link color to black for better visibility */
+  text-decoration: none; /* Remove underline for better aesthetics */
+  font-weight: bold; /* Make the text bold for better readability */
   transition: transform 0.3s ease; /* Smooth transition for hover effect */
 }
 
