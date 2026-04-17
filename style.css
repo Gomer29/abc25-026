@@ -173,7 +173,18 @@ h1:hover::after{
 .car-card {
   display: flex; /* Use flexbox for layout */
   flex-direction: column; /* Arrange the items in a column for better layout */
-  gap: 10px; /* Add gap between the items for better spacing */
+  gap: 15px; /* Add gap between the items for better spacing */
+  margin: 15px; /* Add margin for better spacing */
+  padding: 1rem; /* Add padding for better spacing */
+  border: 1px solid #000000; /* Add a border to each car card for better visibility */
+  border-radius: 5px; /* Add border radius to curve the edges for better aesthetics */
+  background-color: #ffffff; /* Set a white background color for better visibility of the car details */
+  justify-content: center; /* Center the items vertically for better layout */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for better aesthetics */ 
+  overflow: hidden; /* Hide any overflow content for better aesthetics */
+  text-align: center; /* Center the text for better aesthetics */
+  transition: transform 0.3s ease; /* Smooth transition for hover effect on the car card */ 
+  
 }
 
 /* Styling for the car image in the car card */
