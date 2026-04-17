@@ -119,6 +119,7 @@ h1:hover::after{
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;  
+    padding: 2rem;
     border: 1px solid #000000;
     border-radius: 10px;
 }
