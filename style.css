@@ -183,6 +183,11 @@ h1:hover::after{
   border-radius: 5px; /* Add border radius to curve the edges of the car image for better aesthetics */
 }
 
+/* Hover effect for the car image in the car card */
+.car-card img:hover {
+  transform: scale(1.05); /* Scale up the car image on hover for better interactivity */
+  transition: transform 0.3s ease; /* Smooth transition for the hover effect on the car image */
+}
 
 /* Styling for the car name in the car card */
 .car-card h3 {
