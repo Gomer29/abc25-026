@@ -177,11 +177,12 @@ h1:hover::after{
 }
 
 /* Styling for the car image in the car card */
-.car-container img {
+.car-card img {
   width: 100%; /* Set the width of the car image to 100% of its container for better layout control */
   height: auto; /* Set the height of the car image to auto to maintain the aspect ratio of the image */
   border-radius: 5px; /* Add border radius to curve the edges of the car image for better aesthetics */
 }
+
 
 /* Styling for the car name in the car card */
 .car-card h3 {
