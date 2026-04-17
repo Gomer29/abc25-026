@@ -114,9 +114,15 @@ h1:hover::after{
   height: 100vh;  
 }
 
+.cars {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns for car listings */
+  gap: 20px;
+}
+
 /* Responsive design for smaller screens */
 @media screen and (max-width: 768px) {
-  .car-container {
+  .cars {
     grid-template-columns: 1fr; /* Single column for smaller screens */
   }
 }
