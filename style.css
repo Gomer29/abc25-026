@@ -49,6 +49,17 @@ nav {
   color: #ff0000; /* Change color on hover for better interactivity */
   transform: scale(1.1); /* Scale up on hover for better interactivity */
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow on hover for better interactivity */
+  transition: 0.3s ease; /* Smooth transition for hover effect */
+  display: inline-block; /* Ensure the element is treated as a block for better hover effects */
+  font-size: 15px; /* Increase font size on hover for better interactivity */
+  letter-spacing: 2px; /* Add letter spacing on hover for better interactivity */
+  text-transform: uppercase; /* Transform text to uppercase on hover for better interactivity */
+  text-align: center; /* Center the text on hover for better interactivity */
+  font-weight: bold; /* Make the text bold on hover for better interactivity */
+  border: 3px solid #ff0000; /* Add a border on hover for better interactivity */
+  position: relative; /* Ensure the element is positioned relative for better hover effects */
+  text-decoration: none; /* Remove underline on hover for better interactivity */
+  z-index: 1; /* Ensure the element is above other elements on hover for better interactivity */
 }
 
 /* combine hero, cars, about, feedback, and contact section styling for consistency */
