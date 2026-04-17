@@ -58,6 +58,8 @@ nav {
   text-align: center; /* Center the text on hover for better interactivity */
   font-weight: bold; /* Make the text bold on hover for better interactivity */
   border: 1px solid #faebd7; /* Add a border on hover for better interactivity */
+  border-radius: 2px; /* Add border radius on hover for better interactivity */
+  padding: 0.7em 1.5em; /* Add padding on hover for better interactivity */
   position: relative; /* Ensure the element is positioned relative for better hover effects */
   text-decoration: none; /* Remove underline on hover for better interactivity */
   z-index: 1; /* Ensure the element is above other elements on hover for better interactivity */
