@@ -44,6 +44,10 @@ nav {
   font-weight: bold;
 }
 
+.navbar a:hover {
+  color: #ff0000; /* Change color on hover for better interactivity */
+}
+
 /* combine hero, cars, about, feedback, and contact section styling for consistency */
 .hero,
 .cars, 
