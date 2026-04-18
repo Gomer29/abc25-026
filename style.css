@@ -143,6 +143,7 @@ h1:hover::after{
   padding: 2rem; /* Add padding for better spacing */
   border: 1px solid #000000; /* Add a border to the cars section for better visibility */
   border-radius: 10px; /* Add border radius to curve the edges for better aesthetics */
+  background-color: #F0F8FF ; /* Set a light background color for better visibility of the cars section */
 }
 
 /* Styling for the my-cars-container in the cars section */
