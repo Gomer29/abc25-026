@@ -158,6 +158,12 @@ h1:hover::after{
   border-radius: 5px; /* Add border radius to curve the edges for better aesthetics */
   text-align: left; /* Align text to the left for better readability */
 }
+.my-cars-container h2 {
+  margin: 0; /* Remove default margin for better layout control */
+  font-size: 1.5rem; /* Set a specific font size for the heading for better readability */
+  color: #000000; /* Set text color to black for better visibility */
+  text-align: left; /* Align text to the left for better readability */
+}
 
 /* Styling for the car container in the cars section */
 .car-container {
