@@ -161,7 +161,7 @@ h1:hover::after{
 /* Styling for the car container in the cars section */
 .car-container {
   display: flex; /* Use flexbox for layout */
-  flex-direction: column; /* Arrange the items in a column for better layout */
+  flex-direction: row; /* Arrange the items in a row for better layout */
   width: 300px; /* Set a fixed width for each car container for better layout control */
   border: 1px solid #000000; /* Add a border to each car container for better visibility */
   border-radius: 5px; /* Add border radius to curve the edges for better aesthetics */
@@ -172,7 +172,7 @@ h1:hover::after{
 /* Styling for the car card in the car container */
 .car-card {
   display: flex; /* Use flexbox for layout */
-  flex-direction: column; /* Arrange the items in a column for better layout */
+  flex-direction: row; /* Arrange the items in a row for better layout */
   gap: 15px; /* Add gap between the items for better spacing */
   margin: 15px; /* Add margin for better spacing */
   padding: 1rem; /* Add padding for better spacing */
@@ -184,7 +184,7 @@ h1:hover::after{
   overflow: hidden; /* Hide any overflow content for better aesthetics */
   text-align: center; /* Center the text for better aesthetics */
   transition: transform 0.3s ease; /* Smooth transition for hover effect on the car card */ 
-  
+
 }
 
 /* Styling for the car image in the car card */
