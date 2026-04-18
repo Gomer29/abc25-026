@@ -136,6 +136,7 @@ h1:hover::after{
 /* Styling for the cars section */
 .cars{
   display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Arrange the items in a column for better layout */
   flex-wrap: wrap; /* Allow the items to wrap to the next line if they exceed the width of the container */
   justify-content: center; /* Center the items horizontally */
   gap: 20px;  /* Add gap between the items for better spacing */
