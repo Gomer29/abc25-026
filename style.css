@@ -274,11 +274,11 @@ h1:hover::after{
   padding: 2rem; /* Add padding for better spacing */
   border: 1px solid #000000; /* Add a border to the about section for better visibility */
   border-radius: 5px; /* Add border radius to curve the edges for better aesthetics */
-  background-color: #f0f8ff ; /* Set a light background color for better visibility of the about section */
   background-image: url('/Images/About-Image/about-image.png'); /* Set the background image for the about section */
   background-repeat: no-repeat; /* Prevent the background image from repeating */
   background-size: cover; /* Cover the entire section with the background image */
   background-position: center; /* Center the background image */
+  height: 100vh; /* Set the height of the about section to 100% of the viewport height for better layout control */
 }
 
 /* Styling for the about content in the about section */
