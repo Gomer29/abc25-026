@@ -266,6 +266,7 @@ h1:hover::after{
 @media (max-width: 768px) {
   /* Responsive styling for smaller screens */
   .car-container {
+    grid-template-columns: 1fr; /* Stack the car cards in a single column on smaller screens for better layout */
     flex-direction: column; /* Stack the car cards vertically on smaller screens for better layout */
     align-items: center; /* Center the car cards on smaller screens for better layout */
   }
