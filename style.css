@@ -275,15 +275,12 @@ h1:hover::after{
   border: 1px solid #000000; /* Add a border to the about section for better visibility */
   border-radius: 5px; /* Add border radius to curve the edges for better aesthetics */
   background-color: #f0f8ff ; /* Set a light background color for better visibility of the about section */
-}
-
-/* Styling for the about section with a background image */
-.about{
   background-image: url('/Images/About-Image/about-image.png'); /* Set the background image for the about section */
   background-repeat: no-repeat; /* Prevent the background image from repeating */
   background-size: cover; /* Cover the entire section with the background image */
   background-position: center; /* Center the background image */
 }
+
 /* Styling for the about content in the about section */
 .about-content {
   flex: 1; /* Allow the about content to grow and fill the available space */
