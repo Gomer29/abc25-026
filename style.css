@@ -241,13 +241,13 @@ h1:hover::after{
 }
 
 /* Styling for the price in the car card */
-.car-card .price {
+.price {
   font-weight: bold; /* Make the price text bold for better visibility */
   color: #000000; /* Set price text color to black for better visibility */
 }
 
 /* Styling for the button in the car card */
-.car-card .buy-now {
+.buy-now {
   display: inline-block; /* Ensure the button is treated as an inline block for better layout control */
   padding: 0.5rem 1rem; /* Add padding for better spacing */
   background-color: #007bff; /* Set a blue background color for the button for better visibility */
@@ -258,6 +258,7 @@ h1:hover::after{
 }
 
 /* Hover effect for the button */
-.car-card .buy-now:hover {
+.buy-now:hover {
   background-color: #0056b3; /* Change background color on hover for better interactivity */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Add a shadow on hover for better interactivity */
 }
