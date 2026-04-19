@@ -157,7 +157,7 @@ h1:hover::after{
   padding: 2rem; /* Add padding for better spacing */
   border: 1px solid #000000; /* Add a border to the my-cars-container for better visibility */
   border-radius: 5px; /* Add border radius to curve the edges for better aesthetics */
-  text-align: left; /* Align text to the left for better readability */
+  background-color: #ffffff; /* Set a white background color for better visibility of the car details */
 }
 .my-cars-container h2 {
   margin: 0; /* Remove default margin for better layout control */
@@ -184,11 +184,11 @@ h1:hover::after{
 /* Styling for the car card in the car container */
 .car-card {
   display: flex; /* Use flexbox for layout */
-  flex-direction: row; /* Arrange the items in a row for better layout */
+  flex-direction: column; /* Arrange the items in a column for better layout */
   flex-wrap: wrap; /* Allow the items to wrap to the next line if they exceed the width of the container */
   justify-content: center; /* Center the items horizontally with even spacing */
   gap: 15px; /* Add gap between the items for better spacing */
-  margin: 15px; /* Add margin for better spacing */
+  margin: 5px; /* Add margin for better spacing */
   padding: 1rem; /* Add padding for better spacing */
   border: 1px solid #000000; /* Add a border to each car card for better visibility */
   border-radius: 5px; /* Add border radius to curve the edges for better aesthetics */
@@ -198,6 +198,12 @@ h1:hover::after{
   text-align: center; /* Center the text for better aesthetics */
   transition: transform 0.3s ease; /* Smooth transition for hover effect on the car card */ 
 
+}
+/* Hover effect for the car card */
+.car-card:hover {
+  transform: translateY(-5px); /* Move the car card up on hover for better interactivity */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add a stronger shadow on hover for better interactivity */
+  transition: transform 0.3s ease; /* Smooth transition for hover effect on the car card */
 }
 
 /* Styling for the car image in the car card */
