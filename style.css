@@ -262,3 +262,11 @@ h1:hover::after{
   background-color: #0056b3; /* Change background color on hover for better interactivity */
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Add a shadow on hover for better interactivity */
 }
+
+@media (max-width: 768px) {
+  /* Responsive styling for smaller screens */
+  .car-container {
+    flex-direction: column; /* Stack the car cards vertically on smaller screens for better layout */
+    align-items: center; /* Center the car cards on smaller screens for better layout */
+  }
+}
