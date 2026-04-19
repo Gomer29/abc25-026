@@ -263,6 +263,7 @@ h1:hover::after{
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Add a shadow on hover for better interactivity */
 }
 
+/* Responsive styling for smaller screens */
 @media (max-width: 768px) {
   /* Responsive styling for smaller screens */
   .car-container {
