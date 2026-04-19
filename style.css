@@ -277,6 +277,20 @@ h1:hover::after{
   background-color: #f0f8ff ; /* Set a light background color for better visibility of the about section */
 }
 
+/* Styling for the about content in the about section */
+.about-content {
+  flex: 1; /* Allow the about content to grow and fill the available space */
+  max-width: 600px; /* Set a maximum width for the about content to prevent it from becoming too wide */
+}
+
+/* Styling for the about image in the about section */
+.about-image {
+  width: 100%; /* Set the width of the about image to 100% of its container for better layout control */
+  max-width: 400px; /* Set a maximum width for the about image to prevent it from becoming too large */
+  height: auto; /* Set the height of the about image to auto to maintain the aspect ratio of the image */
+  border-radius: 5px; /* Add border radius to curve the edges of the about image for better aesthetics */
+}
+
 /* Responsive styling for smaller screens */
 @media (max-width: 768px) {
   /* Responsive styling for smaller screens */
