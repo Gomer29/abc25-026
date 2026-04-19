@@ -114,7 +114,7 @@ h1:hover::after{
 
 /* Adding A banner image to the hero section */
 .banner {
-  background-image: url('/Images/Videos/carvid2.mp4'); /* Use a fallback background image if the video file is not supported */
+  background-image: url('/Images/Videos/banner-video2.mp4'); /* Use a fallback background image if the video file is not supported */
   background-repeat: no-repeat; /* Prevent the background image from repeating */
   background-size: cover; /* Cover the entire element with the background image */
   background-position: center; /* Center the background image */
