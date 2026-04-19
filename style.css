@@ -263,6 +263,17 @@ h1:hover::after{
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Add a shadow on hover for better interactivity */
 }
 
+.about {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Arrange the items in a column for better layout */
+  align-items: center; /* Center the items horizontally for better layout */
+  gap: 20px; /* Add gap between the items for better spacing */
+  padding: 2rem; /* Add padding for better spacing */
+  border: 1px solid #000000; /* Add a border to the about section for better visibility */
+  border-radius: 5px; /* Add border radius to curve the edges for better aesthetics */
+  background-color: #f0f8ff ; /* Set a light background color for better visibility of the about section */
+}
+
 /* Responsive styling for smaller screens */
 @media (max-width: 768px) {
   /* Responsive styling for smaller screens */
