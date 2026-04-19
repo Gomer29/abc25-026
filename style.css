@@ -128,9 +128,9 @@ h1:hover::after{
 }
 
 /* Styling for the banner image in the hero section */
-.banner-image {
+.banner-video {
   width: 100%; /* Set the width of the banner image to 100% of its container */
-  height: 100vh;  /* Set the height of the banner image to 100% of the viewport height */
+  height: 50vh;  /* Set the height of the banner image to 50% of the viewport height for better layout control */
 }
 
 /* Styling for the cars section */
