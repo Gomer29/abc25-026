@@ -16,6 +16,7 @@ header {
   align-items: center; /* Vertically center the content */
   padding: 1rem 2rem; /* Add padding for better spacing */
   width: 100%; /* Set the width of the header to 100% of the viewport for better layout control */
+  max-width: 100%; /* Ensure the header does not exceed the width of the viewport for better layout control */
 }
 
 /* logo styling */
@@ -78,6 +79,7 @@ nav {
   padding: 2rem; /* Add padding for better spacing */
   text-align: center; /* Center text for better aesthetics */
   width: 100%; /* Set the width of the sections to 100% of the viewport for better layout control */
+  max-width: 100%; /* Ensure the sections do not exceed the width of the viewport for better layout control */
 }
 
 /* footer styling */
@@ -88,6 +90,7 @@ footer {
   text-align: center; /* Center text for better aesthetics */
   padding: 1rem; /* Add padding for better spacing */
   width: 100%; /* Set the width of the footer to 100% of the viewport for better layout control */
+  max-width: 100%; /* Ensure the footer does not exceed the width of the viewport for better layout control */
 }
 
 /* Adding Pseudo-element for h1 */
