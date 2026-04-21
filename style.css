@@ -18,6 +18,8 @@ header {
   background:  #DCDCDC; /* Light gray background for the header */
   color: #000000; /* Set text color to black for better visibility */
   display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space out the content in the header for better layout */
+  flex-wrap: wrap; /* Allow the content to wrap if it exceeds the width of the header */
   align-items: center; /* Vertically center the content */
   padding: 1rem 2rem; /* Add padding for better spacing */
   width: 100%; /* Set the width of the header to 100% of the viewport for better layout control */
