@@ -176,7 +176,7 @@ h1:hover::after{
   border: 1px solid #000000; /* Add a border to the my-cars-container for better visibility */
   border-radius: 5px; /* Add border radius to curve the edges for better aesthetics */
   background-color: #ffffff; /* Set a white background color for better visibility of the car details */
-  width: 98%; /* Set the width of the my-cars-container to 98% of its parent container for better layout control */
+  width: 95%; /* Set the width of the my-cars-container to 95% of its parent container for better layout control */
 }
 .my-cars-container h2 {
   margin: 0; /* Remove default margin for better layout control */
