@@ -143,6 +143,9 @@ h1:hover::after{
   padding: 2rem; /* Add padding for better spacing */
   border: 1px solid #f0f8ff; /* Add a border to the cars section for better visibility */
   background-color: #f0f8ff ; /* Set a light background color for better visibility of the cars section */
+  width: 98%; /* Set the width of the cars section to 98% of its container for better layout control */
+  border: 1px solid #000000;  /* Add a border to the cars section for better visibility */
+  border-radius: 5px; /* Add border radius to curve the edges for better aesthetics */
 }
 
 /* Styling for the my-cars-container in the cars section */
@@ -157,6 +160,7 @@ h1:hover::after{
   border: 1px solid #000000; /* Add a border to the my-cars-container for better visibility */
   border-radius: 5px; /* Add border radius to curve the edges for better aesthetics */
   background-color: #ffffff; /* Set a white background color for better visibility of the car details */
+  width: 98%; /* Set the width of the my-cars-container to 98% of its parent container for better layout control */
 }
 .my-cars-container h2 {
   margin: 0; /* Remove default margin for better layout control */
@@ -180,7 +184,7 @@ h1:hover::after{
   border-radius: 5px; /* Add border radius to curve the edges for better aesthetics */
   padding: 1rem; /* Add padding for better spacing */
   background-color: #f0f0f0; /* Set a light background color for better visibility of the car details */
-  width: 94%; /* Set the width of the car container to 94% of its parent container for better layout control */
+  width: 98%; /* Set the width of the car container to 98% of its parent container for better layout control */
 }
 
 /* Styling for the car card in the car container */
