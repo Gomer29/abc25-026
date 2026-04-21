@@ -146,6 +146,10 @@ h1:hover::after{
 .banner-video {
   width: 100%; /* Set the width of the banner image to 100% of its container */
   height: 90vh;  /* Set the height of the banner image to 90% of the viewport height for better layout control */
+  position: relative; /* Position the banner image relative for better layout control */
+  object-fit: cover; /* Ensure the banner image covers the entire area of its container for better aesthetics */
+  padding-top: 56.25%; /* Maintain a 16:9 aspect ratio for the banner image for better aesthetics */
+  overflow: hidden; /* Hide any overflow content for better aesthetics */
 }
 
 /* Styling for the cars section */
