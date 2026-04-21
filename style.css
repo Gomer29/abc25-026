@@ -7,7 +7,9 @@ body {
   padding: 0;  /* Remove default padding for better layout control */
   width: 100%; /* Set the width of the body to 100% of the viewport for better layout control */
   max-width: 100%; /* Ensure the body does not exceed the width of the viewport for better layout control */
-  align-items: center; /* Center the content horizontally for better layout */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Arrange the items in a column for better layout */
+  align-items: center; /* Center the items horizontally for better layout */
 }
 
 /* header styling */
