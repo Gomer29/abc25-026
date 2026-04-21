@@ -180,7 +180,7 @@ h1:hover::after{
   border-radius: 5px; /* Add border radius to curve the edges for better aesthetics */
   padding: 1rem; /* Add padding for better spacing */
   background-color: #f0f0f0; /* Set a light background color for better visibility of the car details */
-  width: 100%; /* Set the width of the car container to 100% of its parent container for better layout control */
+  width: 94%; /* Set the width of the car container to 94% of its parent container for better layout control */
 }
 
 /* Styling for the car card in the car container */
