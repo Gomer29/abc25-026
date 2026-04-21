@@ -238,7 +238,7 @@ h1:hover::after{
   max-width: 300px; /* Set a maximum width for the car image to prevent it from becoming too large */
   display: block; /* Ensure the car image is treated as a block element for better layout control */
   height: 220px; /* Set a fixed height for the car image for better layout control */
-  object-fit: contain; /* Ensure the car image maintains its aspect ratio and fits within the specified dimensions for better aesthetics */
+  object-fit: cover; /* Ensure the car image covers the entire container while maintaining its aspect ratio */
   border-radius: 5px; /* Add border radius to curve the edges of the car image for better aesthetics */
   transition: transform 0.3s ease; /* Smooth transition for the hover effect on the car image */
   background-color: #ffffff; /* Set a white background color for the car image for better visibility */
