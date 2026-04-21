@@ -87,6 +87,7 @@ nav {
   text-align: center; /* Center text for better aesthetics */
   width: 100%; /* Set the width of the sections to 100% of the viewport for better layout control */
   max-width: 100%; /* Ensure the sections do not exceed the width of the viewport for better layout control */
+  align-items: center; /* Center items vertically for better layout */
 }
 
 /* footer styling */
