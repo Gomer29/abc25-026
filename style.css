@@ -6,6 +6,7 @@ body {
   margin: 0; /* Remove default margin for better layout control */
   padding: 0;  /* Remove default padding for better layout control */
   width: 100%; /* Set the width of the body to 100% of the viewport for better layout control */
+  max-width: 100%; /* Ensure the body does not exceed the width of the viewport for better layout control */
 }
 
 /* header styling */
