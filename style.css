@@ -220,6 +220,10 @@ h1:hover::after{
   overflow: hidden; /* Hide any overflow content for better aesthetics */
   text-align: center; /* Center the text for better aesthetics */
   transition: transform 0.3s ease; /* Smooth transition for hover effect on the car card */ 
+  width: 300px; /* Set a fixed width for each car card for better layout control */
+  height: 400px; /* Set a fixed height for each car card for better layout control */
+  align-items: center; /* Center the items vertically for better layout */
+  box-sizing: border-box; /* Ensure padding and border are included in the total width and height for better layout control */
 }
 /* Hover effect for the car card */
 .car-card:hover {
