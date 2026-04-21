@@ -10,6 +10,7 @@ body {
   display: flex; /* Use flexbox for layout */
   flex-direction: column; /* Arrange the items in a column for better layout */
   align-items: center; /* Center the items horizontally for better layout */
+  overflow-x: hidden; /* Hide horizontal overflow for better aesthetics */
 }
 
 /* header styling */
