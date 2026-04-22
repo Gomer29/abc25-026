@@ -590,7 +590,8 @@ h1:hover::after{
   .hamburger {
     display: block;
     font-size: 1.3rem;
-    padding: 0.4rem;
+    padding: 0.4rem 1rem 0.4rem 0.4rem;
+    margin-left: auto;
   }
 
   .logo a {
@@ -734,6 +735,8 @@ h1:hover::after{
   .hamburger {
     display: block;
     font-size: 1.4rem;
+    padding: 0.4rem 1.2rem 0.4rem 0.4rem;
+    margin-left: auto;
   }
 
   .logo a {
