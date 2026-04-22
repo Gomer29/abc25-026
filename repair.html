@@ -27,8 +27,8 @@
        <img src="images/Car Repairs/carrepair2.png" alt="Car Repair" class="repair-image">
      </div>
      <div class="repair-section-video">
-       <video controls class="repair-video" autoplay muted loop>
-         <source src="videos/Car Repairs/carrepair6.mp4" type="video/mp4">
+       <video controls class="repair-video" autoplay muted>
+         <source src="Images/Car Repairs/carrepair6.mp4" type="video/mp4">
          Your browser does not support the video tag.
        </video> 
      </div>
@@ -50,5 +50,16 @@
   <footer class="foot">
     <p class="in-foot">&copy; 2026 GLY Motor Group. All rights reserved.</p>
   </footer>
+  <script>
+    const videos = ['Images/Car Repairs/carrepair6.mp4', 'Images/Car Repairs/carrepair5.mp4'];
+    let currentIndex = 0;
+    const videoElement = document.querySelector('.repair-video');
+
+    videoElement.addEventListener('ended', () => {
+      currentIndex = (currentIndex + 1) % videos.length;
+      videoElement.src = videos[currentIndex];
+      videoElement.play();
+    });
+  </script>
 </body>
 </html>
