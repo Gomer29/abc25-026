@@ -327,8 +327,8 @@ h1:hover::after{
   background-color: #f0f8ff; /* Set a light background color for better visibility of the feedback form */
   width: 600px; /* Set the width of the feedback form to 300 pixels for better layout control */
   height: vh; /* Set the height of the feedback form to 200 pixels for better layout control */
-  justify-content: center; /* Center the form elements vertically for better layout */
-  justify-items: left; /* Align the form elements to the left for better layout */
+  justify-content: left; /* Center the form elements vertically for better layout */
+  justify-items: center; /* Align the form elements to the left for better layout */
 }
 
 /* Responsive styling for smaller screens */
