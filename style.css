@@ -53,6 +53,7 @@ nav {
   text-decoration: none; /* Remove underline for better aesthetics */
   font-weight: bold; /* Make the text bold for better readability */
   transition: transform 0.3s ease; /* Smooth transition for hover effect */
+  padding: 10px; /* Add padding for better spacing */
 }
 
 /* navbar a hover styling */
@@ -316,7 +317,7 @@ h1:hover::after{
   flex-wrap: wrap; /* Allow the items to wrap to the next line if they exceed the width of the container */
   justify-content: space-evenly; /* Center the items horizontally for better layout */
   align-items: space-evenly; /* Center the items vertically for better layout */
-  gap: 20px; /* Add gap between the items for better spacing */
+  gap: 5px; /* Add gap between the items for better spacing */
   padding: 2rem; /* Add padding for better spacing */
   border: 1px solid #000000; /* Add a border to the about-info section for better visibility */
   border-radius: 5px; /* Add border radius to curve the edges for better aesthetics */
