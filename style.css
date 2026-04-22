@@ -317,7 +317,7 @@ h1:hover::after{
 }
 
 /* Styling for the feedback form */
-.feedbackForm {
+.feedback-section {
   display: flex; /* Use flexbox for layout */
   flex-direction: column; /* Arrange the items in a column for better layout */
   gap: 15px; /* Add gap between the form elements for better spacing */
