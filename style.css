@@ -491,12 +491,33 @@ h1:hover::after{
   display: flex; /* Use flexbox for layout */
   flex-direction: row; /* Arrange the items in a row for better layout */
   flex-wrap: wrap; /* Allow the items to wrap to the next line if they exceed the width of the container */
-  justify-content: space-evenly; /* Center the items horizontally for better layout */
-  align-items: space-evenly; /* Center the items vertically for better layout */
-  gap: 5px; /* Add gap between the items for better spacing */
+  justify-content: space-between; /* Space items horizontally on large screens */
+  align-items: center; /* Center the items vertically for better layout */
+  gap: 2rem; /* Add gap between the items for better spacing */
   padding: 2rem; /* Add padding for better spacing */
   border: 1px solid #000000; /* Add a border to the about-info section for better visibility */
   border-radius: 5px; /* Add border radius to curve the edges for better aesthetics */
+  width: 100%;
+  max-width: 1200px;
+}
+
+.about-image,
+.about-content {
+  flex: 1 1 45%;
+  min-width: 280px;
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 5px;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* Styling for the feedback form */
@@ -707,6 +728,12 @@ h1:hover::after{
   .about-info {
     flex-direction: column;
     width: 100%;
+  }
+
+  .about-image,
+  .about-content {
+    flex: 1 1 100%;
+    min-width: auto;
   }
 
   .repair-section {
