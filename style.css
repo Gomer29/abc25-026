@@ -334,6 +334,7 @@ h1:hover::after{
   height: 300px; /* Set the height of the feedback form to 200 pixels for better layout control */
   justify-content: center; /* Center the form elements vertically for better layout */
   justify-items: center; /* Align the form elements to the left for better layout */
+  position: relative; /* Position the feedback form relative for better layout control */
 }
 
 /* Responsive styling for smaller screens */
