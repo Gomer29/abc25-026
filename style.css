@@ -24,6 +24,7 @@ header {
   padding: 1rem 2rem; /* Add padding for better spacing */
   width: 100%; /* Set the width of the header to 100% of the viewport for better layout control */
   max-width: 100%; /* Ensure the header does not exceed the width of the viewport for better layout control */
+  position: relative; /* Position relative for absolute positioning of navbar */
 }
 
 /* logo styling */
@@ -207,24 +208,76 @@ h1:hover::after{
   cursor: pointer;
   color: #000000;
   padding: 0.5rem;
+  z-index: 1001;
+  transition: all 0.3s ease;
 }
 
+.hamburger:hover {
+  transform: scale(1.1);
+  color: #faebd7;
+}
+
+/* Default desktop styles - hamburger hidden */
+.navbar {
+  position: static;
+  width: auto;
+}
+
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+  position: static;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  box-shadow: none;
+  width: auto;
+}
+
+.navbar li {
+  width: auto;
+  text-align: left;
+}
+
+.navbar a {
+  display: inline-block;
+  padding: 10px;
+  border: none;
+}
+
+/* Mobile and Tablet styles */
 @media (max-width: 768px) {
   .hamburger {
     display: block;
+    order: 2;
+  }
+
+  header {
+    position: relative;
+  }
+
+  nav {
+    margin-left: 0;
+    width: 100%;
+    order: 3;
+  }
+
+  .navbar {
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
   }
 
   .navbar ul {
     display: none;
     flex-direction: column;
-    position: absolute;
-    top: 100%;
-    left: 0;
     width: 100%;
     background: #DCDCDC;
     padding: 0;
     margin: 0;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    border-bottom: 2px solid #bbb;
   }
 
   .navbar ul.show {
@@ -234,16 +287,92 @@ h1:hover::after{
   .navbar li {
     width: 100%;
     text-align: center;
+    border-bottom: 1px solid #bbb;
+  }
+
+  .navbar li:last-child {
+    border-bottom: none;
   }
 
   .navbar a {
     display: block;
-    padding: 1rem;
-    border-bottom: 1px solid #bbb;
+    padding: 1rem 1.5rem;
+    border: none;
+    width: 100%;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
   }
 
   .navbar a:hover {
     background-color: #f0f0f0;
+    color: #faebd7;
+  }
+}
+
+/* Extra Small Devices - Enhanced mobile experience */
+@media (max-width: 480px) {
+  .hamburger {
+    font-size: 1.3rem;
+    padding: 0.4rem;
+  }
+
+  .navbar ul {
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+
+  .navbar a {
+    padding: 0.8rem 1rem;
+    font-size: 0.95rem;
+  }
+}
+
+/* Small Tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+  .hamburger {
+    font-size: 1.4rem;
+  }
+
+  .navbar a {
+    padding: 0.9rem 1.2rem;
+  }
+}
+
+/* Desktop and larger - hamburger hidden */
+@media (min-width: 769px) {
+  .hamburger {
+    display: none !important;
+  }
+
+  .navbar {
+    position: static;
+    width: auto;
+  }
+
+  .navbar ul {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+    width: auto;
+  }
+
+  .navbar li {
+    width: auto;
+    text-align: left;
+    border: none;
+  }
+
+  .navbar a {
+    display: inline-block;
+    padding: 10px;
+  }
+
+  .navbar a:hover {
+    background-color: transparent;
   }
 }
 .car-container {
@@ -453,20 +582,76 @@ h1:hover::after{
 @media (min-width: 320px) and (max-width: 480px) {
   header {
     padding: 0.8rem 1rem;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .hamburger {
+    display: block;
+    font-size: 1.3rem;
+    padding: 0.4rem;
   }
 
   .logo a {
     font-size: 1.2rem;
+    flex: 1;
   }
 
   nav {
     margin-left: 0;
     width: 100%;
+    order: 3;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+
+  .navbar {
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
   }
 
   .navbar ul {
-    gap: 10px;
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #DCDCDC;
+    padding: 0;
+    margin: 0;
+    gap: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+
+  .navbar ul.show {
+    display: flex;
+  }
+
+  .navbar li {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #bbb;
+  }
+
+  .navbar li:last-child {
+    border-bottom: none;
+  }
+
+  .navbar a {
+    display: block;
+    padding: 0.8rem 1rem;
+    font-size: 0.95rem;
+    border: none;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .navbar a:hover {
+    background-color: #f0f0f0;
+    color: #faebd7;
   }
 
   .hero,
@@ -542,10 +727,70 @@ h1:hover::after{
 @media (min-width: 481px) and (max-width: 768px) {
   header {
     padding: 1rem 1.5rem;
+    position: relative;
+  }
+
+  .hamburger {
+    display: block;
+    font-size: 1.4rem;
   }
 
   .logo a {
     font-size: 1.3rem;
+  }
+
+  nav {
+    margin-left: 0;
+    width: 100%;
+    order: 3;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+
+  .navbar {
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+  }
+
+  .navbar ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #DCDCDC;
+    padding: 0;
+    margin: 0;
+    gap: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+
+  .navbar ul.show {
+    display: flex;
+  }
+
+  .navbar li {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #bbb;
+  }
+
+  .navbar li:last-child {
+    border-bottom: none;
+  }
+
+  .navbar a {
+    display: block;
+    padding: 0.9rem 1.2rem;
+    border: none;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .navbar a:hover {
+    background-color: #f0f0f0;
+    color: #faebd7;
   }
 
   .hero,
@@ -611,12 +856,44 @@ h1:hover::after{
 
 /* Medium Devices (769px - 992px) - Tablets & Small Desktops */
 @media (min-width: 769px) and (max-width: 992px) {
-  header {
-    padding: 1rem 2rem;
+  .hamburger {
+    display: none !important;
+  }
+
+  .navbar {
+    position: static;
+    width: auto;
   }
 
   .navbar ul {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+    width: auto;
     gap: 15px;
+  }
+
+  .navbar li {
+    width: auto;
+    text-align: left;
+    border: none;
+  }
+
+  .navbar a {
+    display: inline-block;
+    padding: 10px;
+  }
+
+  .navbar a:hover {
+    background-color: transparent;
+  }
+
+  header {
+    padding: 1rem 2rem;
   }
 
   .hero,
@@ -681,12 +958,44 @@ h1:hover::after{
 
 /* Large Devices (993px - 1199px) - Desktops */
 @media (min-width: 993px) and (max-width: 1199px) {
-  header {
-    padding: 1rem 2.5rem;
+  .hamburger {
+    display: none !important;
+  }
+
+  .navbar {
+    position: static;
+    width: auto;
   }
 
   .navbar ul {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+    width: auto;
     gap: 20px;
+  }
+
+  .navbar li {
+    width: auto;
+    text-align: left;
+    border: none;
+  }
+
+  .navbar a {
+    display: inline-block;
+    padding: 10px;
+  }
+
+  .navbar a:hover {
+    background-color: transparent;
+  }
+
+  header {
+    padding: 1rem 2.5rem;
   }
 
   .hero,
@@ -745,17 +1054,45 @@ h1:hover::after{
 
 /* Extra Large Devices (1200px and up) - Large Desktops */
 @media (min-width: 1200px) {
-  header {
-    padding: 1.2rem 3rem;
+  .hamburger {
+    display: none !important;
+  }
+
+  .navbar {
+    position: static;
+    width: auto;
   }
 
   .navbar ul {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+    width: auto;
     gap: 25px;
   }
 
+  .navbar li {
+    width: auto;
+    text-align: left;
+    border: none;
+  }
+
   .navbar a {
+    display: inline-block;
     padding: 12px;
     font-size: 1rem;
+  }
+
+  .navbar a:hover {
+    background-color: transparent;
+  }
+
+  header {
+    padding: 1.2rem 3rem;
   }
 
   .hero,
@@ -816,17 +1153,45 @@ h1:hover::after{
 
 /* Ultra Large Devices (1400px and up) - 4K & Large Monitors */
 @media (min-width: 1400px) {
-  header {
-    padding: 1.5rem 4rem;
+  .hamburger {
+    display: none !important;
+  }
+
+  .navbar {
+    position: static;
+    width: auto;
   }
 
   .navbar ul {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+    width: auto;
     gap: 30px;
   }
 
+  .navbar li {
+    width: auto;
+    text-align: left;
+    border: none;
+  }
+
   .navbar a {
+    display: inline-block;
     padding: 15px;
     font-size: 1.05rem;
+  }
+
+  .navbar a:hover {
+    background-color: transparent;
+  }
+
+  header {
+    padding: 1.5rem 4rem;
   }
 
   .hero,
