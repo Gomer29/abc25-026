@@ -335,6 +335,22 @@ h1:hover::after{
   justify-content: center; /* Center the form elements vertically for better layout */
   justify-items: center; /* Align the form elements to the left for better layout */
   position: relative; /* Position the feedback form relative for better layout control */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for better aesthetics */
+  color: #000000; /* Set text color to black for better visibility */
+}
+
+/* Styling for the form elements in the feedback form */
+.feedbackForm {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Arrange the items in a column for better layout */
+  gap: 10px; /* Add gap between the form elements for better spacing */
+  width: 100%; /* Set the width of the feedback form to 100% of its container for better layout control */
+}
+
+.feedbackForm label {
+  font-weight: bold; /* Make the form labels bold for better visibility */
+  color: #000000; /* Set form label text color to black for better visibility */
+  margin-bottom: 5px; /* Add margin below the form labels for better spacing */
 }
 
 /* Responsive styling for smaller screens */
