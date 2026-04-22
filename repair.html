@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GLY Motor Group - Repair Services</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <h1><div class="logo"><a href="index.html">GLY Motor Group</a></div></h1>
+    <button class="hamburger" aria-label="Toggle navigation">☰</button>
     <nav class="navbar">
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -59,6 +61,11 @@
       currentIndex = (currentIndex + 1) % videos.length;
       videoElement.src = videos[currentIndex];
       videoElement.play();
+    });
+  </script>
+  <script>
+    document.querySelector('.hamburger').addEventListener('click', () => {
+      document.querySelector('.navbar ul').classList.toggle('show');
     });
   </script>
 </body>

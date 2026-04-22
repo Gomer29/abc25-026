@@ -9,6 +9,7 @@
 <body>
   <header>
     <h1><div class="logo"><a href="index.html">GLY Motor Group</a></div></h1>
+    <button class="hamburger" aria-label="Toggle navigation">☰</button>
     <nav class="navbar">
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -35,5 +36,10 @@
   <footer class="foot">
     <p class="in-foot">&copy; 2026 GLY Motor Group. All rights reserved.</p>
   </footer>
+  <script>
+    document.querySelector('.hamburger').addEventListener('click', () => {
+      document.querySelector('.navbar ul').classList.toggle('show');
+    });
+  </script>
 </body>
 </html>
