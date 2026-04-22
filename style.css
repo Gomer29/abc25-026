@@ -577,8 +577,6 @@ h1:hover::after{
   }
 }
 
-/* ===== COMPREHENSIVE MEDIA QUERIES FOR ALL SCREEN SIZES ===== */
-
 /* Extra Small Devices (320px and up) - Mobile Phones */
 @media (min-width: 320px) and (max-width: 480px) {
   header {
