@@ -347,10 +347,26 @@ h1:hover::after{
   width: 100%; /* Set the width of the feedback form to 100% of its container for better layout control */
 }
 
+/* Styling for the form labels in the feedback form */
 .feedbackForm label {
   font-weight: bold; /* Make the form labels bold for better visibility */
   color: #000000; /* Set form label text color to black for better visibility */
   margin-bottom: 5px; /* Add margin below the form labels for better spacing */
+}
+
+/* Styling for the form inputs in the feedback form */
+.submit-button {
+  display: inline-block; /* Ensure the submit button is treated as an inline block for better layout control */
+  padding: 0.5rem 1rem; /* Add padding for better spacing */
+  background-color: #007bff; /* Set a blue background color for the submit button for better visibility */
+  color: #ffffff; /* Set text color to white for better visibility on the submit button */
+  text-decoration: none; /* Remove underline from the submit button text for better aesthetics */
+  border-radius: 5px; /* Add border radius to curve the edges of the submit button for better aesthetics */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect on the submit button */
+}
+.submit-button:hover {
+  background-color: #0056b3; /* Change background color on hover for better interactivity */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Add a shadow on hover for better interactivity */
 }
 
 /* Responsive styling for smaller screens */
