@@ -446,3 +446,457 @@ h1:hover::after{
     align-items: center; /* Center the car cards on smaller screens for better layout */
   }
 }
+
+/* ===== COMPREHENSIVE MEDIA QUERIES FOR ALL SCREEN SIZES ===== */
+
+/* Extra Small Devices (320px and up) - Mobile Phones */
+@media (min-width: 320px) and (max-width: 480px) {
+  header {
+    padding: 0.8rem 1rem;
+    flex-direction: column;
+  }
+
+  .logo a {
+    font-size: 1.2rem;
+  }
+
+  nav {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .navbar ul {
+    gap: 10px;
+  }
+
+  .hero,
+  .repair,
+  .cars, 
+  .about,
+  .feedback,
+  .contact {
+    padding: 1rem 0.8rem;
+  }
+
+  h1, h2 {
+    font-size: 1.3rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  .car-card {
+    width: 100%;
+    height: auto;
+    margin: 0.5rem;
+  }
+
+  .car-card img {
+    height: 150px;
+  }
+
+  .car-container {
+    width: 95%;
+    margin: 1rem 0.5rem;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .my-cars-container {
+    width: 90%;
+    margin: 1rem auto;
+    padding: 1rem;
+  }
+
+  .feedback-section {
+    width: 90vw;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .feedbackForm input,
+  .feedbackForm textarea,
+  .feedbackForm select {
+    width: 100%;
+    padding: 0.4rem;
+    font-size: 0.9rem;
+  }
+
+  .about-info {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .repair-section {
+    flex-direction: column;
+  }
+
+  .repair-section-img,
+  .repair-section-video {
+    width: 100%;
+  }
+}
+
+/* Small Devices (481px - 768px) - Small Tablets & Large Phones */
+@media (min-width: 481px) and (max-width: 768px) {
+  header {
+    padding: 1rem 1.5rem;
+  }
+
+  .logo a {
+    font-size: 1.3rem;
+  }
+
+  .hero,
+  .repair,
+  .cars, 
+  .about,
+  .feedback,
+  .contact {
+    padding: 1.5rem;
+  }
+
+  h1, h2 {
+    font-size: 1.5rem;
+  }
+
+  .car-card {
+    width: 45%;
+    height: 350px;
+  }
+
+  .car-card img {
+    height: 180px;
+  }
+
+  .car-container {
+    width: 95%;
+    justify-content: center;
+  }
+
+  .feedback-section {
+    width: 85vw;
+    height: auto;
+    padding: 1.5rem;
+  }
+
+  .feedbackForm input,
+  .feedbackForm textarea,
+  .feedbackForm select {
+    font-size: 0.95rem;
+    padding: 0.5rem;
+  }
+
+  .my-cars-container {
+    width: 90%;
+  }
+
+  .about-info {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .repair-section {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .repair-section-img,
+  .repair-section-video {
+    width: 100%;
+    max-width: 500px;
+  }
+}
+
+/* Medium Devices (769px - 992px) - Tablets & Small Desktops */
+@media (min-width: 769px) and (max-width: 992px) {
+  header {
+    padding: 1rem 2rem;
+  }
+
+  .navbar ul {
+    gap: 15px;
+  }
+
+  .hero,
+  .repair,
+  .cars, 
+  .about,
+  .feedback,
+  .contact {
+    padding: 2rem 1.5rem;
+  }
+
+  h1, h2 {
+    font-size: 1.8rem;
+  }
+
+  .car-card {
+    width: 48%;
+    height: 380px;
+  }
+
+  .car-card img {
+    height: 200px;
+  }
+
+  .car-container {
+    width: 95%;
+    margin: 1.5rem auto;
+  }
+
+  .feedback-section {
+    width: 600px;
+    height: auto;
+    padding: 2rem;
+  }
+
+  .feedbackForm input,
+  .feedbackForm textarea,
+  .feedbackForm select {
+    font-size: 0.95rem;
+  }
+
+  .my-cars-container {
+    width: 95%;
+  }
+
+  .about-info {
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  .repair-section {
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .repair-section-img,
+  .repair-section-video {
+    width: 45%;
+  }
+}
+
+/* Large Devices (993px - 1199px) - Desktops */
+@media (min-width: 993px) and (max-width: 1199px) {
+  header {
+    padding: 1rem 2.5rem;
+  }
+
+  .navbar ul {
+    gap: 20px;
+  }
+
+  .hero,
+  .repair,
+  .cars, 
+  .about,
+  .feedback,
+  .contact {
+    padding: 2.5rem 2rem;
+  }
+
+  h1, h2 {
+    font-size: 2rem;
+  }
+
+  .car-card {
+    width: 30%;
+    height: 400px;
+  }
+
+  .car-card img {
+    height: 220px;
+  }
+
+  .car-container {
+    width: 95%;
+    justify-content: space-around;
+  }
+
+  .feedback-section {
+    width: 650px;
+    height: auto;
+    padding: 2rem;
+  }
+
+  .my-cars-container {
+    width: 95%;
+  }
+
+  .about-info {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .repair-section {
+    flex-direction: row;
+    gap: 2.5rem;
+    align-items: center;
+  }
+
+  .repair-section-img,
+  .repair-section-video {
+    width: 45%;
+  }
+}
+
+/* Extra Large Devices (1200px and up) - Large Desktops */
+@media (min-width: 1200px) {
+  header {
+    padding: 1.2rem 3rem;
+  }
+
+  .navbar ul {
+    gap: 25px;
+  }
+
+  .navbar a {
+    padding: 12px;
+    font-size: 1rem;
+  }
+
+  .hero,
+  .repair,
+  .cars, 
+  .about,
+  .feedback,
+  .contact {
+    padding: 3rem 2.5rem;
+  }
+
+  h1, h2 {
+    font-size: 2.2rem;
+  }
+
+  .car-card {
+    width: 32%;
+    height: 420px;
+  }
+
+  .car-card img {
+    height: 230px;
+  }
+
+  .car-container {
+    width: 98%;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .feedback-section {
+    width: 700px;
+    height: auto;
+    padding: 2.5rem;
+  }
+
+  .my-cars-container {
+    width: 95%;
+  }
+
+  .about-info {
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .repair-section {
+    flex-direction: row;
+    gap: 3rem;
+    align-items: center;
+  }
+
+  .repair-section-img,
+  .repair-section-video {
+    width: 45%;
+    max-width: 600px;
+  }
+}
+
+/* Ultra Large Devices (1400px and up) - 4K & Large Monitors */
+@media (min-width: 1400px) {
+  header {
+    padding: 1.5rem 4rem;
+  }
+
+  .navbar ul {
+    gap: 30px;
+  }
+
+  .navbar a {
+    padding: 15px;
+    font-size: 1.05rem;
+  }
+
+  .hero,
+  .repair,
+  .cars, 
+  .about,
+  .feedback,
+  .contact {
+    padding: 3.5rem 3rem;
+  }
+
+  h1, h2 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 1.05rem;
+  }
+
+  .car-card {
+    width: 22%;
+    height: 450px;
+  }
+
+  .car-card img {
+    height: 250px;
+  }
+
+  .car-container {
+    width: 98%;
+    justify-content: space-around;
+    gap: 25px;
+  }
+
+  .my-cars-container {
+    width: 95%;
+    margin: 2.5rem auto;
+  }
+
+  .feedback-section {
+    width: 750px;
+    padding: 3rem;
+  }
+
+  .feedbackForm input,
+  .feedbackForm textarea,
+  .feedbackForm select {
+    font-size: 1rem;
+    padding: 0.7rem;
+  }
+
+  .about-info {
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .repair-section {
+    flex-direction: row;
+    gap: 3.5rem;
+    align-items: center;
+  }
+
+  .repair-section-img,
+  .repair-section-video {
+    width: 48%;
+    max-width: 700px;
+  }
+
+  footer {
+    padding: 2rem;
+    font-size: 1.05rem;
+  }
+}
