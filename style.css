@@ -81,6 +81,8 @@ nav {
 .about,
 .feedback,
 .contact {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Arrange the items in a column for better layout */
   background-image: linear-gradient(#c0c0c0); /* Gradient background for visual appeal */
   color: #000000; /* Set text color to black for better visibility */
   padding: 2rem; /* Add padding for better spacing */
@@ -88,6 +90,9 @@ nav {
   width: 100%; /* Set the width of the sections to 100% of the viewport for better layout control */
   max-width: 100%; /* Ensure the sections do not exceed the width of the viewport for better layout control */
   align-items: center; /* Center items vertically for better layout */
+  align-content: center; /* Center content for better layout */
+  justify-content: center; /* Center content horizontally for better layout */
+  justify-items: center; /* Center items for better layout */
 }
 
 /* footer styling */
