@@ -293,6 +293,7 @@ h1:hover::after{
 /* Hover effect for the button */
 .buy-now:hover {
   background-color: #0056b3; /* Change background color on hover for better interactivity */
+  transition: 0.3s ease; /* Smooth transition for hover effect on the button */
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Add a shadow on hover for better interactivity */
 }
 
@@ -376,6 +377,7 @@ h1:hover::after{
 }
 .submit-button:hover {
   background-color: #0056b3; /* Change background color on hover for better interactivity */
+  transition: 0.3s ease; /* Smooth transition for hover effect on the submit button */
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Add a shadow on hover for better interactivity */
 }
 
