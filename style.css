@@ -365,6 +365,11 @@ h1:hover::after{
   font-size: 1rem; /* Set the font size for better readability */
 }
 
+.feedbackForm textarea {
+  resize: vertical; /* Allow vertical resizing of the textarea for better user experience */
+  min-height: 100px; /* Set a minimum height for the textarea for better layout control */
+}
+
 /* Styling for the submit button in the feedback form */
 .submit-button {
   display: inline-block; /* Ensure the submit button is treated as an inline block for better layout control */
