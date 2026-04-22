@@ -32,6 +32,7 @@ header {
   text-decoration: none; /* Remove underline for better aesthetics */
   font-size: 1.5rem; /* Increase font size for better visibility */
   font-weight: bold; /* Make the logo text bold for better visibility */
+  padding: 0.5rem; /* Add padding for better spacing */
 }
 
 /* .navbar styling */
