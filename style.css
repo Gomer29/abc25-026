@@ -120,7 +120,7 @@ h1::after{
   bottom: 0; /* Position the pseudo-element at the bottom edge of the h1 */
   width: 100%; /* Set the width of the pseudo-element to 100% of the h1 */
   height: .2em; /* Set the height of the pseudo-element */
-  background-image: linear-gradient(to right, #ff0000, #0000ff);
+  background-image: linear-gradient(to right, #f2e8c1 ,); /* Gradient background for the pseudo-element for visual appeal */
   border-radius: 1em; /* Add border radius to curve the edges for rounded corners */
 }
 
