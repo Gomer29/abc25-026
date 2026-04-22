@@ -306,7 +306,7 @@ h1:hover::after{
  
 .about-info {
   display: flex; /* Use flexbox for layout */
-  flex-direction: column; /* Arrange the items in a row for better layout */
+  flex-direction: row; /* Arrange the items in a row for better layout */
   flex-wrap: wrap; /* Allow the items to wrap to the next line if they exceed the width of the container */
   justify-content: center; /* Center the items horizontally for better layout */
   align-items: center; /* Center the items vertically for better layout */
