@@ -22,18 +22,55 @@
   <section class="feedback">
     <h2 class="feed-back">Feedback</h2>
     <p>We value your input! Please share your thoughts, suggestions, or any concerns you may have about our services or website.</p>
-    <form action="submit_feedback.html" method="post">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required><br><br>
+    <div class="container">
+  <h2>We Value Your Experience</h2>
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required><br><br>
+  <form id="feedbackForm">
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="email" id="email" placeholder="Your Email" required>
 
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" rows="5" required></textarea><br><br>
+    <select id="rating">
+      <option value="">Rate your experience</option>
+      <option>⭐</option>
+      <option>⭐⭐</option>
+      <option>⭐⭐⭐</option>
+      <option>⭐⭐⭐⭐</option>
+      <option>⭐⭐⭐⭐⭐</option>
+    </select>
 
-      <button type="submit">Submit Feedback</button>
-    </form>
+    <textarea id="message" placeholder="Share your thoughts about our vintage cars..."></textarea>
+
+    <button type="submit">Submit Feedback</button>
+  </form>
+
+  <div class="preview" id="feedbackPreview">
+    <h3>Customer Feedback</h3>
+  </div>
+</div>
+
+<script>
+  const form = document.getElementById('feedbackForm');
+  const preview = document.getElementById('feedbackPreview');
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const name = document.getElementById('name').value;
+    const rating = document.getElementById('rating').value;
+    const message = document.getElementById('message').value;
+
+    const card = document.createElement('div');
+    card.classList.add('feedback-card');
+
+    card.innerHTML = `
+      <p><strong>${name}</strong> (${rating})</p>
+      <p>${message}</p>
+    `;
+
+    preview.appendChild(card);
+    form.reset();
+  });
+</script>
   </section>
   <footer class="foot">
     <p class="in-foot">&copy; 2026 GLY Motor Group. All rights reserved.</p>
