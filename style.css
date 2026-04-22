@@ -324,7 +324,7 @@ h1:hover::after{
 /* Styling for the feedback form */
 .feedback-section {
   display: flex; /* Use flexbox for layout */
-  flex-direction: row; /* Arrange the items in a column for better layout */
+  flex-direction: column; /* Arrange the items in a column for better layout */
   gap: 15px; /* Add gap between the form elements for better spacing */
   padding: 2rem; /* Add padding for better spacing */
   border: 1px solid #000000; /* Add a border to the feedback form for better visibility */
@@ -342,7 +342,7 @@ h1:hover::after{
 /* Styling for the form elements in the feedback form */
 .feedbackForm {
   display: flex; /* Use flexbox for layout */
-  flex-direction: row; /* Arrange the items in a column for better layout */
+  flex-direction: column; /* Arrange the items in a column for better layout */
   gap: 10px; /* Add gap between the form elements for better spacing */
   width: 100%; /* Set the width of the feedback form to 100% of its container for better layout control */
 }
@@ -355,6 +355,16 @@ h1:hover::after{
 }
 
 /* Styling for the form inputs in the feedback form */
+.feedbackForm input,
+.feedbackForm textarea,
+.feedbackForm select {
+  padding: 0.5rem; /* Add padding for better spacing */
+  border: 1px solid #ccc; /* Add a border to the form inputs for better visibility */
+  border-radius: 5px; /* Add border radius to curve the edges for better aesthetics */
+  font-size: 1rem; /* Set the font size for better readability */
+}
+
+/* Styling for the submit button in the feedback form */
 .submit-button {
   display: inline-block; /* Ensure the submit button is treated as an inline block for better layout control */
   padding: 0.5rem 1rem; /* Add padding for better spacing */
