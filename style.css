@@ -207,9 +207,10 @@ h1:hover::after{
   font-size: 1.5rem;
   cursor: pointer;
   color: #000000;
-  padding: 0.5rem;
+  padding: 0.5rem 1.5rem 0.5rem 0.5rem;
   z-index: 1001;
   transition: all 0.3s ease;
+  margin-left: auto;
 }
 
 .hamburger:hover {
