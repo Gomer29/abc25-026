@@ -326,7 +326,7 @@ h1:hover::after{
 .feedback-section {
   display: flex; /* Use flexbox for layout */
   flex-direction: column; /* Arrange the items in a column for better layout */
-  gap: 15px; /* Add gap between the form elements for better spacing */
+  gap: 5px; /* Add gap between the form elements for better spacing */
   padding: 2rem; /* Add padding for better spacing */
   border: 1px solid #000000; /* Add a border to the feedback form for better visibility */
   border-radius: 5px; /* Add border radius to curve the edges for better aesthetics */
