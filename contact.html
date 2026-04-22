@@ -42,8 +42,20 @@
     <p class="in-foot">&copy; 2026 GLY Motor Group. All rights reserved.</p> 
   </footer>
   <script>
-    document.querySelector('.hamburger').addEventListener('click', () => {
-      document.querySelector('.navbar ul').classList.toggle('show');
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelectorAll('.navbar a');
+    const navMenu = document.querySelector('.navbar ul');
+
+    // Toggle menu on hamburger click
+    hamburger.addEventListener('click', () => {
+      navMenu.classList.toggle('show');
+    });
+
+    // Close menu when a navigation link is clicked
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('show');
+      });
     });
   </script>
 </body>
