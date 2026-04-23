@@ -23,8 +23,9 @@
   </header>
   <section class="hero">
     <div class="banner-video">
-      <video autoplay muted loop>
-        <source src="Images/Videos/banner-video2.mp4" type="video/mp4">
+      <video class="hero-banner-video" autoplay muted playsinline>
+        <source src="Images/Videos/banner-video1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
       </video>
     </div>
     <h3>Welcome to GLY Motor Group</h3>
@@ -52,6 +53,28 @@
         navMenu.classList.remove('show');
       });
     });
+
+    const heroVideo = document.querySelector('.hero-banner-video');
+    const bannerSources = [
+      'Images/Videos/banner-video1.mp4',
+      'Images/Videos/banner-video2.mp4'
+    ];
+    let bannerIndex = 0;
+
+    if (heroVideo) {
+      heroVideo.addEventListener('ended', () => {
+        bannerIndex = (bannerIndex + 1) % bannerSources.length;
+        heroVideo.src = bannerSources[bannerIndex];
+        heroVideo.load();
+        heroVideo.play();
+      });
+
+      heroVideo.addEventListener('loadeddata', () => {
+        if (heroVideo.paused) {
+          heroVideo.play();
+        }
+      });
+    }
   </script>
 </body>
 </html>

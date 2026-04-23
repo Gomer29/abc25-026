@@ -136,29 +136,67 @@ h1:hover::after{
   scale: 1; /* Scale the pseudo-element up to 1 on hover for the hover effect */
 }
 
-/* Adding A banner image to the hero section */
-.banner {
-  background-image: url('/Images/Videos/banner-video2.mp4'); /* Use a fallback background image if the video file is not supported */
-  background-repeat: no-repeat; /* Prevent the background image from repeating */
-  background-size: cover; /* Cover the entire element with the background image */
-  background-position: center; /* Center the background image */
-  width: 100%; /* Set the width of the banner to 100% of its container */
-  height: auto;  /* Set the height of the banner to auto to maintain the aspect ratio of the image */
-  position: relative; /* Position the banner relative for the content to be positioned absolutely within it */
-  display: flex; /* Use flexbox for layout */
-  justify-content: center; /* Center the content horizontally */
-  align-items: center; /* Center the content vertically */
-  color: #ffffff; /* Set text color to white for better visibility on the banner */
+/* Adding a fullscreen hero banner section */
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  overflow: hidden;
+  color: #ffffff;
+  background: #000000;
 }
 
-/* Styling for the banner image in the hero section */
 .banner-video {
-  width: 100%; /* Set the width of the banner image to 100% of its container */
-  height: 100%; /* Set the height of the banner image to 100% of its container */
-  position: relative; /* Position the banner image relative for better layout control */
-  object-fit: cover; /* Ensure the banner image covers the entire area of its container for better aesthetics */
-  padding-top: 56.25%; /* Maintain a 16:9 aspect ratio for the banner image for better aesthetics */
-  overflow: hidden; /* Hide any overflow content for better aesthetics */
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.banner-video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hero h3,
+.hero p {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.hero h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+}
+
+.hero p {
+  max-width: 780px;
+  line-height: 1.6;
+  font-size: clamp(1rem, 1.4vw, 1.25rem);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: 70vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    min-height: 60vh;
+  }
 }
 
 /* Styling for the cars section */
