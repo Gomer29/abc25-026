@@ -1360,6 +1360,7 @@ h1:hover::after{
 .social-container ul {
   display: flex; /* Use flexbox for layout */
   flex-direction: row; /* Arrange the items in a row for better layout */
+  flex-wrap: wrap; /* Allow the items to wrap to the next line if they exceed the width of the container */
   gap: 15px; /* Add gap between the social media icons for better spacing */
   list-style: none; /* Remove default list styling for better aesthetics */
   padding: 0; /* Remove default padding for better layout control */
