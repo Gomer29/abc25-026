@@ -1347,6 +1347,9 @@ h1:hover::after{
 
 /* Styling for the contact section */
 .contact-info ul {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Arrange the items in a column for better layout */
+  gap: 10px; /* Add gap between the contact information items for better spacing */
   list-style: none; /* Remove default list styling for better aesthetics */
   padding: 0; /* Remove default padding for better layout control */
 }
