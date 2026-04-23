@@ -1363,3 +1363,72 @@ h1:hover::after{
   list-style: none; /* Remove default list styling for better aesthetics */
   padding: 0; /* Remove default padding for better layout control */
 }
+
+/* Styling for the social media icons in the contact section */
+.social-container a svg {
+  height: 30px; /* Set a specific height for the social media icons for better visibility */
+}
+
+/* Styling for the social media icons in the contact section */
+.social-container a {
+  background-color:#ffffff; /* Set a white background color for the social media icons for better visibility */
+  padding: 1em; /* Add padding around the social media icons for better spacing */
+  border-radius: 50%; /* Make the social media icons circular for better aesthetics */
+  height: 50px; /* Set a specific height for the social media icons for better visibility */
+  width: 50px; /* Set a specific width for the social media icons for better visibility */
+  box-sizing: border-box; /* Ensure padding and border are included in the total width and height for better layout control */
+  flex: 0; /* Prevent the social media icons from growing or shrinking for better layout control */
+  display: grid; /* Use grid layout for the social media icons for better alignment */
+  place-items: center; /* Center the social media icons within their container for better aesthetics */
+  box-shadow: 0 5px 10px rgba(0,0,0,0.05); /* Add a subtle shadow for better aesthetics */
+}
+
+/* Hover effect for the social media icons in the contact section */
+.social-container a::before{
+  content: attr(data-social); /* Use the data-social attribute to display the name of the social media platform on hover for better accessibility */
+  position: absolute; /* Position the tooltip absolutely for better layout control */
+  background-color: var(--accent-color); /* Use the accent color for the tooltip background for better aesthetics */
+  color: #ffffff; /* Set text color to white for better visibility on the tooltip (to be checked) */
+  text-decoration: none; /* Remove underline from the tooltip text for better aesthetics */
+  padding: 0.5rem 1rem; /* Add padding for better spacing on the tooltip */
+  border-radius: 100px; /* Add border radius to curve the edges of the tooltip*/
+  box-shadow: 0 5px 10px rgba(0,0,0,0.05); /* Add a shadow to the tooltip for better aesthetics */
+  transform: translateY(-30px) rotate(25deg); /* Position the tooltip above the social media icon and add a slight rotation for better aesthetics */
+  opacity: 0; /* Hide the tooltip by default for better aesthetics */
+  transition: 200ms cubic-bezier(0.42, 0, 0.44, 1.68); /* Smooth transition for the tooltip on hover for better interactivity */
+}
+
+/* Hover effect for the social media icons in the contact section */
+.social-container a:hover {
+ background-color: var(--accent-color); /* Change background color on hover for better interactivity */
+ fill: #ffffff; /* Change icon color to white on hover for better visibility */
+}
+
+/* Hover effect for the social media icons in the contact section */
+.social-container a:hover::before {
+  opacity: 1; /* Show the tooltip on hover for better interactivity */
+  transform: translateY(-65px) rotate(0); /* Move the tooltip up on hover for better interactivity */
+}
+
+.social-container a::after {
+  content: ""; /* Create an empty element for the tooltip arrow */
+  position: absolute; /* Position the tooltip arrow absolutely for better layout control */
+  width: 0; /* Set a specific width for the tooltip arrow for better visibility */
+  height: 0; /* Set a specific height for the tooltip arrow for better visibility */
+  border-left: 5px solid transparent; /* Create the left side of the tooltip arrow */
+  border-right: 5px solid transparent; /* Create the right side of the tooltip arrow */
+  border-top: 5px solid var(--accent-color); /* Create the top side of the tooltip arrow using the accent color for better aesthetics */
+  transform: translateY(0) rotate(25deg); /* Position the tooltip arrow below the tooltip and add a slight rotation for better aesthetics */
+  opacity: 0; /* Hide the tooltip arrow by default for better aesthetics */
+  transition: 200ms cubic-bezier(0.42, 0, 0.44, 1.68); /* Smooth transition for the tooltip arrow on hover for better interactivity */
+}
+
+/* Hover effect for the social media icons in the contact section */
+.social-container a:hover::after {
+  opacity: 1; /* Show the tooltip arrow on hover for better interactivity */
+  transform: translateY(-42px) rotate(0); /* Move the tooltip arrow up on hover for better interactivity */
+}
+
+.social-container a:hover svg {
+  fill: #ffffff; /* Change icon color to white on hover for better visibility */
+}
