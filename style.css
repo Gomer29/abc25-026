@@ -25,6 +25,7 @@ header {
   width: 100%; /* Set the width of the header to 100% of the viewport for better layout control */
   max-width: 100%; /* Ensure the header does not exceed the width of the viewport for better layout control */
   position: relative; /* Position relative for absolute positioning of navbar */
+  z-index: 1000; /* Ensure header stays above all page content */
 }
 
 /* logo styling */
@@ -97,6 +98,8 @@ nav {
   align-content: center; /* Center content for better layout */
   justify-content: center; /* Center content horizontally for better layout */
   justify-items: center; /* Center items for better layout */
+  position: relative; /* Ensure sections are positioned for z-index stacking */
+  z-index: 0; /* Keep sections below header and menu */
 }
 
 /* footer styling */
