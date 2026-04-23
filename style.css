@@ -1408,20 +1408,23 @@ h1:hover::after{
 
 /* Styling for the social media icons in the contact section */
 .social-container a svg {
-  height: 30px; /* Set a specific height for the social media icons for better visibility */
+  width: 24px;
+  height: 24px;
+  display: block;
 }
 
 /* Styling for the social media icons in the contact section */
 .social-container a {
-  background-color:#ffffff; /* Set a white background color for the social media icons for better visibility */
-  padding: 1em; /* Add padding around the social media icons for better spacing */
+  background-color: #ffffff; /* Set a white background color for the social media icons for better visibility */
+  width: 56px;
+  height: 56px;
+  padding: 0;
   border-radius: 50%; /* Make the social media icons circular for better aesthetics */
-  height: 50px; /* Set a specific height for the social media icons for better visibility */
-  width: 50px; /* Set a specific width for the social media icons for better visibility */
   box-sizing: border-box; /* Ensure padding and border are included in the total width and height for better layout control */
   flex: 0; /* Prevent the social media icons from growing or shrinking for better layout control */
   display: grid; /* Use grid layout for the social media icons for better alignment */
   place-items: center; /* Center the social media icons within their container for better aesthetics */
+  position: relative;
   box-shadow: 0 5px 10px rgba(0,0,0,0.05); /* Add a subtle shadow for better aesthetics */
 }
 
