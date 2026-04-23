@@ -247,6 +247,7 @@ h1:hover::after{
   color: #000000;
   padding: 0.5rem 1.5rem 0.5rem 0.5rem;
   z-index: 1001;
+  position: relative;
   transition: all 0.3s ease;
   margin-left: auto;
 }
@@ -306,6 +307,7 @@ h1:hover::after{
     width: 100%;
     top: 100%;
     left: 0;
+    z-index: 1100;
   }
 
   .navbar ul {
@@ -317,6 +319,7 @@ h1:hover::after{
     margin: 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
     border-bottom: 2px solid #bbb;
+    z-index: 1100;
   }
 
   .navbar ul.show {
