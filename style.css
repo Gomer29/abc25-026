@@ -1402,6 +1402,10 @@ h1:hover::after{
   padding: 0; /* Remove default padding for better layout control */
 }
 
+.social-container {
+  margin-top: 2rem; /* Add space above the social container to prevent overlap */
+}
+
 /* Styling for the social media icons in the contact section */
 .social-container a svg {
   height: 30px; /* Set a specific height for the social media icons for better visibility */
