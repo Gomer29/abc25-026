@@ -1,4 +1,4 @@
-/* CSS Styles for GLY Motors */
+/* CSS Styles for GLY Motor Group */
 
 /* Global styling */
 body {
@@ -1343,4 +1343,10 @@ h1:hover::after{
   object-fit: cover; /* Cover the area without distortion */
   display: block; /* Remove any default inline spacing */
   aspect-ratio: 16 / 9; /* Maintain 16:9 aspect ratio for better consistency */
+}
+
+/* Styling for the contact section */
+.contact-info ul {
+  list-style: none; /* Remove default list styling for better aesthetics */
+  padding: 0; /* Remove default padding for better layout control */
 }
