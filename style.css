@@ -239,6 +239,42 @@ h1:hover::after{
   text-align: left; /* Align text to the left for better readability */
 }
 
+/* Repair section video styling */
+.repair-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.repair-section-video {
+  width: 100%;
+  max-width: 1000px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.repair-section-video video {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.service-list ul {
+  list-style: disc inside;
+  padding-left: 1rem;
+  margin: 0 auto 2rem;
+  max-width: 900px;
+  text-align: left;
+}
+
+.service-list li {
+  margin-bottom: 0.8rem;
+  line-height: 1.7;
+}
 
 /* Hamburger menu styles */
 .hamburger {
