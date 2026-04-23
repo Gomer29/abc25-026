@@ -1290,3 +1290,13 @@ h1:hover::after{
     font-size: 1.05rem;
   }
 }
+
+/* Styling for about-content-video */
+.about-content-video {
+  width: 100%; /* Fill the width of its container */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 100%; /* Ensure it doesn't exceed container width */
+  object-fit: cover; /* Cover the area without distortion */
+  display: block; /* Remove any default inline spacing */
+  aspect-ratio: 16 / 9; /* Maintain 16:9 aspect ratio for better consistency */
+}
