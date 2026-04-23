@@ -1353,6 +1353,7 @@ h1:hover::after{
   gap: 10px; /* Add gap between the contact information items for better spacing */
   list-style: none; /* Remove default list styling for better aesthetics */
   padding: 0; /* Remove default padding for better layout control */
+  text-decoration: none; /* Remove underline from the contact information items for better aesthetics */
 }
 
 /* Styling for the social media icons in the contact section */
