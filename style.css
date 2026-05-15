@@ -141,64 +141,64 @@ h1:hover::after{
 
 /* Adding a fullscreen hero banner section */
 .hero {
-  position: relative;
-  width: 100%;
-  min-height: 85vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-  overflow: hidden;
-  color: #ffffff;
-  background: #000000;
+  position: relative; /* Keep hero positioned relative to its container */
+  width: 100%; /* Stretch hero to the full page width */
+  min-height: 85vh; /* Make hero cover most of the viewport vertically */
+  display: flex; /* Use flex layout for hero content */
+  flex-direction: column; /* Stack content vertically */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  padding: 0; /* Remove default padding inside the hero */
+  overflow: hidden; /* Hide any overflowing content */
+  color: #ffffff; /* Use white text over the hero background */
+  background: #000000; /* Use black as the hero background */
 }
 
 .banner-video {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  z-index: 0;
+  position: absolute; /* Position the video behind the text */
+  inset: 0; /* Fill the whole hero container */
+  width: 100%; /* Make the banner full width */
+  height: 100%; /* Make the banner full height */
+  overflow: hidden; /* Hide any video overflow */
+  z-index: 0; /* Place the banner below other hero content */
 }
 
 .banner-video video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
+  width: 100%; /* Let the video fill the container width */
+  height: 100%; /* Let the video fill the container height */
+  object-fit: cover; /* Crop the video cleanly to fill the area */
+  display: block; /* Remove inline gap under the video */
 }
 
 .hero h3,
 .hero p {
-  position: relative;
-  z-index: 1;
-  text-align: center;
-  padding: 0 1rem;
+  position: relative; /* Keep text layered normally */
+  z-index: 1; /* Put text above the background video */
+  text-align: center; /* Center align hero text */
+  padding: 0 1rem; /* Add horizontal padding for small screens */
 }
 
 .hero h3 {
-  margin-top: 0;
-  margin-bottom: 1rem;
-  font-size: clamp(2rem, 4vw, 3.5rem);
+  margin-top: 0; /* Remove extra top space from the heading */
+  margin-bottom: 1rem; /* Add space below the heading */
+  font-size: clamp(2rem, 4vw, 3.5rem); /* Scale heading size by screen width */
 }
 
 .hero p {
-  max-width: 780px;
-  line-height: 1.6;
-  font-size: clamp(1rem, 1.4vw, 1.25rem);
+  max-width: 780px; /* Keep paragraph width easy to read */
+  line-height: 1.6; /* Space lines for readability */
+  font-size: clamp(1rem, 1.4vw, 1.25rem); /* Scale paragraph text by viewport size */
 }
 
 @media (max-width: 768px) {
   .hero {
-    min-height: 70vh;
+    min-height: 70vh; /* Reduce hero height on tablets */
   }
 }
 
 @media (max-width: 480px) {
   .hero {
-    min-height: 60vh;
+    min-height: 60vh; /* Reduce hero height on small phones */
   }
 }
 
@@ -241,71 +241,71 @@ h1:hover::after{
 
 /* Repair section video styling */
 .repair-section {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  margin: 2rem 0;
+  width: 100%; /* Make the repair section fill its container */
+  display: flex; /* Use flex layout for the section content */
+  justify-content: center; /* Center the video block horizontally */
+  gap: 1.5rem; /* Space out child elements */
+  margin: 2rem 0; /* Add vertical space around the section */
 }
 
 .repair-section-video {
-  width: 100%;
-  max-width: 1000px;
-  overflow: hidden;
-  border-radius: 10px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  width: 100%; /* Allow the video container to be full width */
+  max-width: 1000px; /* Limit the container width for readability */
+  overflow: hidden; /* Hide overflow from the video container */
+  border-radius: 10px; /* Round the video container corners */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); /* Add a soft shadow around the video */
 }
 
 .repair-intro {
-  max-width: 860px;
-  margin: 0 auto 2rem;
-  text-align: justify;
-  text-justify: inter-word;
-  line-height: 1.75;
+  max-width: 860px; /* Keep the intro paragraph width readable */
+  margin: 0 auto 2rem; /* Center the paragraph and add bottom spacing */
+  text-align: justify; /* Justify the text for neat edges */
+  text-justify: inter-word; /* Use word spacing for justified text */
+  line-height: 1.75; /* Add line spacing for readability */
 }
 
 .repair-section-video video {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover;
+  width: 100%; /* Stretch the video to fill the container */
+  height: auto; /* Keep the video's aspect ratio */
+  display: block; /* Remove inline spacing below the video */
+  object-fit: cover; /* Crop the video nicely inside its box */
 }
 
 .service-list {
-  max-width: 940px;
-  margin: 0 auto 2rem;
-  padding: 1.5rem;
-  background: rgba(255, 255, 255, 0.92);
-  border: 1px solid #d6d6d6;
-  border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  max-width: 940px; /* Limit the service list width for readability */
+  margin: 0 auto 2rem; /* Center the list block and add bottom space */
+  padding: 1.5rem; /* Add padding inside the service list */
+  background: rgba(255, 255, 255, 0.92); /* Use a faint white background */
+  border: 1px solid #d6d6d6; /* Add a light border around the list */
+  border-radius: 16px; /* Round the edges of the service list box */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); /* Add a soft shadow behind the list */
 }
 
 .service-list ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1rem;
+  list-style: none; /* Remove default list bullets */
+  padding: 0; /* Remove default padding from the list */
+  margin: 0; /* Remove default margin from the list */
+  display: grid; /* Use grid layout for service items */
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Create responsive columns */
+  gap: 1rem; /* Add spacing between list items */
 }
 
 .service-list li {
-  background: #f8f8f8;
-  padding: 1rem 1.1rem;
-  border-radius: 12px;
-  border: 1px solid #e5e5e5;
-  line-height: 1.65;
-  font-weight: 500;
-  color: #222222;
+  background: #f8f8f8; /* Use a light background for each item */
+  padding: 1rem 1.1rem; /* Add internal padding to each item */
+  border-radius: 12px; /* Round the corners of list items */
+  border: 1px solid #e5e5e5; /* Add a subtle border around each item */
+  line-height: 1.65; /* Space lines inside list items */
+  font-weight: 500; /* Use a medium font weight for readability */
+  color: #222222; /* Use dark text for contrast */
 }
 
 .service-list li::before {
-  content: "•";
-  color: #d29f4b;
-  display: inline-block;
-  width: 1.2em;
-  margin-left: -1.2em;
+  content: "•"; /* Add a custom bullet marker */
+  color: #d29f4b; /* Make the bullet a warm gold color */
+  display: inline-block; /* Keep the bullet aligned with text */
+  width: 1.2em; /* Reserve space for the bullet marker */
+  margin-left: -1.2em; /* Pull the bullet into the left margin */
 }
 
 /* Hamburger menu styles */
