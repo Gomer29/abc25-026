@@ -261,7 +261,7 @@ h1:hover::after{
   margin: 2rem auto; /* Add margin and center the container horizontally */
   padding: 2rem; /* Add padding for better spacing */
   border: 1px solid #000000; /* Add a border to the my-cars-container for better visibility */
-  border-radius: 50%; /* Make the container visually circular/rounded */
+  border-radius: 10px; /* Make the container visually rounded */
   background-color: #ffffff; /* Set a white background color for better visibility of the car details */
   width: 90%; /* Set the width of the my-cars-container to 90% of its parent container */
 }
