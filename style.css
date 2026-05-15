@@ -21,7 +21,7 @@ header {
   justify-content: space-between; /* Space out the content in the header for better layout */
   flex-wrap: wrap; /* Allow the content to wrap if it exceeds the width of the header */
   align-items: center; /* Vertically center the content */
-  padding: 1rem 2rem; /* Add padding for better spacing */
+  padding: 1rem 3rem; /* Add wider side padding so header items don't sit too close to screen edges */
   width: 100%; /* Set the width of the header to 100% of the viewport for better layout control */
   max-width: 100%; /* Ensure the header does not exceed the width of the viewport for better layout control */
   position: relative; /* Position relative for absolute positioning of navbar */
@@ -47,7 +47,7 @@ nav {
   list-style: none; /* Remove default list styling for better aesthetics */
   padding: 0; /* Remove default padding for better aesthetics */
   display: flex; /* Use flexbox for horizontal layout of navigation items */
-  gap: 20px; /* Add gap between navigation items for better spacing */
+  gap: 14px; /* Slightly reduce space between navigation items */
 }
 
 /* navbar a styling */
@@ -56,7 +56,7 @@ nav {
   text-decoration: none; /* Remove underline for better aesthetics */
   font-weight: bold; /* Make the text bold for better readability */
   transition: transform 0.3s ease; /* Smooth transition for hover effect */
-  padding: 10px; /* Add padding for better spacing */
+  padding: 8px; /* Reduce horizontal spacing between navbar links */
 }
 
 /* navbar a hover styling */
