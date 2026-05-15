@@ -506,9 +506,9 @@ h1:hover::after{
   flex-wrap: wrap; /* Allow the items to wrap to the next line if they exceed the width of the container */
   justify-content: space-between; /* Spread cards evenly across the row */
   gap: 20px; /* Add gap between the items for better spacing */
-  margin: 2rem; /* Add outer space around the container */
-  width: calc(100% - 4rem); /* Fit inside page padding while using full width */
-  max-width: 1200px; /* Limit the container width on large screens */
+  margin: 2rem auto; /* Add outer space and center the container horizontally */
+  width: 94%; /* Make the car container span 94% of the viewport/parent width */
+  max-width: 1400px; /* Keep a sensible cap on extremely large screens */
   border: 1px solid #000000; /* Add a border to the car container */
   border-radius: 5px; /* Round the container corners */
   padding: 1rem; /* Add inner padding inside the container */
