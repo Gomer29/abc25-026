@@ -310,1096 +310,1095 @@ h1:hover::after{
 
 /* Hamburger menu styles */
 .hamburger {
-  display: none;
-  background: none;
-  border: none;
-  font-size: 1.5rem;
-  cursor: pointer;
-  color: #000000;
-  padding: 0.5rem 1.5rem 0.5rem 0.5rem;
-  z-index: 1001;
-  position: relative;
-  transition: all 0.3s ease;
-  margin-left: auto;
+  display: none; /* Hide the hamburger on larger screens */
+  background: none; /* Remove default button background */
+  border: none; /* Remove default button border */
+  font-size: 1.5rem; /* Make the hamburger icon easy to tap */
+  cursor: pointer; /* Show pointer cursor when hovering */
+  color: #000000; /* Use black for the hamburger icon */
+  padding: 0.5rem 1.5rem 0.5rem 0.5rem; /* Add space around the button */
+  z-index: 1001; /* Keep the button above other elements */
+  position: relative; /* Keep the button in normal flow with stacking context */
+  transition: all 0.3s ease; /* Animate hover changes smoothly */
+  margin-left: auto; /* Push the button to the right in the header */
 }
 
 .hamburger:hover {
-  transform: scale(1.1);
-  color: #faebd7;
+  transform: scale(1.1); /* Slightly enlarge the button on hover */
+  color: #faebd7; /* Change icon color when hovered */
 }
 
 /* Default desktop styles - hamburger hidden */
 .navbar {
-  position: static;
-  width: auto;
+  position: static; /* Keep the navbar in the normal page flow */
+  width: auto; /* Allow the navbar to size naturally */
 }
 
 .navbar ul {
-  display: flex;
-  flex-direction: row;
-  position: static;
-  background: transparent;
-  padding: 0;
-  margin: 0;
-  box-shadow: none;
-  width: auto;
+  display: flex; /* Arrange navbar items horizontally */
+  flex-direction: row; /* Keep the list items in a row */
+  position: static; /* Use normal positioning for the menu */
+  background: transparent; /* Make the nav background transparent */
+  padding: 0; /* Remove default list padding */
+  margin: 0; /* Remove default list margin */
+  box-shadow: none; /* Remove any box shadow */
+  width: auto; /* Allow natural width for the menu list */
 }
 
 .navbar li {
-  width: auto;
-  text-align: left;
+  width: auto; /* Use natural width for menu items */
+  text-align: left; /* Align text to the left for desktop nav */
 }
 
 .navbar a {
-  display: inline-block;
-  padding: 10px;
-  border: none;
+  display: inline-block; /* Let the links be padded inline elements */
+  padding: 10px; /* Add spacing around each navbar link */
+  border: none; /* Remove default link border */
 }
 
 /* Mobile and Tablet styles */
 @media (max-width: 768px) {
   .hamburger {
-    display: block;
-    order: 2;
+    display: block; /* Show the hamburger on smaller screens */
+    order: 2; /* Move hamburger next to logo in the header */
   }
 
   header {
-    position: relative;
+    position: relative; /* Keep header positioned normally for mobile */
   }
 
   nav {
-    margin-left: 0;
-    width: 100%;
-    order: 3;
+    margin-left: 0; /* Reset left margin for mobile nav */
+    width: 100%; /* Let nav take full width */
+    order: 3; /* Place nav after the hamburger button */
   }
 
   .navbar {
-    position: absolute;
-    width: 100%;
-    top: 100%;
-    left: 0;
-    z-index: 1100;
+    position: absolute; /* Overlay the mobile menu on top of content */
+    width: 100%; /* Make mobile nav full width */
+    top: 100%; /* Position below the header */
+    left: 0; /* Align to the left edge */
+    z-index: 1100; /* Keep mobile nav above page content */
   }
 
   .navbar ul {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    background: #DCDCDC;
-    padding: 0;
-    margin: 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-    border-bottom: 2px solid #bbb;
-    z-index: 1100;
+    display: none; /* Hide the menu until opened */
+    flex-direction: column; /* Stack menu items vertically */
+    width: 100%; /* Make the menu full width */
+    background: #DCDCDC; /* Use a light background for mobile menu */
+    padding: 0; /* Remove list padding */
+    margin: 0; /* Remove list margin */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Add subtle shadow behind menu */
+    border-bottom: 2px solid #bbb; /* Add a border at the bottom */
+    z-index: 1100; /* Keep menu above other items */
   }
 
   .navbar ul.show {
-    display: flex;
+    display: flex; /* Show the menu when toggled open */
   }
 
   .navbar li {
-    width: 100%;
-    text-align: center;
-    border-bottom: 1px solid #bbb;
+    width: 100%; /* Make each menu item fill the width */
+    text-align: center; /* Center menu text on mobile */
+    border-bottom: 1px solid #bbb; /* Separate items with lines */
   }
 
   .navbar li:last-child {
-    border-bottom: none;
+    border-bottom: none; /* Remove divider under the last item */
   }
 
   .navbar a {
-    display: block;
-    padding: 1rem 1.5rem;
-    border: none;
-    width: 100%;
-    box-sizing: border-box;
-    transition: background-color 0.3s ease;
+    display: block; /* Make links fill their container */
+    padding: 1rem 1.5rem; /* Add comfortable touch area */
+    border: none; /* Remove link border */
+    width: 100%; /* Make links full width */
+    box-sizing: border-box; /* Include padding in width calculation */
+    transition: background-color 0.3s ease; /* Smooth hover background changes */
   }
 
   .navbar a:hover {
-    background-color: #f0f0f0;
-    color: #faebd7;
+    background-color: #f0f0f0; /* Light hover background color */
+    color: #faebd7; /* Change link color on hover */
   }
 }
 
 /* Extra Small Devices - Enhanced mobile experience */
 @media (max-width: 480px) {
   .hamburger {
-    font-size: 1.3rem;
-    padding: 0.4rem;
+    font-size: 1.3rem; /* Use a smaller icon on very small screens */
+    padding: 0.4rem; /* Reduce padding around the icon */
   }
 
   .navbar ul {
-    max-height: 80vh;
-    overflow-y: auto;
+    max-height: 80vh; /* Limit mobile menu height */
+    overflow-y: auto; /* Allow scrolling when the menu is tall */
   }
 
   .navbar a {
-    padding: 0.8rem 1rem;
-    font-size: 0.95rem;
+    padding: 0.8rem 1rem; /* Use smaller link padding on tiny screens */
+    font-size: 0.95rem; /* Slightly reduce link text size */
   }
 }
 
 /* Small Tablets */
 @media (min-width: 481px) and (max-width: 768px) {
   .hamburger {
-    font-size: 1.4rem;
+    font-size: 1.4rem; /* Slightly larger icon on tablets */
   }
 
   .navbar a {
-    padding: 0.9rem 1.2rem;
+    padding: 0.9rem 1.2rem; /* Use medium padding for tablet links */
   }
 }
 
 /* Desktop and larger - hamburger hidden */
 @media (min-width: 769px) {
   .hamburger {
-    display: none !important;
+    display: none !important; /* Always hide the hamburger on desktop */
   }
 
   .navbar {
-    position: static;
-    width: auto;
+    position: static; /* Keep desktop nav in normal flow */
+    width: auto; /* Use natural width for desktop nav */
   }
 
   .navbar ul {
-    display: flex;
-    flex-direction: row;
-    position: static;
-    background: transparent;
-    padding: 0;
-    margin: 0;
-    box-shadow: none;
-    width: auto;
+    display: flex; /* Show nav items horizontally */
+    flex-direction: row; /* Keep desktop menu in a row */
+    position: static; /* Use normal positioning */
+    background: transparent; /* Remove mobile background */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    box-shadow: none; /* Remove mobile shadow */
+    width: auto; /* Use natural width */
   }
 
   .navbar li {
-    width: auto;
-    text-align: left;
-    border: none;
+    width: auto; /* Use natural width for desktop items */
+    text-align: left; /* Left-align desktop menu text */
+    border: none; /* Remove mobile separators on desktop */
   }
 
   .navbar a {
-    display: inline-block;
-    padding: 10px;
+    display: inline-block; /* Keep links inline with padding */
+    padding: 10px; /* Use default desktop padding */
   }
 
   .navbar a:hover {
-    background-color: transparent;
+    background-color: transparent; /* Keep hover background clear on desktop */
   }
 }
 .car-container {
   display: flex; /* Use flexbox for layout */
   flex-wrap: wrap; /* Allow the items to wrap to the next line if they exceed the width of the container */
-  justify-content: space-between;
+  justify-content: space-between; /* Spread cards evenly across the row */
   gap: 20px; /* Add gap between the items for better spacing */
-  margin: 2rem;
-  width: calc(100% - 4rem);
-  max-width: 1200px;
-  border: 1px solid #000000;
-  border-radius: 5px;
-  padding: 1rem;
-  background-color: #f0f0f0;
+  margin: 2rem; /* Add outer space around the container */
+  width: calc(100% - 4rem); /* Fit inside page padding while using full width */
+  max-width: 1200px; /* Limit the container width on large screens */
+  border: 1px solid #000000; /* Add a border to the car container */
+  border-radius: 5px; /* Round the container corners */
+  padding: 1rem; /* Add inner padding inside the container */
+  background-color: #f0f0f0; /* Use a light gray background for contrast */
 }
 
 /* Styling for the car card in the car container */
 .car-card {
   display: flex; /* Use flexbox for layout */
   flex-direction: column; /* Arrange the items in a column for better layout */
-  justify-content: space-between; /* Center the items horizontally with even spacing */
-  align-items: center; /* Center the items vertically for better layout */
-  flex: 0 1 calc(33.333% - 26px); /* Three cards per row with spacing */
-  min-width: 260px;
-  max-width: 32%;
+  justify-content: space-between; /* Space items evenly top to bottom */
+  align-items: center; /* Center the items horizontally inside the card */
+  flex: 0 1 calc(33.333% - 26px); /* Allow three cards per row with spacing */
+  min-width: 260px; /* Keep cards a minimum readable width */
+  max-width: 32%; /* Limit the card width for good proportions */
   padding: 1rem; /* Add padding for better spacing */
-  border: 1px solid #000000; /* Add a border to each car card for better visibility */
-  border-radius: 5px; /* Add border radius to curve the edges for better aesthetics */
-  background-color: #ffffff; /* Set a white background color for better visibility of the car details */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for better aesthetics */
-  overflow: hidden; /* Hide any overflow content for better aesthetics */
-  text-align: center; /* Center the text for better aesthetics */
-  transition: transform 0.3s ease; /* Smooth transition for hover effect on the car card */
+  border: 1px solid #000000; /* Add a border to each car card */
+  border-radius: 5px; /* Round the card corners */
+  background-color: #ffffff; /* Use a white background for the card */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+  overflow: hidden; /* Hide any overflow inside the card */
+  text-align: center; /* Center the text inside the card */
+  transition: transform 0.3s ease; /* Smooth hover transform for cards */
   height: auto; /* Allow height to adjust based on content */
-  box-sizing: border-box; /* Ensure padding and border are included in the total width and height for better layout control */
+  box-sizing: border-box; /* Include padding and border in the card width */
 }
 /* Hover effect for the car card */
 .car-card:hover {
-  transform: translateY(-5px); /* Move the car card up on hover for better interactivity */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add a stronger shadow on hover for better interactivity */
-  transition: transform 0.3s ease; /* Smooth transition for hover effect on the car card */
+  transform: translateY(-5px); /* Lift the card slightly on hover */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add a stronger shadow on hover */ 
 }
 
 /* Styling for the car image in the car card */
 .car-card img {
-  width: 100%; /* Set the width of the car image to 100% of its container for better layout control */
-  max-width: 300px; /* Set a maximum width for the car image to prevent it from becoming too large */
-  display: block; /* Ensure the car image is treated as a block element for better layout control */
-  height: 220px; /* Set a fixed height for the car image for better layout control */
-  object-fit: contain; /* Ensure the car image maintains its aspect ratio and fits within the specified dimensions for better aesthetics */
-  border-radius: 5px; /* Add border radius to curve the edges of the car image for better aesthetics */
-  transition: transform 0.3s ease; /* Smooth transition for the hover effect on the car image */
-  background-color: #ffffff; /* Set a white background color for the car image for better visibility */
+  width: 100%; /* Make the image fill the card width */
+  max-width: 300px; /* Limit the image width for consistency */
+  display: block; /* Remove inline spacing under the image */
+  height: 220px; /* Fix the image height for consistent cards */
+  object-fit: contain; /* Preserve image aspect ratio */
+  border-radius: 5px; /* Round the image corners */
+  transition: transform 0.3s ease; /* Smooth the hover transform */
+  background-color: #ffffff; /* Use a white background behind the image */
 }
 
 /* Hover effect for the car image in the car card */
 .car-card img:hover {
-  transform: scale(1.05); /* Scale up the car image on hover for better interactivity */
-  transition: transform 0.3s ease; /* Smooth transition for the hover effect on the car image */
-  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5); /* Add an inset shadow on hover for better interactivity */
+  transform: scale(1.05); /* Slightly enlarge the image on hover */
+  transition: transform 0.3s ease; /* Smooth the hover effect */
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5); /* Add a subtle inset shadow on hover */
 }
 
 /* Styling for the car name in the car card */
 .car-card h3 {
-  margin: 0; /* Remove default margin for better layout control */
-  font-size: 1.2rem; /* Set a specific font size for the car name for better readability */
-  color: #000000; /* Set text color to black for better visibility */
+  margin: 0; /* Remove default heading margin */
+  font-size: 1.2rem; /* Set a clear size for the car name */
+  color: #000000; /* Use black text for readability */
 }
 
 /* Styling for the car details in the car card */
 .car-card p {
-  margin: 0; /* Remove default margin for better layout control */
-  font-size: 1rem; /* Set a specific font size for the car details for better readability */
-  color: #000000; /* Set text color to black for better visibility */
+  margin: 0; /* Remove default paragraph margin */
+  font-size: 1rem; /* Use a readable font size for details */
+  color: #000000; /* Keep the detail text black */
 }
 
 /* Styling for the price in the car card */
 .price {
-  font-weight: bold; /* Make the price text bold for better visibility */
-  color: #000000; /* Set price text color to black for better visibility */
+  font-weight: bold; /* Emphasize the price */
+  color: #000000; /* Use strong black contrast */
 }
 
 /* Styling for the button in the car card */
 .buy-now {
-  display: inline-block; /* Ensure the button is treated as an inline block for better layout control */
-  padding: 0.5rem 1rem; /* Add padding for better spacing */
-  background-color: #007bff; /* Set a blue background color for the button for better visibility */
-  color: #ffffff; /* Set text color to white for better visibility on the button */
-  text-decoration: none; /* Remove underline from the button text for better aesthetics */
-  border-radius: 5px; /* Add border radius to curve the edges of the button for better aesthetics */
-  transition: background-color 0.3s ease; /* Smooth transition for hover effect on the button */
+  display: inline-block; /* Let the button size to its content */
+  padding: 0.5rem 1rem; /* Add padding inside the button */
+  background-color: #007bff; /* Use blue for the button background */
+  color: #ffffff; /* Use white for button text */
+  text-decoration: none; /* Remove underline from the button */
+  border-radius: 5px; /* Round the button corners */
+  transition: background-color 0.3s ease; /* Animate the button hover state */
 }
 
 /* Hover effect for the button */
 .buy-now:hover {
-  background-color: #0056b3; /* Change background color on hover for better interactivity */
-  transition: 0.3s ease; /* Smooth transition for hover effect on the button */
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Add a shadow on hover for better interactivity */
+  background-color: #0056b3; /* Darken the button on hover */
+  transition: 0.3s ease; /* Keep the hover animation smooth */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
 }
 
 /* Styling for the about section */
 .about {
-  display: flex; /* Use flexbox for layout */
-  flex-direction: row; /* Arrange the items in a row for better layout */
-  flex-wrap: wrap; /* Allow the items to wrap to the next line if they exceed the width of the container */
-  justify-content: center; /* Center the items horizontally for better layout */
-  align-items: center; /* Center the items vertically for better layout */
-  gap: 20px; /* Add gap between the items for better spacing */
-  padding: 2rem; /* Add padding for better spacing */
-  border: 1px solid #000000; /* Add a border to the about section for better visibility */
-  border-radius: 5px; /* Add border radius to curve the edges for better aesthetics */
+  display: flex; /* Use flex layout for the about section */
+  flex-direction: row; /* Place items side by side */
+  flex-wrap: wrap; /* Wrap items on smaller screens */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  gap: 20px; /* Add spacing between items */
+  padding: 2rem; /* Add padding around the section */
+  border: 1px solid #000000; /* Add a border around the section */
+  border-radius: 5px; /* Round the section corners */
 }
  
 .about-info {
-  display: flex; /* Use flexbox for layout */
-  flex-direction: row; /* Arrange the items in a row for better layout */
-  flex-wrap: wrap; /* Allow the items to wrap to the next line if they exceed the width of the container */
-  justify-content: space-between; /* Space items horizontally on large screens */
-  align-items: center; /* Center the items vertically for better layout */
-  gap: 2rem; /* Add gap between the items for better spacing */
-  padding: 2rem; /* Add padding for better spacing */
-  border: 1px solid #000000; /* Add a border to the about-info section for better visibility */
-  border-radius: 5px; /* Add border radius to curve the edges for better aesthetics */
-  width: 100%;
-  max-width: 1200px;
+  display: flex; /* Use flex layout for the about info container */
+  flex-direction: row; /* Place items side by side */
+  flex-wrap: wrap; /* Wrap items on smaller screens */
+  justify-content: space-between; /* Space items apart horizontally */
+  align-items: center; /* Center items vertically */
+  gap: 2rem; /* Add spacing between items */
+  padding: 2rem; /* Add padding around the info section */
+  border: 1px solid #000000; /* Add a border around the info section */
+  border-radius: 5px; /* Round the section corners */
+  width: 100%; /* Let the info section fill its parent */
+  max-width: 1200px; /* Limit width on large screens */
 }
 
 .about-image,
 .about-content {
-  flex: 1 1 45%;
-  min-width: 280px;
+  flex: 1 1 45%; /* Allow both columns to share space evenly */
+  min-width: 280px; /* Keep each column at a readable minimum width */
 }
 
 .about-image img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 5px;
+  width: 100%; /* Let the image fill its container width */
+  height: auto; /* Preserve the image's aspect ratio */
+  display: block; /* Remove extra inline spacing below the image */
+  border-radius: 5px; /* Round the image corners */
 }
 
 .about-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: flex; /* Use flex layout inside the about content */
+  flex-direction: column; /* Stack the about content vertically */
+  justify-content: center; /* Center content vertically inside the block */
 }
 
 /* Styling for the feedback form */
 .feedback-section {
-  display: flex; /* Use flexbox for layout */
-  flex-direction: column; /* Arrange the items in a column for better layout */
-  gap: 5px; /* Add gap between the form elements for better spacing */
-  padding: 2rem; /* Add padding for better spacing */
-  border: 1px solid #000000; /* Add a border to the feedback form for better visibility */
-  border-radius: 5px; /* Add border radius to curve the edges for better aesthetics */
-  background-color: #f0f8ff; /* Set a light background color for better visibility of the feedback form */
-  width: 600px; /* Set the width of the feedback form to 300 pixels for better layout control */
-  height: 600px; /* Set the height of the feedback form to 200 pixels for better layout control */
-  justify-content: center; /* Center the form elements vertically for better layout */
-  justify-items: center; /* Align the form elements to the left for better layout */
-  position: relative; /* Position the feedback form relative for better layout control */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for better aesthetics */
-  color: #000000; /* Set text color to black for better visibility */
+  display: flex; /* Use flex layout for the feedback form */
+  flex-direction: column; /* Stack form fields vertically */
+  gap: 5px; /* Add small spacing between fields */
+  padding: 2rem; /* Add padding inside the form */
+  border: 1px solid #000000; /* Add a border around the form */
+  border-radius: 5px; /* Round the form corners */
+  background-color: #f0f8ff; /* Use a pale blue background for the form */
+  width: 600px; /* Set a fixed width for the form */
+  height: 600px; /* Set a fixed height for the form */
+  justify-content: center; /* Center form fields vertically */
+  justify-items: center; /* Align child items after justification */
+  position: relative; /* Keep the form positioned normally in the layout */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a soft shadow behind the form */
+  color: #000000; /* Use black text for readability */
 }
 
 /* Styling for the form elements in the feedback form */
 .feedbackForm {
-  display: flex; /* Use flexbox for layout */
-  flex-direction: column; /* Arrange the items in a column for better layout */
-  gap: 10px; /* Add gap between the form elements for better spacing */
-  width: 100%; /* Set the width of the feedback form to 100% of its container for better layout control */
+  display: flex; /* Use flex layout for form inputs */
+  flex-direction: column; /* Stack inputs vertically */
+  gap: 10px; /* Add spacing between form controls */
+  width: 100%; /* Make the form inputs fill the form width */
 }
 
 /* Styling for the form labels in the feedback form */
 .feedbackForm label {
-  font-weight: bold; /* Make the form labels bold for better visibility */
-  color: #000000; /* Set form label text color to black for better visibility */
-  margin-bottom: 5px; /* Add margin below the form labels for better spacing */
+  font-weight: bold; /* Make labels stand out */
+  color: #000000; /* Use black text for labels */
+  margin-bottom: 5px; /* Add space below each label */
 }
 
 /* Styling for the form inputs in the feedback form */
 .feedbackForm input,
 .feedbackForm textarea,
 .feedbackForm select {
-  padding: 0.5rem; /* Add padding for better spacing */
-  border: 1px solid #ccc; /* Add a border to the form inputs for better visibility */
-  border-radius: 5px; /* Add border radius to curve the edges for better aesthetics */
-  font-size: 1rem; /* Set the font size for better readability */
+  padding: 0.5rem; /* Add space inside each form control */
+  border: 1px solid #ccc; /* Add a light border to inputs */
+  border-radius: 5px; /* Round input corners */
+  font-size: 1rem; /* Use a readable font size */
 }
 
 .feedbackForm textarea {
-  resize: vertical; /* Allow vertical resizing of the textarea for better user experience */
-  min-height: 100px; /* Set a minimum height for the textarea for better layout control */
+  resize: vertical; /* Allow users to resize the textarea vertically */
+  min-height: 100px; /* Set a minimum height for the textarea */
 }
 
 /* Styling for the submit button in the feedback form */
 .submit-button {
-  display: inline-block; /* Ensure the submit button is treated as an inline block for better layout control */
-  padding: 0.5rem 1rem; /* Add padding for better spacing */
-  background-color: #007bff; /* Set a blue background color for the submit button for better visibility */
-  color: #ffffff; /* Set text color to white for better visibility on the submit button */
-  text-decoration: none; /* Remove underline from the submit button text for better aesthetics */
-  border-radius: 5px; /* Add border radius to curve the edges of the submit button for better aesthetics */
-  transition: background-color 0.3s ease; /* Smooth transition for hover effect on the submit button */
+  display: inline-block; /* Let the button size to its text */
+  padding: 0.5rem 1rem; /* Add padding around the button text */
+  background-color: #007bff; /* Use blue for the submit button */
+  color: #ffffff; /* Use white text on the button */
+  text-decoration: none; /* Remove the default link underline */
+  border-radius: 5px; /* Round the button corners */
+  transition: background-color 0.3s ease; /* Animate hover background changes */
 }
 .submit-button:hover {
-  background-color: #0056b3; /* Change background color on hover for better interactivity */
-  transition: 0.3s ease; /* Smooth transition for hover effect on the submit button */
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Add a shadow on hover for better interactivity */
+  background-color: #0056b3; /* Darken button color when hovered */
+  transition: 0.3s ease; /* Keep the hover animation smooth */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Add a shadow on hover */
 }
 
 /* Responsive styling for smaller screens */
 @media (max-width: 768px) {
   /* Responsive styling for smaller screens */
   .car-container {
-    grid-template-columns: 1fr; /* Stack the car cards in a single column on smaller screens for better layout */
-    flex-direction: column; /* Stack the car cards vertically on smaller screens for better layout */
-    align-items: center; /* Center the car cards on smaller screens for better layout */
+    grid-template-columns: 1fr; /* Use a single column layout for car cards */
+    flex-direction: column; /* Stack car cards vertically */
+    align-items: center; /* Center car cards in the container */
   }
 }
 
 /* Extra Small Devices (320px and up) - Mobile Phones */
 @media (min-width: 320px) and (max-width: 480px) {
   header {
-    padding: 0.8rem 1rem;
-    flex-direction: row;
-    flex-wrap: wrap;
+    padding: 0.8rem 1rem; /* Use smaller header padding on mobile */
+    flex-direction: row; /* Keep header content in a row */
+    flex-wrap: wrap; /* Allow header items to wrap to the next line */
   }
 
   .hamburger {
-    display: block;
-    font-size: 1.3rem;
-    padding: 0.4rem 1rem 0.4rem 0.4rem;
-    margin-left: auto;
+    display: block; /* Show the mobile menu button */
+    font-size: 1.3rem; /* Use a small icon size on phones */
+    padding: 0.4rem 1rem 0.4rem 0.4rem; /* Add touch-friendly padding */
+    margin-left: auto; /* Push the button to the right */
   }
 
   .logo a {
-    font-size: 1.2rem;
-    flex: 1;
+    font-size: 1.2rem; /* Use a slightly smaller logo text on mobile */
+    flex: 1; /* Allow the logo to take remaining space */
   }
 
   nav {
-    margin-left: 0;
-    width: 100%;
-    order: 3;
-    position: absolute;
-    top: 100%;
-    left: 0;
+    margin-left: 0; /* Remove left margin on mobile */
+    width: 100%; /* Make nav full width */
+    order: 3; /* Place nav after the hamburger button */
+    position: absolute; /* Position nav over page content */
+    top: 100%; /* Place nav below the header */
+    left: 0; /* Align nav to the left */
   }
 
   .navbar {
-    position: absolute;
-    width: 100%;
-    top: 100%;
-    left: 0;
+    position: absolute; /* Position navbar absolutely on mobile */
+    width: 100%; /* Stretch navbar full width */
+    top: 100%; /* Place navbar below the header */
+    left: 0; /* Align to the left edge */
   }
 
   .navbar ul {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    background: #DCDCDC;
-    padding: 0;
-    margin: 0;
-    gap: 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-    max-height: 80vh;
-    overflow-y: auto;
+    display: none; /* Hide the menu by default */
+    flex-direction: column; /* Stack menu items vertically */
+    width: 100%; /* Make menu items full width */
+    background: #DCDCDC; /* Use a light gray background */
+    padding: 0; /* Remove list padding */
+    margin: 0; /* Remove list margin */
+    gap: 0; /* Remove gap between list items */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Add a soft drop shadow */
+    max-height: 80vh; /* Limit menu height on mobile */
+    overflow-y: auto; /* Allow scrolling if menu is too tall */
   }
 
   .navbar ul.show {
-    display: flex;
+    display: flex; /* Show the mobile menu when active */
   }
 
   .navbar li {
-    width: 100%;
-    text-align: center;
-    border-bottom: 1px solid #bbb;
+    width: 100%; /* Make each nav item full width */
+    text-align: center; /* Center text inside nav items */
+    border-bottom: 1px solid #bbb; /* Separate items with a border */
   }
 
   .navbar li:last-child {
-    border-bottom: none;
+    border-bottom: none; /* Remove bottom border on the last item */
   }
 
   .navbar a {
-    display: block;
-    padding: 0.8rem 1rem;
-    font-size: 0.95rem;
-    border: none;
-    width: 100%;
-    box-sizing: border-box;
+    display: block; /* Make nav links fill their container */
+    padding: 0.8rem 1rem; /* Add mobile-friendly padding */
+    font-size: 0.95rem; /* Use a smaller font size for mobile */
+    border: none; /* Remove default link border */
+    width: 100%; /* Make links full width */
+    box-sizing: border-box; /* Include padding in the link width */
   }
 
   .navbar a:hover {
-    background-color: #f0f0f0;
-    color: #faebd7;
+    background-color: #f0f0f0; /* Light hover background for mobile */
+    color: #faebd7; /* Change text color on hover */
   }
 
   .hero,
   .repair,
-  .cars, 
+  .cars,
   .about,
   .feedback,
   .contact {
-    padding: 1rem 0.8rem;
+    padding: 1rem 0.8rem; /* Use smaller section padding on mobile */
   }
 
   h1, h2 {
-    font-size: 1.3rem;
+    font-size: 1.3rem; /* Reduce heading size for small screens */
   }
 
   p {
-    font-size: 0.9rem;
+    font-size: 0.9rem; /* Reduce paragraph size for easy reading */
   }
 
   .car-card {
-    width: 100%;
-    height: auto;
-    margin: 0.5rem;
+    width: 100%; /* Make car cards full width on mobile */
+    height: auto; /* Let card height grow to fit content */
+    margin: 0.5rem; /* Add vertical spacing around cards */
   }
 
   .car-card img {
-    height: 150px;
+    height: 150px; /* Use a smaller car image height on mobile */
   }
 
   .car-container {
-    width: 95%;
-    margin: 1rem 0.5rem;
-    flex-direction: column;
-    align-items: stretch;
+    width: 95%; /* Keep car container slightly inside the viewport */
+    margin: 1rem 0.5rem; /* Add mobile-friendly outer spacing */
+    flex-direction: column; /* Stack cards vertically */
+    align-items: stretch; /* Let cards fill the container width */
   }
 
   .my-cars-container {
-    width: 90%;
-    margin: 1rem auto;
-    padding: 1rem;
+    width: 90%; /* Use a slightly narrower width for the car container */
+    margin: 1rem auto; /* Center the car container */
+    padding: 1rem; /* Add padding inside the car container */
   }
 
   .feedback-section {
-    width: 90vw;
-    height: auto;
-    padding: 1rem;
+    width: 90vw; /* Make the feedback form nearly full width on mobile */
+    height: auto; /* Let the feedback form height adjust to content */
+    padding: 1rem; /* Use smaller padding on mobile */
   }
 
   .feedbackForm input,
   .feedbackForm textarea,
   .feedbackForm select {
-    width: 100%;
-    padding: 0.4rem;
-    font-size: 0.9rem;
+    width: 100%; /* Make form controls full width */
+    padding: 0.4rem; /* Use smaller padding inside inputs */
+    font-size: 0.9rem; /* Use a comfortable font size on mobile */
   }
 
   .about-info {
-    flex-direction: column;
-    width: 100%;
+    flex-direction: column; /* Stack about info vertically */
+    width: 100%; /* Fill the available width */
   }
 
   .about-image,
   .about-content {
-    flex: 1 1 100%;
-    min-width: auto;
+    flex: 1 1 100%; /* Make each section take full width */
+    min-width: auto; /* Let the columns shrink naturally */
   }
 
   .repair-section {
-    flex-direction: column;
+    flex-direction: column; /* Stack the repair section vertically */
   }
 
   .repair-section-img,
   .repair-section-video {
-    width: 100%;
+    width: 100%; /* Make repair media full width */
   }
 }
 
 /* Small Devices (481px - 768px) - Small Tablets & Large Phones */
 @media (min-width: 481px) and (max-width: 768px) {
   header {
-    padding: 1rem 1.5rem;
-    position: relative;
+    padding: 1rem 1.5rem; /* Use medium padding on small tablets */
+    position: relative; /* Keep header positioned normally */
   }
 
   .hamburger {
-    display: block;
-    font-size: 1.4rem;
-    padding: 0.4rem 1.2rem 0.4rem 0.4rem;
-    margin-left: auto;
+    display: block; /* Show the hamburger on tablets */
+    font-size: 1.4rem; /* Use a slightly larger icon than phones */
+    padding: 0.4rem 1.2rem 0.4rem 0.4rem; /* Add touch-friendly padding */
+    margin-left: auto; /* Push button to the right */
   }
 
   .logo a {
-    font-size: 1.3rem;
+    font-size: 1.3rem; /* Use a larger logo font on tablets */
   }
 
   nav {
-    margin-left: 0;
-    width: 100%;
-    order: 3;
-    position: absolute;
-    top: 100%;
-    left: 0;
+    margin-left: 0; /* Reset nav margin on tablets */
+    width: 100%; /* Let nav span the full width */
+    order: 3; /* Keep nav below the hamburger */
+    position: absolute; /* Overlay nav on page content */
+    top: 100%; /* Place nav just below the header */
+    left: 0; /* Align nav to the left edge */
   }
 
   .navbar {
-    position: absolute;
-    width: 100%;
-    top: 100%;
-    left: 0;
+    position: absolute; /* Position navbar absolutely */
+    width: 100%; /* Let navbar fill the width */
+    top: 100%; /* Place navbar below the header */
+    left: 0; /* Align left */
   }
 
   .navbar ul {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    background: #DCDCDC;
-    padding: 0;
-    margin: 0;
-    gap: 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    display: none; /* Hide menu until toggled open */
+    flex-direction: column; /* Stack nav items vertically */
+    width: 100%; /* Make menu full width */
+    background: #DCDCDC; /* Use a light background for the mobile menu */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    gap: 0; /* Remove gaps between items */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Add a subtle shadow */
   }
 
   .navbar ul.show {
-    display: flex;
+    display: flex; /* Show the menu when active */
   }
 
   .navbar li {
-    width: 100%;
-    text-align: center;
-    border-bottom: 1px solid #bbb;
+    width: 100%; /* Make each menu item full width */
+    text-align: center; /* Center text in nav items */
+    border-bottom: 1px solid #bbb; /* Add separators between nav items */
   }
 
   .navbar li:last-child {
-    border-bottom: none;
+    border-bottom: none; /* Remove separator after last item */
   }
 
   .navbar a {
-    display: block;
-    padding: 0.9rem 1.2rem;
-    border: none;
-    width: 100%;
-    box-sizing: border-box;
+    display: block; /* Make links fill the whole item */
+    padding: 0.9rem 1.2rem; /* Add comfortable padding for tablets */
+    border: none; /* Remove default link border */
+    width: 100%; /* Make links full width */
+    box-sizing: border-box; /* Include padding in the link width */
   }
 
   .navbar a:hover {
-    background-color: #f0f0f0;
-    color: #faebd7;
+    background-color: #f0f0f0; /* Light hover background */
+    color: #faebd7; /* Change text color on hover */
   }
 
   .hero,
   .repair,
-  .cars, 
+  .cars,
   .about,
   .feedback,
   .contact {
-    padding: 1.5rem;
+    padding: 1.5rem; /* Use moderate padding on tablets */
   }
 
   h1, h2 {
-    font-size: 1.5rem;
+    font-size: 1.5rem; /* Increase heading size for tablets */
   }
 
   .car-card {
-    width: 45%;
-    height: 350px;
+    width: 45%; /* Use two cards per row on tablets */
+    height: 350px; /* Fix card height for a cleaner grid */
   }
 
   .car-card img {
-    height: 180px;
+    height: 180px; /* Increase image height for tablet cards */
   }
 
   .car-container {
-    width: 95%;
-    justify-content: center;
+    width: 95%; /* Reduce container width slightly */
+    justify-content: center; /* Center cards in the container */
   }
 
   .feedback-section {
-    width: 85vw;
-    height: auto;
-    padding: 1.5rem;
+    width: 85vw; /* Use most of the viewport width */
+    height: auto; /* Let the form height adjust */
+    padding: 1.5rem; /* Use larger form padding */
   }
 
   .feedbackForm input,
   .feedbackForm textarea,
   .feedbackForm select {
-    font-size: 0.95rem;
-    padding: 0.5rem;
+    font-size: 0.95rem; /* Slightly larger input text on tablets */
+    padding: 0.5rem; /* Add padding inside form controls */
   }
 
   .my-cars-container {
-    width: 90%;
+    width: 90%; /* Keep the car container narrow on tablets */
   }
 
   .about-info {
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: row; /* Place about items side by side */
+    justify-content: space-around; /* Space about items evenly */
   }
 
   .repair-section {
-    flex-direction: column;
-    gap: 1rem;
+    flex-direction: column; /* Stack repair section on tablets */
+    gap: 1rem; /* Add spacing between repair blocks */
   }
 
   .repair-section-img,
   .repair-section-video {
-    width: 100%;
-    max-width: 500px;
+    width: 100%; /* Make media full width */
+    max-width: 500px; /* Limit the media width */
   }
 }
 
 /* Medium Devices (769px - 992px) - Tablets & Small Desktops */
 @media (min-width: 769px) and (max-width: 992px) {
   .hamburger {
-    display: none !important;
+    display: none !important; /* Hide the hamburger menu on medium screens */
   }
 
   .navbar {
-    position: static;
-    width: auto;
+    position: static; /* Keep the navbar in normal page flow */
+    width: auto; /* Let the navbar size naturally */
   }
 
   .navbar ul {
-    display: flex;
-    flex-direction: row;
-    position: static;
-    background: transparent;
-    padding: 0;
-    margin: 0;
-    box-shadow: none;
-    width: auto;
-    gap: 15px;
+    display: flex; /* Arrange menu items horizontally */
+    flex-direction: row; /* Keep the menu in a row */
+    position: static; /* Keep the list in the normal flow */
+    background: transparent; /* Remove the background color */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    box-shadow: none; /* Remove any shadow */
+    width: auto; /* Use the natural width */
+    gap: 15px; /* Space out menu items */
   }
 
   .navbar li {
-    width: auto;
-    text-align: left;
-    border: none;
+    width: auto; /* Use natural width for nav items */
+    text-align: left; /* Left-align nav text */
+    border: none; /* Remove mobile-style borders */
   }
 
   .navbar a {
-    display: inline-block;
-    padding: 10px;
+    display: inline-block; /* Keep links inline with padding */
+    padding: 10px; /* Add spacing around links */
   }
 
   .navbar a:hover {
-    background-color: transparent;
+    background-color: transparent; /* Keep hover background clear */
   }
 
   header {
-    padding: 1rem 2rem;
+    padding: 1rem 2rem; /* Use moderate header padding */
   }
 
   .hero,
   .repair,
-  .cars, 
+  .cars,
   .about,
   .feedback,
   .contact {
-    padding: 2rem 1.5rem;
+    padding: 2rem 1.5rem; /* Apply balanced section padding */
   }
 
   h1, h2 {
-    font-size: 1.8rem;
+    font-size: 1.8rem; /* Use a larger heading size */
   }
 
   .car-card {
-    width: 48%;
-    height: 380px;
+    width: 48%; /* Allow two cards per row */
+    height: 380px; /* Fix card height for consistency */
   }
 
   .car-card img {
-    height: 200px;
+    height: 200px; /* Use a taller image size */
   }
 
   .car-container {
-    width: 95%;
-    margin: 1.5rem auto;
+    width: 95%; /* Keep the container slightly inset */
+    margin: 1.5rem auto; /* Center the container and add spacing */
   }
 
   .feedback-section {
-    width: 600px;
-    height: auto;
-    padding: 2rem;
+    width: 600px; /* Use a moderate feedback form width */
+    height: auto; /* Allow form height to adjust */
+    padding: 2rem; /* Add comfortable padding */
   }
 
   .feedbackForm input,
   .feedbackForm textarea,
   .feedbackForm select {
-    font-size: 0.95rem;
+    font-size: 0.95rem; /* Use a readable input font size */
   }
 
   .my-cars-container {
-    width: 95%;
+    width: 95%; /* Keep the car container narrow */
   }
 
   .about-info {
-    flex-direction: row;
-    gap: 15px;
+    flex-direction: row; /* Place about sections side by side */
+    gap: 15px; /* Add spacing between columns */
   }
 
   .repair-section {
-    flex-direction: row;
-    gap: 2rem;
-    align-items: center;
+    flex-direction: row; /* Place repair content side by side */
+    gap: 2rem; /* Add spacing between sections */
+    align-items: center; /* Align repair sections vertically */
   }
 
   .repair-section-img,
   .repair-section-video {
-    width: 45%;
+    width: 45%; /* Use near-half width for media blocks */
   }
 }
 
 /* Large Devices (993px - 1199px) - Desktops */
 @media (min-width: 993px) and (max-width: 1199px) {
   .hamburger {
-    display: none !important;
+    display: none !important; /* Hide the hamburger on desktop */
   }
 
   .navbar {
-    position: static;
-    width: auto;
+    position: static; /* Keep navbar in normal flow */
+    width: auto; /* Use natural width */
   }
 
   .navbar ul {
-    display: flex;
-    flex-direction: row;
-    position: static;
-    background: transparent;
-    padding: 0;
-    margin: 0;
-    box-shadow: none;
-    width: auto;
-    gap: 20px;
+    display: flex; /* Arrange nav items horizontally */
+    flex-direction: row; /* Use row layout */
+    position: static; /* Keep nav list in flow */
+    background: transparent; /* Remove background */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    box-shadow: none; /* Remove shadow */
+    width: auto; /* Use natural width */
+    gap: 20px; /* Add spacing between nav items */
   }
 
   .navbar li {
-    width: auto;
-    text-align: left;
-    border: none;
+    width: auto; /* Use natural item width */
+    text-align: left; /* Left-align text */
+    border: none; /* Remove borders from nav items */
   }
 
   .navbar a {
-    display: inline-block;
-    padding: 10px;
+    display: inline-block; /* Keep links inline with padding */
+    padding: 10px; /* Use standard desktop padding */
   }
 
   .navbar a:hover {
-    background-color: transparent;
+    background-color: transparent; /* Keep hover background clear */
   }
 
   header {
-    padding: 1rem 2.5rem;
+    padding: 1rem 2.5rem; /* Use larger header padding */
   }
 
   .hero,
   .repair,
-  .cars, 
+  .cars,
   .about,
   .feedback,
   .contact {
-    padding: 2.5rem 2rem;
+    padding: 2.5rem 2rem; /* Use larger section padding */
   }
 
   h1, h2 {
-    font-size: 2rem;
+    font-size: 2rem; /* Use larger headings */
   }
 
   .car-card {
-    width: 30%;
-    height: 400px;
+    width: 30%; /* Place three cards per row */
+    height: 400px; /* Taller cards for desktops */
   }
 
   .car-card img {
-    height: 220px;
+    height: 220px; /* Use a larger image height */
   }
 
   .car-container {
-    width: 95%;
-    justify-content: space-around;
+    width: 95%; /* Keep the container mostly full width */
+    justify-content: space-around; /* Space cards out evenly */
   }
 
   .feedback-section {
-    width: 650px;
-    height: auto;
-    padding: 2rem;
+    width: 650px; /* Use a fixed feedback form width */
+    height: auto; /* Let the form grow naturally */
+    padding: 2rem; /* Add comfortable padding */
   }
 
   .my-cars-container {
-    width: 95%;
+    width: 95%; /* Keep the car container narrow */
   }
 
   .about-info {
-    flex-direction: row;
-    gap: 20px;
+    flex-direction: row; /* Keep about content side by side */
+    gap: 20px; /* Add space between blocks */
   }
 
   .repair-section {
-    flex-direction: row;
-    gap: 2.5rem;
-    align-items: center;
+    flex-direction: row; /* Keep repair content side by side */
+    gap: 2.5rem; /* Add spacing between columns */
+    align-items: center; /* Align items vertically center */
   }
 
   .repair-section-img,
   .repair-section-video {
-    width: 45%;
+    width: 45%; /* Use near-half width for media */
   }
 }
 
 /* Extra Large Devices (1200px and up) - Large Desktops */
 @media (min-width: 1200px) {
   .hamburger {
-    display: none !important;
+    display: none !important; /* Hide hamburger on large desktops */
   }
 
   .navbar {
-    position: static;
-    width: auto;
+    position: static; /* Keep navbar in normal flow */
+    width: auto; /* Use natural width */
   }
 
   .navbar ul {
-    display: flex;
-    flex-direction: row;
-    position: static;
-    background: transparent;
-    padding: 0;
-    margin: 0;
-    box-shadow: none;
-    width: auto;
-    gap: 25px;
+    display: flex; /* Arrange nav items in a row */
+    flex-direction: row; /* Use a row layout */
+    position: static; /* Keep list in normal flow */
+    background: transparent; /* Remove background */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    box-shadow: none; /* Remove shadow */
+    width: auto; /* Use natural width */
+    gap: 25px; /* Add wider spacing between items */
   }
 
   .navbar li {
-    width: auto;
-    text-align: left;
-    border: none;
+    width: auto; /* Use natural item width */
+    text-align: left; /* Left-align text */
+    border: none; /* Remove item borders */
   }
 
   .navbar a {
-    display: inline-block;
-    padding: 12px;
-    font-size: 1rem;
+    display: inline-block; /* Keep links inline */
+    padding: 12px; /* Use larger desktop padding */
+    font-size: 1rem; /* Use standard font size */
   }
 
   .navbar a:hover {
-    background-color: transparent;
+    background-color: transparent; /* Keep hover background clear */
   }
 
   header {
-    padding: 1.2rem 3rem;
+    padding: 1.2rem 3rem; /* Use generous header padding */
   }
 
   .hero,
   .repair,
-  .cars, 
+  .cars,
   .about,
   .feedback,
   .contact {
-    padding: 3rem 2.5rem;
+    padding: 3rem 2.5rem; /* Use spacious section padding */
   }
 
   h1, h2 {
-    font-size: 2.2rem;
+    font-size: 2.2rem; /* Use larger headings for wide screens */
   }
 
   .car-card {
-    width: 32%;
-    height: 420px;
+    width: 32%; /* Use three cards per row */
+    height: 420px; /* Use taller cards */
   }
 
   .car-card img {
-    height: 230px;
+    height: 230px; /* Use taller images */
   }
 
   .car-container {
-    width: 98%;
-    justify-content: space-between;
-    gap: 20px;
+    width: 98%; /* Use almost full width */
+    justify-content: space-between; /* Space cards evenly */
+    gap: 20px; /* Keep card gaps consistent */
   }
 
   .feedback-section {
-    width: 700px;
-    height: auto;
-    padding: 2.5rem;
+    width: 700px; /* Use a larger form width */
+    height: auto; /* Let the form height adjust */
+    padding: 2.5rem; /* Use generous form padding */
   }
 
   .my-cars-container {
-    width: 95%;
+    width: 95%; /* Keep the container narrow */
   }
 
   .about-info {
-    flex-direction: row;
-    gap: 30px;
+    flex-direction: row; /* Keep columns side by side */
+    gap: 30px; /* Add more spacing between sections */
   }
 
   .repair-section {
-    flex-direction: row;
-    gap: 3rem;
-    align-items: center;
+    flex-direction: row; /* Keep repair content side by side */
+    gap: 3rem; /* Use wider gaps between sections */
+    align-items: center; /* Align items vertically */
   }
 
   .repair-section-img,
   .repair-section-video {
-    width: 45%;
-    max-width: 600px;
+    width: 45%; /* Use near-half widths */
+    max-width: 600px; /* Cap the width on large screens */
   }
 }
 
 /* Ultra Large Devices (1400px and up) - 4K & Large Monitors */
 @media (min-width: 1400px) {
   .hamburger {
-    display: none !important;
+    display: none !important; /* Hide hamburger on ultra-wide screens */
   }
 
   .navbar {
-    position: static;
-    width: auto;
+    position: static; /* Keep navbar in normal flow */
+    width: auto; /* Use natural width */
   }
 
   .navbar ul {
-    display: flex;
-    flex-direction: row;
-    position: static;
-    background: transparent;
-    padding: 0;
-    margin: 0;
-    box-shadow: none;
-    width: auto;
-    gap: 30px;
+    display: flex; /* Arrange nav items in a row */
+    flex-direction: row; /* Use a row layout */
+    position: static; /* Keep list in flow */
+    background: transparent; /* Keep background transparent */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    box-shadow: none; /* Remove shadow */
+    width: auto; /* Use natural width */
+    gap: 30px; /* Use wide spacing between links */
   }
 
   .navbar li {
-    width: auto;
-    text-align: left;
-    border: none;
+    width: auto; /* Use natural width */
+    text-align: left; /* Left-align text */
+    border: none; /* Remove any borders */
   }
 
   .navbar a {
-    display: inline-block;
-    padding: 15px;
-    font-size: 1.05rem;
+    display: inline-block; /* Keep links inline */
+    padding: 15px; /* Use large padding for wide screens */
+    font-size: 1.05rem; /* Slightly larger link text */
   }
 
   .navbar a:hover {
-    background-color: transparent;
+    background-color: transparent; /* Keep hover background clear */
   }
 
   header {
-    padding: 1.5rem 4rem;
+    padding: 1.5rem 4rem; /* Use the largest header padding */
   }
 
   .hero,
   .repair,
-  .cars, 
+  .cars,
   .about,
   .feedback,
   .contact {
-    padding: 3.5rem 3rem;
+    padding: 3.5rem 3rem; /* Use the most generous section padding */
   }
 
   h1, h2 {
-    font-size: 2.5rem;
+    font-size: 2.5rem; /* Use very large headings on ultra-wide screens */
   }
 
   p {
-    font-size: 1.05rem;
+    font-size: 1.05rem; /* Use slightly larger paragraph text on large screens */
   }
 
   .car-card {
-    width: 22%;
-    height: 450px;
+    width: 22%; /* Fit four cards per row on very large screens */
+    height: 450px; /* Use a tall card height for spacious layout */
   }
 
   .car-card img {
-    height: 250px;
+    height: 250px; /* Use a taller image size for large cards */
   }
 
   .car-container {
-    width: 98%;
-    justify-content: space-around;
-    gap: 25px;
+    width: 98%; /* Use nearly full width for the container */
+    justify-content: space-around; /* Space cards evenly across the row */
+    gap: 25px; /* Use larger gaps between cards */
   }
 
   .my-cars-container {
-    width: 95%;
-    margin: 2.5rem auto;
+    width: 95%; /* Keep the car section narrow enough for readability */
+    margin: 2.5rem auto; /* Center the container and add vertical spacing */
   }
 
   .feedback-section {
-    width: 750px;
-    padding: 3rem;
+    width: 750px; /* Use a large width for the feedback form */
+    padding: 3rem; /* Add generous padding around the form */
   }
 
   .feedbackForm input,
   .feedbackForm textarea,
   .feedbackForm select {
-    font-size: 1rem;
-    padding: 0.7rem;
+    font-size: 1rem; /* Use standard readable input text size */
+    padding: 0.7rem; /* Add comfortable padding inside inputs */
   }
 
   .about-info {
-    flex-direction: row;
-    gap: 40px;
+    flex-direction: row; /* Keep about content side by side */
+    gap: 40px; /* Add wide spacing between about columns */
   }
 
   .repair-section {
-    flex-direction: row;
-    gap: 3.5rem;
-    align-items: center;
+    flex-direction: row; /* Keep repair content side by side */
+    gap: 3.5rem; /* Add even wider spacing between sections */
+    align-items: center; /* Align rows vertically centered */
   }
 
   .repair-section-img,
   .repair-section-video {
-    width: 48%;
-    max-width: 700px;
+    width: 48%; /* Use nearly half width for repair media */
+    max-width: 700px; /* Cap the width for readability */
   }
 
   footer {
-    padding: 2rem;
-    font-size: 1.05rem;
+    padding: 2rem; /* Add more footer padding on large screens */
+    font-size: 1.05rem; /* Use a slightly larger footer font */
   }
 }
 
@@ -1416,96 +1415,96 @@ h1:hover::after{
 /* Styling for the contact section */
 .contact-info ul {
   display: flex; /* Use flexbox for layout */
-  flex-direction: row; /* Arrange the items in a column for better layout */
-  flex-wrap: wrap; /* Allow the items to wrap to the next line if they exceed the width of the container */
-  gap: 10px; /* Add gap between the contact information items for better spacing */
-  list-style: none; /* Remove default list styling for better aesthetics */
-  padding: 0; /* Remove default padding for better layout control */
-  text-decoration: none; /* Remove underline from the contact information items for better aesthetics */
+  flex-direction: row; /* Arrange contact items in a row */
+  flex-wrap: wrap; /* Wrap items to the next line when needed */
+  gap: 10px; /* Add spacing between contact items */
+  list-style: none; /* Remove default list bullets */
+  padding: 0; /* Remove list padding */
+  text-decoration: none; /* Remove underline from contact items */
 }
 
 /* Styling for the social media icons in the contact section */
 .social-container ul {
-  display: flex; /* Use flexbox for layout */
-  flex-direction: row; /* Arrange the items in a row for better layout */
-  flex-wrap: wrap; /* Allow the items to wrap to the next line if they exceed the width of the container */
-  gap: 15px; /* Add gap between the social media icons for better spacing */
-  list-style: none; /* Remove default list styling for better aesthetics */
-  padding: 0; /* Remove default padding for better layout control */
+  display: flex; /* Use flexbox for social icons */
+  flex-direction: row; /* Place icons in a row */
+  flex-wrap: wrap; /* Wrap icons to next line on small screens */
+  gap: 15px; /* Add spacing between icons */
+  list-style: none; /* Remove default list bullets */
+  padding: 0; /* Remove list padding */
 }
 
 .social-container {
-  margin-top: 2rem; /* Add space above the social container to prevent overlap */
+  margin-top: 2rem; /* Add space above the social section */
 }
 
 /* Styling for the social media icons in the contact section */
 .social-container a svg {
-  width: 24px;
-  height: 24px;
-  display: block;
+  width: 24px; /* Set icon width */
+  height: 24px; /* Set icon height */
+  display: block; /* Remove inline spacing under icons */
 }
 
 /* Styling for the social media icons in the contact section */
 .social-container a {
-  background-color: #ffffff; /* Set a white background color for the social media icons for better visibility */
-  width: 56px;
-  height: 56px;
-  padding: 0;
-  border-radius: 50%; /* Make the social media icons circular for better aesthetics */
-  box-sizing: border-box; /* Ensure padding and border are included in the total width and height for better layout control */
-  flex: 0; /* Prevent the social media icons from growing or shrinking for better layout control */
-  display: grid; /* Use grid layout for the social media icons for better alignment */
-  place-items: center; /* Center the social media icons within their container for better aesthetics */
-  position: relative;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.05); /* Add a subtle shadow for better aesthetics */
+  background-color: #ffffff; /* Use white background for icon buttons */
+  width: 56px; /* Set a fixed width for icon buttons */
+  height: 56px; /* Set a fixed height for icon buttons */
+  padding: 0; /* Remove inner padding */
+  border-radius: 50%; /* Make icons circular */
+  box-sizing: border-box; /* Include border and padding in width/height */
+  flex: 0; /* Prevent icons from stretching */
+  display: grid; /* Use grid to center content */
+  place-items: center; /* Center the icon inside the button */
+  position: relative; /* Use absolute positioning for tooltip elements */
+  box-shadow: 0 5px 10px rgba(0,0,0,0.05); /* Add a soft shadow */
 }
 
 /* Hover effect for the social media icons in the contact section */
 .social-container a::before{
-  content: attr(data-social); /* Use the data-social attribute to display the name of the social media platform on hover for better accessibility */
-  position: absolute; /* Position the tooltip absolutely for better layout control */
-  background-color: var(--accent-color); /* Use the accent color for the tooltip background for better aesthetics */
-  color: #ffffff; /* Set text color to white for better visibility on the tooltip (to be checked) */
-  text-decoration: none; /* Remove underline from the tooltip text for better aesthetics */
-  padding: 0.5rem 1rem; /* Add padding for better spacing on the tooltip */
-  border-radius: 100px; /* Add border radius to curve the edges of the tooltip*/
-  box-shadow: 0 5px 10px rgba(0,0,0,0.05); /* Add a shadow to the tooltip for better aesthetics */
-  transform: translateY(-30px) rotate(25deg); /* Position the tooltip above the social media icon and add a slight rotation for better aesthetics */
-  opacity: 0; /* Hide the tooltip by default for better aesthetics */
-  transition: 200ms cubic-bezier(0.42, 0, 0.44, 1.68); /* Smooth transition for the tooltip on hover for better interactivity */
+  content: attr(data-social); /* Show the social platform name from data attribute */
+  position: absolute; /* Position the tooltip absolutely */
+  background-color: var(--accent-color); /* Use accent color for tooltip background */
+  color: #ffffff; /* Make tooltip text white */
+  text-decoration: none; /* Remove underline from tooltip text */
+  padding: 0.5rem 1rem; /* Add padding inside the tooltip */
+  border-radius: 100px; /* Round the tooltip into a pill shape */
+  box-shadow: 0 5px 10px rgba(0,0,0,0.05); /* Add shadow behind the tooltip */
+  transform: translateY(-30px) rotate(25deg); /* Position and rotate the tooltip */
+  opacity: 0; /* Hide the tooltip by default */
+  transition: 200ms cubic-bezier(0.42, 0, 0.44, 1.68); /* Animate tooltip appearance */
 }
 
 /* Hover effect for the social media icons in the contact section */
 .social-container a:hover {
- background-color: var(--accent-color); /* Change background color on hover for better interactivity */
- fill: #ffffff; /* Change icon color to white on hover for better visibility */
+  background-color: var(--accent-color); /* Change button background on hover */
+  fill: #ffffff; /* Make icon color white on hover */
 }
 
 /* Hover effect for the social media icons in the contact section */
 .social-container a:hover::before {
-  opacity: 1; /* Show the tooltip on hover for better interactivity */
-  transform: translateY(-65px) rotate(0); /* Move the tooltip up on hover for better interactivity */
+  opacity: 1; /* Show the tooltip on hover */
+  transform: translateY(-65px) rotate(0); /* Move tooltip into view */
 }
 
 .social-container a::after {
-  content: ""; /* Create an empty element for the tooltip arrow */
-  position: absolute; /* Position the tooltip arrow absolutely for better layout control */
-  width: 0; /* Set a specific width for the tooltip arrow for better visibility */
-  height: 0; /* Set a specific height for the tooltip arrow for better visibility */
-  border-left: 5px solid transparent; /* Create the left side of the tooltip arrow */
-  border-right: 5px solid transparent; /* Create the right side of the tooltip arrow */
-  border-top: 5px solid var(--accent-color); /* Create the top side of the tooltip arrow using the accent color for better aesthetics */
-  transform: translateY(0) rotate(25deg); /* Position the tooltip arrow below the tooltip and add a slight rotation for better aesthetics */
-  opacity: 0; /* Hide the tooltip arrow by default for better aesthetics */
-  transition: 200ms cubic-bezier(0.42, 0, 0.44, 1.68); /* Smooth transition for the tooltip arrow on hover for better interactivity */
+  content: ""; /* Create an empty tooltip arrow */
+  position: absolute; /* Position the arrow absolutely */
+  width: 0; /* Use zero width for triangle arrow */
+  height: 0; /* Use zero height for triangle arrow */
+  border-left: 5px solid transparent; /* Create left side of arrow */
+  border-right: 5px solid transparent; /* Create right side of arrow */
+  border-top: 5px solid var(--accent-color); /* Create top arrow edge */
+  transform: translateY(0) rotate(25deg); /* Position and rotate the arrow */
+  opacity: 0; /* Hide the arrow by default */
+  transition: 200ms cubic-bezier(0.42, 0, 0.44, 1.68); /* Animate arrow appearance */
 }
 
 /* Hover effect for the social media icons in the contact section */
 .social-container a:hover::after {
-  opacity: 1; /* Show the tooltip arrow on hover for better interactivity */
-  transform: translateY(-42px) rotate(0); /* Move the tooltip arrow up on hover for better interactivity */
+  opacity: 1; /* Show the tooltip arrow on hover */
+  transform: translateY(-42px) rotate(0); /* Move the arrow upward */
 }
 
 .social-container a:hover svg {
-  fill: #ffffff; /* Change icon color to white on hover for better visibility */
+  fill: #ffffff; /* Make the icon white on hover */
 }
