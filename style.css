@@ -1,8 +1,12 @@
 /* CSS Styles for GLY Motor Group */
 
 /* Global styling */
+html {
+  font-size: clamp(0.9rem, 1vw + 0.25rem, 1.15rem); /* Scale base font smoothly from small to large screens */
+}
 body {
   font-family: Arial, sans-serif; /* Use a clean and modern font for better readability */
+  font-size: 1rem; /* Use the responsive root font size */
   margin: 0; /* Remove default margin for better layout control */
   padding: 0;  /* Remove default padding for better layout control */
   width: 100%; /* Set the width of the body to 100% of the viewport for better layout control */
