@@ -612,6 +612,12 @@ h1:hover::after{
   border-radius: 5px; /* Round the section corners */
 }
  
+#about-outro-info {
+  text-align: justify; /* Justify the text for neat edges */
+  text-justify: inter-word; /* Use word spacing for justified text */
+  color: #000000; /* Use black text for better visibility */
+}
+
 .about-info {
   display: flex; /* Use flex layout for the about info container */
   flex-direction: row; /* Place items side by side */
