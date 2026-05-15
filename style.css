@@ -271,17 +271,41 @@ h1:hover::after{
   object-fit: cover;
 }
 
-.service-list ul {
-  list-style: disc inside;
-  padding-left: 1rem;
+.service-list {
+  max-width: 940px;
   margin: 0 auto 2rem;
-  max-width: 900px;
-  text-align: left;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid #d6d6d6;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.service-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
 }
 
 .service-list li {
-  margin-bottom: 0.8rem;
-  line-height: 1.7;
+  background: #f8f8f8;
+  padding: 1rem 1.1rem;
+  border-radius: 12px;
+  border: 1px solid #e5e5e5;
+  line-height: 1.65;
+  font-weight: 500;
+  color: #222222;
+}
+
+.service-list li::before {
+  content: "•";
+  color: #d29f4b;
+  display: inline-block;
+  width: 1.2em;
+  margin-left: -1.2em;
 }
 
 /* Hamburger menu styles */
