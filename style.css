@@ -2,7 +2,7 @@
 
 /* Global styling */
 html {
-  font-size: clamp(0.9rem, 1vw + 0.25rem, 1.15rem); /* Scale base font smoothly from small to large screens */
+  font-size: clamp(0.88rem, 1vw + 0.3rem, 1.2rem); /* Scale base font smoothly from small to large screens */
 }
 body {
   font-family: Arial, sans-serif; /* Use a clean and modern font for better readability */
@@ -15,6 +15,35 @@ body {
   flex-direction: column; /* Arrange the items in a column for better layout */
   align-items: center; /* Center the items horizontally for better layout */
   overflow-x: hidden; /* Hide horizontal overflow for better aesthetics */
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+h1 {
+  font-size: clamp(2rem, 2.8vw, 4rem);
+}
+
+h2 {
+  font-size: clamp(1.5rem, 2.4vw, 3rem);
+}
+
+h3 {
+  font-size: clamp(1.25rem, 2vw, 2rem);
+}
+
+p,
+label,
+.feedbackForm input,
+.feedbackForm textarea,
+.feedbackForm select,
+.service-list li,
+.car-card p {
+  font-size: clamp(0.95rem, 1vw + 0.15rem, 1.15rem);
 }
 
 /* header styling */
@@ -515,10 +544,10 @@ h1:hover::after{
 /* Styling for the car image in the car card */
 .car-card img {
   width: 100%; /* Make the image fill the card width */
-  max-width: 300px; /* Limit the image width for consistency */
+  max-width: clamp(260px, 24vw, 420px); /* Scale image size efficiently on larger screens */
   display: block; /* Remove inline spacing under the image */
-  height: 220px; /* Fix the image height for consistent cards */
-  object-fit: contain; /* Preserve image aspect ratio */
+  aspect-ratio: 4 / 3; /* Keep consistent card image proportions */
+  object-fit: cover; /* Fill the image frame while preserving aspect ratio */
   border-radius: 5px; /* Round the image corners */
   transition: transform 0.3s ease; /* Smooth the hover transform */
   background-color: #ffffff; /* Use a white background behind the image */
@@ -534,14 +563,14 @@ h1:hover::after{
 /* Styling for the car name in the car card */
 .car-card h3 {
   margin: 0; /* Remove default heading margin */
-  font-size: 1.2rem; /* Set a clear size for the car name */
+  font-size: clamp(1.15rem, 1.3vw, 1.6rem); /* Scale car title size with screen width */
   color: #000000; /* Use black text for readability */
 }
 
 /* Styling for the car details in the car card */
 .car-card p {
   margin: 0; /* Remove default paragraph margin */
-  font-size: 1rem; /* Use a readable font size for details */
+  font-size: clamp(0.95rem, 1vw + 0.1rem, 1.1rem); /* Scale detail text with screen width */
   color: #000000; /* Keep the detail text black */
 }
 
@@ -604,6 +633,7 @@ h1:hover::after{
 
 .about-image img {
   width: 100%; /* Let the image fill its container width */
+  max-width: clamp(280px, 30vw, 560px); /* Scale the about image size across screen sizes */
   height: auto; /* Preserve the image's aspect ratio */
   display: block; /* Remove extra inline spacing below the image */
   border-radius: 5px; /* Round the image corners */
@@ -619,13 +649,13 @@ h1:hover::after{
 .feedback-section {
   display: flex; /* Use flex layout for the feedback form */
   flex-direction: column; /* Stack form fields vertically */
-  gap: 5px; /* Add small spacing between fields */
-  padding: 2rem; /* Add padding inside the form */
+  gap: 0.75rem; /* Add spacing between fields */
+  padding: clamp(1.5rem, 2vw, 2.5rem); /* Scale padding for different screen sizes */
   border: 1px solid #000000; /* Add a border around the form */
   border-radius: 5px; /* Round the form corners */
   background-color: #f0f8ff; /* Use a pale blue background for the form */
-  width: 600px; /* Set a fixed width for the form */
-  height: 600px; /* Set a fixed height for the form */
+  width: min(95%, 650px); /* Make form responsive and larger on wide screens */
+  min-height: 500px; /* Keep a comfortable vertical form height */
   justify-content: center; /* Center form fields vertically */
   justify-items: center; /* Align child items after justification */
   position: relative; /* Keep the form positioned normally in the layout */
@@ -655,7 +685,7 @@ h1:hover::after{
   padding: 0.5rem; /* Add space inside each form control */
   border: 1px solid #ccc; /* Add a light border to inputs */
   border-radius: 5px; /* Round input corners */
-  font-size: 1rem; /* Use a readable font size */
+  font-size: clamp(0.95rem, 1vw + 0.15rem, 1.1rem); /* Use a responsive font size */
 }
 
 .feedbackForm textarea {
