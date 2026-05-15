@@ -258,12 +258,12 @@ h1:hover::after{
   flex-wrap: wrap; /* Allow the items to wrap to the next line if they exceed the width of the container */
   justify-content: left; /* Align the items to the left for better layout */
   gap: 20px; /* Add gap between the items for better spacing */
-  margin: 2rem; /* Add margin for better spacing and center the container */
+  margin: 2rem auto; /* Add margin and center the container horizontally */
   padding: 2rem; /* Add padding for better spacing */
   border: 1px solid #000000; /* Add a border to the my-cars-container for better visibility */
-  border-radius: 5px; /* Add border radius to curve the edges for better aesthetics */
+  border-radius: 50%; /* Make the container visually circular/rounded */
   background-color: #ffffff; /* Set a white background color for better visibility of the car details */
-  width: 95%; /* Set the width of the my-cars-container to 95% of its parent container for better layout control */
+  width: 90%; /* Set the width of the my-cars-container to 90% of its parent container */
 }
 .my-cars-container h2 {
   margin: 0; /* Remove default margin for better layout control */
@@ -507,7 +507,7 @@ h1:hover::after{
   justify-content: space-between; /* Spread cards evenly across the row */
   gap: 20px; /* Add gap between the items for better spacing */
   margin: 2rem auto; /* Add outer space and center the container horizontally */
-  width: 94%; /* Make the car container span 94% of the viewport/parent width */
+  width: 90%; /* Make the car container span 90% of the viewport/parent width */
   max-width: 1400px; /* Keep a sensible cap on extremely large screens */
   border: 1px solid #000000; /* Add a border to the car container */
   border-radius: 5px; /* Round the container corners */
@@ -716,6 +716,7 @@ h1:hover::after{
     grid-template-columns: 1fr; /* Use a single column layout for car cards */
     flex-direction: column; /* Stack car cards vertically */
     align-items: center; /* Center car cards in the container */
+    width: 90%; /* Ensure mobile container uses 90% width */
   }
 }
 
@@ -824,8 +825,8 @@ h1:hover::after{
   }
 
   .car-container {
-    width: 95%; /* Keep car container slightly inside the viewport */
-    margin: 1rem 0.5rem; /* Add mobile-friendly outer spacing */
+    width: 90%; /* Keep car container slightly inside the viewport */
+    margin: 1rem auto; /* Center on mobile */
     flex-direction: column; /* Stack cards vertically */
     align-items: stretch; /* Let cards fill the container width */
   }
@@ -834,6 +835,7 @@ h1:hover::after{
     width: 90%; /* Use a slightly narrower width for the car container */
     margin: 1rem auto; /* Center the car container */
     padding: 1rem; /* Add padding inside the car container */
+    border-radius: 50%;
   }
 
   .feedback-section {
@@ -962,7 +964,7 @@ h1:hover::after{
   }
 
   .car-container {
-    width: 95%; /* Reduce container width slightly */
+    width: 90%; /* Reduce container width slightly */
     justify-content: center; /* Center cards in the container */
   }
 
@@ -981,6 +983,7 @@ h1:hover::after{
 
   .my-cars-container {
     width: 90%; /* Keep the car container narrow on tablets */
+    border-radius: 50%;
   }
 
   .about-info {
@@ -1059,7 +1062,7 @@ h1:hover::after{
   }
 
   .car-container {
-    width: 95%; /* Keep the container slightly inset */
+    width: 90%; /* Keep the container slightly inset */
     margin: 1.5rem auto; /* Center the container and add spacing */
   }
 
@@ -1076,7 +1079,8 @@ h1:hover::after{
   }
 
   .my-cars-container {
-    width: 95%; /* Keep the car container narrow */
+    width: 90%; /* Keep the car container narrow */
+    border-radius: 50%;
   }
 
   .about-info {
@@ -1156,7 +1160,7 @@ h1:hover::after{
   }
 
   .car-container {
-    width: 95%; /* Keep the container mostly full width */
+    width: 90%; /* Keep the container mostly full width */
     justify-content: space-around; /* Space cards out evenly */
   }
 
@@ -1167,7 +1171,8 @@ h1:hover::after{
   }
 
   .my-cars-container {
-    width: 95%; /* Keep the car container narrow */
+    width: 90%; /* Keep the car container narrow */
+    border-radius: 50%;
   }
 
   .about-info {
@@ -1248,7 +1253,7 @@ h1:hover::after{
   }
 
   .car-container {
-    width: 98%; /* Use almost full width */
+    width: 90%; /* Use 90% width */
     justify-content: space-between; /* Space cards evenly */
     gap: 20px; /* Keep card gaps consistent */
   }
@@ -1260,7 +1265,8 @@ h1:hover::after{
   }
 
   .my-cars-container {
-    width: 95%; /* Keep the container narrow */
+    width: 90%; /* Keep the container narrow */
+    border-radius: 50%;
   }
 
   .about-info {
@@ -1345,14 +1351,15 @@ h1:hover::after{
   }
 
   .car-container {
-    width: 98%; /* Use nearly full width for the container */
+    width: 90%; /* Use 90% width */
     justify-content: space-around; /* Space cards evenly across the row */
     gap: 25px; /* Use larger gaps between cards */
   }
 
   .my-cars-container {
-    width: 95%; /* Keep the car section narrow enough for readability */
+    width: 90%; /* Keep the car section narrow enough for readability */
     margin: 2.5rem auto; /* Center the container and add vertical spacing */
+    border-radius: 50%;
   }
 
   .feedback-section {
