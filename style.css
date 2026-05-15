@@ -256,6 +256,14 @@ h1:hover::after{
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
+.repair-intro {
+  max-width: 860px;
+  margin: 0 auto 2rem;
+  text-align: justify;
+  text-justify: inter-word;
+  line-height: 1.75;
+}
+
 .repair-section-video video {
   width: 100%;
   height: auto;
