@@ -273,18 +273,13 @@ h1:hover::after{
 }
 
 /* Repair section styling */
-.repair-intro {
+.repair-intro, 
+.repair-outro {
   max-width: 860px; /* Keep the intro paragraph width readable */
   margin: 0 auto 2rem; /* Center the paragraph and add bottom spacing */
   text-align: justify; /* Justify the text for neat edges */
   text-justify: inter-word; /* Use word spacing for justified text */
   line-height: 1.75; /* Add line spacing for readability */
-}
-
-.repair-outro {
-  width: 90%; /* Limit the width of the outro paragraph for better readability */
-  justify-content: justify; /* Justify the text for neat edges */
-  text-justify: inter-word; /* Use word spacing for justified text */
 }
 
 .service-list {
