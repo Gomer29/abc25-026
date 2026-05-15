@@ -321,24 +321,24 @@ h1:hover::after{
 /* Hamburger menu styles */
 .hamburger {
   display: none; /* Hide the hamburger on larger screens */
-  background: #F5F5DC ; /* Bold beige button to stand out from the light header */
+  background: #B0C4DE; /* Light steel blue button */
   border: none; /* Remove default button border */
   border-radius: 12px; /* Round the edges for a polished look */
   font-size: 1.5rem; /* Make the hamburger icon easy to tap */
   cursor: pointer; /* Show pointer cursor when hovering */
-  color: #ffffff; /* Use white icon color for high contrast */
+  color: #000000; /* Use black icon color for contrast */
   padding: 0.6rem 1rem; /* Add balanced space around the button */
   z-index: 1001; /* Keep the button above other elements */
   position: relative; /* Keep the button in normal flow with stacking context */
   transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease; /* Animate hover changes smoothly */
   margin-left: auto; /* Push the button to the right in the header */
-  box-shadow: 0 4px 12px rgba(26, 115, 232, 0.2); /* Add subtle depth to lift the button */
+  box-shadow: 0 4px 12px rgba(176, 196, 222, 0.3); /* Add subtle depth with light steel blue shadow */
 }
 
 .hamburger:hover {
   transform: scale(1.05); /* Slightly enlarge the button on hover */
-  background: #185abc; /* Darken the button on hover while keeping contrast */
-  color: #ffffff; /* Keep icon color white on hover */
+  background: #8FA3C4; /* Darker light steel blue on hover */
+  color: #000000; /* Keep icon color black on hover */
 }
 
 /* Default desktop styles - hamburger hidden */
@@ -412,7 +412,7 @@ h1:hover::after{
 
   .navbar li {
     width: 100%; /* Make each menu item fill the width */
-    text-align: center; /* Center menu text on mobile */
+    text-align: right; /* Right-align menu text on mobile */
     border-bottom: 1px solid #bbb; /* Separate items with lines */
   }
 
@@ -427,6 +427,7 @@ h1:hover::after{
     width: 100%; /* Make links full width */
     box-sizing: border-box; /* Include padding in width calculation */
     transition: background-color 0.3s ease; /* Smooth hover background changes */
+    text-align: right; /* Right-align the link text */
   }
 
   .navbar a:hover {
