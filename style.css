@@ -321,7 +321,7 @@ h1:hover::after{
 /* Hamburger menu styles */
 .hamburger {
   display: none; /* Hide the hamburger on larger screens */
-  background: #1a73e8; /* Bold blue button to stand out from the light header */
+  background: #F5F5DC ; /* Bold beige button to stand out from the light header */
   border: none; /* Remove default button border */
   border-radius: 12px; /* Round the edges for a polished look */
   font-size: 1.5rem; /* Make the hamburger icon easy to tap */
