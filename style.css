@@ -249,11 +249,18 @@ h1:hover::after{
 }
 
 .repair-section-video {
-  width: 100%; /* Allow the video container to be full width */
+  width: 80%; /* Use 80% of the viewport for the repair video container */
   max-width: 1000px; /* Limit the container width for readability */
+  min-width: 320px; /* Maintain a usable minimum size on small screens */
   overflow: hidden; /* Hide overflow from the video container */
   border-radius: 10px; /* Round the video container corners */
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); /* Add a soft shadow around the video */
+}
+
+@media (max-width: 768px) {
+  .repair-section-video {
+    width: 95%; /* Use more width on smaller devices while staying responsive */
+  }
 }
 
 .repair-intro {
