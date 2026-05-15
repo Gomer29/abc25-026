@@ -1466,6 +1466,49 @@ h1:hover::after{
   box-shadow: 0 5px 10px rgba(0,0,0,0.05); /* Add a soft shadow */
 }
 
+@media (max-width: 768px) {
+  .social-container ul {
+    gap: 10px; /* Reduce spacing for smaller screens */
+  }
+
+  .social-container a {
+    width: 48px; /* Smaller icon button on tablet and small desktop screens */
+    height: 48px; /* Smaller icon button on tablet and small desktop screens */
+  }
+
+  .social-container a svg {
+    width: 20px; /* Smaller icon graphic */
+    height: 20px; /* Smaller icon graphic */
+  }
+}
+
+@media (max-width: 480px) {
+  .social-container ul {
+    gap: 8px; /* Reduce spacing for phones */
+  }
+
+  .social-container a {
+    width: 42px; /* Use a smaller button on phones */
+    height: 42px; /* Use a smaller button on phones */
+  }
+
+  .social-container a svg {
+    width: 18px; /* Use a smaller icon graphic on phones */
+    height: 18px; /* Use a smaller icon graphic on phones */
+  }
+
+  .social-container a::before {
+    padding: 0.35rem 0.75rem; /* Keep tooltip compact on phones */
+    font-size: 0.85rem; /* Slightly smaller tooltip text */
+  }
+
+  .social-container a::after {
+    border-left: 4px solid transparent; /* Smaller tooltip arrow */
+    border-right: 4px solid transparent; /* Smaller tooltip arrow */
+    border-top: 4px solid var(--accent-color); /* Smaller tooltip arrow */
+  }
+}
+
 /* Hover effect for the social media icons in the contact section */
 .social-container a::before{
   content: attr(data-social); /* Show the social platform name from data attribute */
