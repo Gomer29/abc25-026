@@ -239,43 +239,13 @@ h1:hover::after{
   text-align: left; /* Align text to the left for better readability */
 }
 
-/* Repair section video styling */
-.repair-section {
-  width: 100%; /* Make the repair section fill its container */
-  display: flex; /* Use flex layout for the section content */
-  justify-content: center; /* Center the video block horizontally */
-  gap: 1.5rem; /* Space out child elements */
-  margin: 2rem 0; /* Add vertical space around the section */
-}
-
-.repair-section-video {
-  width: 80%; /* Use 80% of the viewport for the repair video container */
-  max-width: 1000px; /* Limit the container width for readability */
-  min-width: 320px; /* Maintain a usable minimum size on small screens */
-  overflow: hidden; /* Hide overflow from the video container */
-  border-radius: 10px; /* Round the video container corners */
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); /* Add a soft shadow around the video */
-}
-
-@media (max-width: 768px) {
-  .repair-section-video {
-    width: 95%; /* Use more width on smaller devices while staying responsive */
-  }
-}
-
+/* Repair section styling */
 .repair-intro {
   max-width: 860px; /* Keep the intro paragraph width readable */
   margin: 0 auto 2rem; /* Center the paragraph and add bottom spacing */
   text-align: justify; /* Justify the text for neat edges */
   text-justify: inter-word; /* Use word spacing for justified text */
   line-height: 1.75; /* Add line spacing for readability */
-}
-
-.repair-section-video video {
-  width: 100%; /* Stretch the video to fill the container */
-  height: auto; /* Keep the video's aspect ratio */
-  display: block; /* Remove inline spacing below the video */
-  object-fit: cover; /* Crop the video nicely inside its box */
 }
 
 .service-list {
@@ -859,11 +829,7 @@ h1:hover::after{
 
   .repair-section {
     flex-direction: column; /* Stack the repair section vertically */
-  }
-
-  .repair-section-img,
-  .repair-section-video {
-    width: 100%; /* Make repair media full width */
+    gap: 1rem; /* Add spacing between repair blocks */
   }
 }
 
@@ -992,12 +958,6 @@ h1:hover::after{
     flex-direction: column; /* Stack repair section on tablets */
     gap: 1rem; /* Add spacing between repair blocks */
   }
-
-  .repair-section-img,
-  .repair-section-video {
-    width: 100%; /* Make media full width */
-    max-width: 500px; /* Limit the media width */
-  }
 }
 
 /* Medium Devices (769px - 992px) - Tablets & Small Desktops */
@@ -1095,11 +1055,6 @@ h1:hover::after{
     gap: 2rem; /* Add spacing between sections */
     align-items: center; /* Align repair sections vertically */
   }
-
-  .repair-section-img,
-  .repair-section-video {
-    width: 45%; /* Use near-half width for media blocks */
-  }
 }
 
 /* Large Devices (993px - 1199px) - Desktops */
@@ -1190,11 +1145,6 @@ h1:hover::after{
     flex-direction: row; /* Keep repair content side by side */
     gap: 2.5rem; /* Add spacing between columns */
     align-items: center; /* Align items vertically center */
-  }
-
-  .repair-section-img,
-  .repair-section-video {
-    width: 45%; /* Use near-half width for media */
   }
 }
 
@@ -1288,12 +1238,6 @@ h1:hover::after{
     flex-direction: row; /* Keep repair content side by side */
     gap: 3rem; /* Use wider gaps between sections */
     align-items: center; /* Align items vertically */
-  }
-
-  .repair-section-img,
-  .repair-section-video {
-    width: 45%; /* Use near-half widths */
-    max-width: 600px; /* Cap the width on large screens */
   }
 }
 
@@ -1398,12 +1342,6 @@ h1:hover::after{
     flex-direction: row; /* Keep repair content side by side */
     gap: 3.5rem; /* Add even wider spacing between sections */
     align-items: center; /* Align rows vertically centered */
-  }
-
-  .repair-section-img,
-  .repair-section-video {
-    width: 48%; /* Use nearly half width for repair media */
-    max-width: 700px; /* Cap the width for readability */
   }
 
   footer {

@@ -24,14 +24,6 @@
   <section class="repair">
     <h2 class="repair-services">Repair Services</h2>
     <p class="repair-intro">At GLY Motor Group, we understand the importance of keeping your vintage muscle car in top condition. Our expert mechanics specialize in repairing and restoring classic cars to their former glory. Whether you need routine maintenance, engine repairs, or a complete restoration, our team is here to help.</p>
-    <div class="repair-section">
-     <div class="repair-section-video">
-       <video controls class="repair-video" autoplay muted>
-         <source src="Images/Car Repairs/carrepair6.mp4" type="video/mp4">
-         Your browser does not support the video tag.
-       </video> 
-     </div>
-    </div> 
     <p>Our repair services include:</p>
     <div class="service-list">
       <ul>
@@ -51,17 +43,6 @@
   <footer class="foot">
     <p class="in-foot">&copy; 2026 GLY Motor Group. All rights reserved.</p>
   </footer>
-  <script>
-    const videos = ['Images/Car Repairs/carrepair6.mp4', 'Images/Car Repairs/carrepair5.mp4'];
-    let currentIndex = 0;
-    const videoElement = document.querySelector('.repair-video');
-
-    videoElement.addEventListener('ended', () => {
-      currentIndex = (currentIndex + 1) % videos.length;
-      videoElement.src = videos[currentIndex];
-      videoElement.play();
-    });
-  </script>
   <script>
     document.querySelector('.hamburger').addEventListener('click', () => {
       document.querySelector('.navbar ul').classList.toggle('show');
