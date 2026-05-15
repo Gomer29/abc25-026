@@ -24,8 +24,8 @@
   <section class="feedback">
    <h2 class="feed-back">Feedback</h2>
    <p>We value your input! Please share your thoughts, suggestions, or any concerns you may have about our services or website.</p>
-   <div class="feedback-section">
-   <form class="feedbackForm">
+  <div class="feedback-section">
+  <form id="feedbackForm" class="feedbackForm">
     <label for="firstname">Firstname:</label>
     <input type="text" id="firstname" name="firstname" required placeholder="Firstname"/><br><br>
     <label for="lastname">Lastname:</label>
@@ -51,6 +51,7 @@
   <div class="preview" id="feedbackPreview">
     <h3>Customer Feedback</h3>
   </div>
+ <!-- Feedback form handling: show thank-you modal and add preview card -->
  <script>
   const form = document.getElementById('feedbackForm');
   const preview = document.getElementById('feedbackPreview');
@@ -58,19 +59,29 @@
   form.addEventListener('submit', function(e) {
     e.preventDefault();
 
-    const name = document.getElementById('name').value;
-    const rating = document.getElementById('rating').value;
-    const message = document.getElementById('message').value;
+    const first = document.getElementById('firstname').value.trim();
+    const last = document.getElementById('lastname').value.trim();
+    const name = (first || last) ? (first + (last ? ' ' + last : '')) : 'Anonymous';
+    const rating = document.getElementById('rating').value || '';
+    const message = document.getElementById('message').value.trim();
 
+    // Append preview card
     const card = document.createElement('div');
     card.classList.add('feedback-card');
-
-    card.innerHTML = `
-      <p><strong>${name}</strong> (${rating})</p>
-      <p>${message}</p>
-    `;
-
+    card.innerHTML = `\n      <p><strong>${name}</strong> ${rating ? '(' + rating + ')' : ''}</p>\n      <p>${message || ''}</p>\n    `;
     preview.appendChild(card);
+
+    // Show thank-you modal
+    const modal = document.getElementById('thankYouModal');
+    if (modal) {
+      modal.classList.add('open');
+      // Auto-close after 2.5s
+      setTimeout(() => modal.classList.remove('open'), 2500);
+    } else {
+      // Fallback alert
+      alert('Thank you for sharing your thoughts with us');
+    }
+
     form.reset();
   });
  </script>
@@ -95,5 +106,12 @@
   <footer class="foot">
     <p class="in-foot">&copy; 2026 GLY Motor Group. All rights reserved.</p>
   </footer>
+
+  <!-- Thank you modal -->
+  <div id="thankYouModal" class="thankyou-modal" aria-hidden="true">
+    <div class="thankyou-modal-content">
+      <p>Thank you for sharing your thoughts with us</p>
+    </div>
+  </div>
 </body>
 </html>
