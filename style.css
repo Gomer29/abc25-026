@@ -281,6 +281,12 @@ h1:hover::after{
   line-height: 1.75; /* Add line spacing for readability */
 }
 
+.repair-outro {
+  width: 90%; /* Limit the width of the outro paragraph for better readability */
+  justify-content: justify; /* Justify the text for neat edges */
+  text-justify: inter-word; /* Use word spacing for justified text */
+}
+
 .service-list {
   max-width: 940px; /* Limit the service list width for readability */
   margin: 0 auto 2rem; /* Center the list block and add bottom space */
@@ -610,12 +616,6 @@ h1:hover::after{
   padding: 2rem; /* Add padding around the section */
   border: 1px solid #000000; /* Add a border around the section */
   border-radius: 5px; /* Round the section corners */
-}
- 
-#about-outro-info {
-  text-align: justify; /* Justify the text for neat edges */
-  text-justify: inter-word; /* Use word spacing for justified text */
-  color: #000000; /* Use black text for better visibility */
 }
 
 .about-info {
