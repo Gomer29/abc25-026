@@ -182,6 +182,13 @@
         }
       }
     });
+
+    // Show purchase confirmation when Buy Now is clicked
+    document.querySelectorAll('.buy-now').forEach(button => {
+      button.addEventListener('click', () => {
+        alert('Thank you for your purchase');
+      });
+    });
   </script>
 </body>
 </html>
