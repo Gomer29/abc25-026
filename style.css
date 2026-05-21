@@ -620,11 +620,11 @@ h1:hover::after{
   align-items: center; /* Center items vertically */
   gap: 2rem; /* Add spacing between items */
   padding: 2rem; /* Add padding around the info section */
-  border: 1px solid #000000; /* Add a border around the info section */
+  border: none; /* Remove the border from the about info section */
   border-radius: 5px; /* Round the section corners */
   width: 90%; /* Limit the width to 90% of the parent */
   max-width: 1200px; /* Limit width on large screens */
-  background-color: #DCDCDC; /* Match the header background color */
+  background: linear-gradient(180deg, rgba(255,255,255,0.95), rgba(220,220,220,0.85)); /* Fade into the about section background */
 }
 
 .about-image,
