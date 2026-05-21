@@ -527,7 +527,7 @@ h1:hover::after{
   min-width: 260px; /* Keep cards a minimum readable width */
   max-width: 32%; /* Limit the card width for good proportions */
   padding: 1rem; /* Add padding for better spacing */
-  border: 1px solid #000000; /* Add a border to each car card */
+  border: none; /* Remove border from car cards */
   border-radius: 5px; /* Round the card corners */
   background-color: #ffffff; /* Use a white background for the card */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
