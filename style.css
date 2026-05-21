@@ -243,10 +243,9 @@ h1:hover::after{
   justify-content: center; /* Center the items horizontally */
   gap: 20px;  /* Add gap between the items for better spacing */
   padding: 2rem; /* Add padding for better spacing */
-  border: 1px solid #f0f8ff; /* Add a border to the cars section for better visibility */
-  background-color: #f0f8ff ; /* Set a light background color for better visibility of the cars section */
+  border: none; /* Remove border from the cars section for a cleaner look */
+  background: linear-gradient(180deg, rgba(240,248,255,0.95), rgba(240,248,255,0.8)); /* Soft background fade for the cars section */
   width: 100%; /* Set the width of the cars section to 100% of its container for better layout control */
-  border: 1px solid #000000;  /* Add a border to the cars section for better visibility */
   border-radius: 5px; /* Add border radius to curve the edges for better aesthetics */
   overflow: hidden; /* Hide any overflow content for better aesthetics */
 }
@@ -260,9 +259,9 @@ h1:hover::after{
   gap: 20px; /* Add gap between the items for better spacing */
   margin: 2rem auto; /* Add margin and center the container horizontally */
   padding: 2rem; /* Add padding for better spacing */
-  border: 1px solid #000000; /* Add a border to the my-cars-container for better visibility */
+  border: none; /* Remove border from the my-cars-container */
   border-radius: 15px; /* Make the container visually rounded */
-  background-color: #ffffff; /* Set a white background color for better visibility of the car details */
+  background: linear-gradient(180deg, rgba(255,255,255,0.9), rgba(240,248,255,0.7)); /* Fade into .cars background */
   width: 90%; /* Set the width of the my-cars-container to 90% of its parent container */
 }
 .my-cars-container h2 {
@@ -511,10 +510,10 @@ h1:hover::after{
   margin: 2rem auto; /* Add outer space and center the container horizontally */
   width: 90%; /* Make the car container span 90% of the viewport/parent width */
   max-width: 1400px; /* Keep a sensible cap on extremely large screens */
-  border: 1px solid #000000; /* Add a border to the car container */
+  border: none; /* Remove border from the car container */
   border-radius: 5px; /* Round the container corners */
   padding: 1rem; /* Add inner padding inside the container */
-  background-color: #f0f0f0; /* Use a light gray background for contrast */
+  background: linear-gradient(180deg, rgba(255,255,255,0.8), rgba(240,248,255,0.6)); /* Fade into .cars background */
 }
 
 /* Styling for the car card in the car container */
